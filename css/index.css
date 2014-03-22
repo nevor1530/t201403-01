@@ -56,25 +56,29 @@
 	  }
 }
 
-.my-row {
-	margin-top:8px;
+.gallery-container {
+	max-width:680px;
+}
+
+.image-container {
+	margin-bottom:8px;
 }
 
 @media (min-width: 768px) {
-	.my-row {
-		margin-top:12px;
+	.image-container {
+		margin-bottom:12px;
 	}
 }
 
 @media (min-width: 992px) {
-	.my-row {
-		margin-top:16px;
+	.image-container {
+		margin-bottom:16px;
 	}
 }
 
 @media (min-width: 1200px) {
-	.my-row {
-		margin-top:20px;
+	.image-container {
+		margin-bottom:20px;
 	}
 }
 
@@ -83,6 +87,7 @@
 	height:auto;
 	padding:0px;
 	margin:0px;
+	max-width:340px;
 } 
 
 .image-container {

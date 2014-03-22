@@ -35,4 +35,26 @@ $(function(){
 			}, 0);
 		}
 	});
+	
+	$(".image-container").on(
+		"mouseover", function() {
+			$('.image-overlay', this).animate({
+	      		height: "toggle", 
+      		}, 200);
+      		
+      		$('.image-title-box', this).hide();
+		}
+	);
+	
+	$(".image-container").on(
+		"mouseout", function() {
+			$('.image-overlay', this).animate({
+	      		height: "toggle", 
+      		}, 200);
+      		
+      		$('.image-title-box', this).show();
+		}
+	);
+	
+		
 });
