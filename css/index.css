@@ -257,7 +257,7 @@
     border-top-right-radius: 2px;
 }
 
-a, h1, h2, h3, h4, h5 {
+.modal-gallery .modal-container a, h1, h2, h3, h4, h5 {
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
@@ -274,11 +274,8 @@ a, h1, h2, h3, h4, h5 {
     list-style-type: none;
 }
 
-p, ul {
+.modal-gallery .modal-container ul {
     font-size: 14px;
-}
-
-p, ul {
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
@@ -316,10 +313,6 @@ p, ul {
     background-size: auto auto;
     position: absolute;
     z-index: 2;
-}
-
-p {
-    line-height: 27px;
 }
 
 .modal-gallery .modal-container .modal-slide.tap-to-ride .stick {
