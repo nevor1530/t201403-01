@@ -37,22 +37,20 @@ $(function(){
 	});
 	
 	$(".image-container").on(
-		"mouseover", function() {
+		"mouseenter", function() {
+      		$('.image-title-box', this).hide();
 			$('.image-overlay', this).animate({
 	      		height: "toggle", 
       		}, 200);
-      		
-      		$('.image-title-box', this).hide();
 		}
 	);
 	
 	$(".image-container").on(
-		"mouseout", function() {
+		"mouseleave", function() {
+      		$('.image-title-box', this).show();
 			$('.image-overlay', this).animate({
 	      		height: "toggle", 
       		}, 200);
-      		
-      		$('.image-title-box', this).show();
 		}
 	);
 	
