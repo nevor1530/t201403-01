@@ -38,6 +38,13 @@
 	
 }
 
+.slide-img {
+	width: 100%;
+	height: auto;
+	max-width: none !important;
+	position: absolute;
+}
+
 @media screen and (max-width: 768px) {
 	.global-header {
 		padding: 18px 5px 18px 5px;
