@@ -52,4 +52,24 @@ $(function(){
 			lastTop = curTop;
 		}, 0);
 	});
+	
+	$(".image-container").on(
+		"mouseenter", function() {
+      		$('.image-title-box', this).hide();
+			$('.image-overlay', this).animate({
+	      		height: "toggle", 
+      		}, 200);
+		}
+	);
+	
+	$(".image-container").on(
+		"mouseleave", function() {
+      		$('.image-title-box', this).show();
+			$('.image-overlay', this).animate({
+	      		height: "toggle", 
+      		}, 200);
+		}
+	);
+	
+		
 });
