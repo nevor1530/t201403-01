@@ -232,7 +232,7 @@
     z-index: 2;
 }
 
-.btn {
+.modal-gallery .modal-container .btn {
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     border-left-color-ltr-source: physical;
