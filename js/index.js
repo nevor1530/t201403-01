@@ -55,6 +55,7 @@ $(function(){
 	
 	$(".image-container").on(
 		"mouseenter", function() {
+		    $('.image-container').css('cursor','pointer');
       		$('.image-title-box', this).hide();
 			$('.image-overlay', this).animate({
 	      		height: "toggle", 
