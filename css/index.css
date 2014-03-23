@@ -176,20 +176,26 @@
 .modal-gallery {
     display: block;
     position: relative;
+    margin-bottom:50px;
 }
 
-.modal-gallery .close-modal {
-    font-size: 30px;
-    font-weight: bold;
-    position: absolute;
-    right: 8px;
+.modal-gallery .close-btn {
+	padding-top:20px;
+	font-size:20px;
+	padding-right:10px;
+}
+
+@media (max-width: 768px) {
+	.modal-gallery .close-btn {
+		padding-top:60px;
+	}
 }
 
 .modal-gallery .modal-container {
-    background-attachment: scroll;
+	background-attachment: scroll;
     background-clip: border-box;
     background-color: #202024;
-    background-image: url("https://d1a3f4spazzrp4.cloudfront.net/web-fresh/pattern-grid-dark@1x.gif");
+    background-image: url("../images/pattern-grid-dark@1x.gif");
     background-origin: padding-box;
     background-position: left top;
     background-repeat: repeat;
@@ -198,6 +204,36 @@
     height: 600px;
     margin-top: 50px;
     width: 100%;
+}
+
+.modal-gallery .modal-container .btn {
+	background-color: rgba(0, 0, 0, 0);
+	position: absolute;
+	height: 452px;
+	top: 50%;
+    margin-top: -200px;
+	width: 40%;
+	left: no;
+	right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 20px;
+    padding-top: 215px;
+}
+
+@media (max-width: 768px) {
+	.modal-gallery .modal-container .btn {
+		background-color: rgba(0, 0, 0, 0);
+		color: #1EBAD6;
+	    right: 0;
+	    text-align: right;
+	    height: auto;
+	    margin: 0;
+	    padding: 22px;
+	    left: no;
+	    top: 0;
+	    width: 52px;
+	}
 }
 
 .modal-gallery .modal-container .btn.last {
@@ -209,94 +245,35 @@
     text-align: left;
 }
 
+@media (max-width: 768px) {
+	.modal-gallery .modal-container .btn.last {
+	 	padding-bottom: 22px;
+	    padding-left: 20px;
+	    padding-right: 20px;
+	    padding-top: 60px;
+	}
+}
+
 .modal-gallery .modal-container .btn.next {
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 20px;
     padding-top: 215px;
     text-align: right;
-}
-
-.modal-gallery .modal-container .btn {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background-color: rgba(0, 0, 0, 0);
-    border-bottom-color: -moz-use-text-color;
-    border-bottom-style: none;
-    border-bottom-width: medium;
-    border-image-outset: 0 0 0 0;
-    border-image-repeat: stretch stretch;
-    border-image-slice: 100% 100% 100% 100%;
-    border-image-source: none;
-    border-image-width: 1 1 1 1;
-    border-left-color-ltr-source: physical;
-    border-left-color-rtl-source: physical;
-    border-left-color-value: -moz-use-text-color;
-    border-left-style-ltr-source: physical;
-    border-left-style-rtl-source: physical;
-    border-left-style-value: none;
-    border-left-width-ltr-source: physical;
-    border-left-width-rtl-source: physical;
-    border-left-width-value: medium;
-    border-right-color-ltr-source: physical;
-    border-right-color-rtl-source: physical;
-    border-right-color-value: -moz-use-text-color;
-    border-right-style-ltr-source: physical;
-    border-right-style-rtl-source: physical;
-    border-right-style-value: none;
-    border-right-width-ltr-source: physical;
-    border-right-width-rtl-source: physical;
-    border-right-width-value: medium;
-    border-top-color: -moz-use-text-color;
-    border-top-style: none;
-    border-top-width: medium;
-    color: #1EBAD6;
-    font-size: 22px;
-    height: 452px;
-    margin-top: -226px;
-    position: absolute;
+    left: auto;
     right: 0;
-    top: 50%;
-    width: 40%;
-    z-index: 2;
 }
-
-.modal-gallery .modal-container .btn {
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    border-left-color-ltr-source: physical;
-    border-left-color-rtl-source: physical;
-    border-left-color-value: #1EBAD6;
-    border-left-style-ltr-source: physical;
-    border-left-style-rtl-source: physical;
-    border-left-style-value: solid;
-    border-left-width-ltr-source: physical;
-    border-left-width-rtl-source: physical;
-    border-left-width-value: 2px;
-    border-right-color-ltr-source: physical;
-    border-right-color-rtl-source: physical;
-    border-right-color-value: #1EBAD6;
-    border-right-style-ltr-source: physical;
-    border-right-style-rtl-source: physical;
-    border-right-style-value: solid;
-    border-right-width-ltr-source: physical;
-    border-right-width-rtl-source: physical;
-    border-right-width-value: 2px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-}
-
-.modal-gallery .modal-container a, h1, h2, h3, h4, h5 {
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
+	
+@media (max-width: 768px) {
+	.modal-gallery .modal-container .btn.next {
+		margin: 0;
+		padding-bottom: 22px;
+	    padding-left: 22px;
+	    padding-right: 22px;
+	    padding-top: 60px;
+		left: 50px;
+		right: auto;
+	}
 }
 
 .modal-gallery .modal-container ul {
@@ -305,32 +282,12 @@
     list-style-type: none;
 }
 
-.modal-gallery .modal-container ul {
-    font-size: 14px;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-}
-
 .modal-gallery .modal-container .modal-slide {
-    display: none;
     padding-bottom: 75px;
     padding-left: 75px;
     padding-right: 75px;
     padding-top: 75px;
     position: relative;
-}
-
-.modal-gallery .modal-container .modal-slide.tap-to-ride .feature-image {
-    height: 660px;
-    left: 85px;
-    top: -32px;
-    width: 270px;
 }
 
 .modal-gallery .modal-container .modal-slide .feature-image {
@@ -346,10 +303,11 @@
     z-index: 2;
 }
 
-.modal-gallery .modal-container .modal-slide.tap-to-ride .stick {
-    left: 128px;
-    top: 220px;
-    transform: rotate(-45deg);
+.modal-gallery .modal-container .modal-slide.tap-to-ride .feature-image {
+    height: 660px;
+    left: 85px;
+    top: -32px;
+    width: 270px;
 }
 
 .modal-gallery .modal-container .modal-slide .stick {
@@ -367,18 +325,20 @@
     z-index: 1;
 }
 
+.modal-gallery .modal-container .modal-slide.tap-to-ride .stick {
+    left: 128px;
+    top: 220px;
+    transform: rotate(-45deg);
+}
+
 .modal-gallery .modal-container .modal-slide.tap-to-ride .copy {
     padding-bottom: 0;
     padding-left: 340px;
     padding-right: 0;
-    padding-top: 110px;
+    padding-top: 80px;
 }
 
 .modal-gallery .modal-container .modal-slide .copy {
     position: relative;
     text-align: left;
-}
-
-.modal-gallery .modal-container .modal-slide.active {
-    display: block;
 }
