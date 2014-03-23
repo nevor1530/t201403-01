@@ -45,6 +45,19 @@
 	position: absolute;
 }
 
+.carousel-indicators li {
+	margin-left: 20px;
+}
+.carousel-indicators li.active {
+	margin-left: 19px;
+}
+.carousel-indicators li:first-child{
+	margin-left: 1px;
+}
+.carousel-indicators li.active:first-child {
+	margin-left: 0px;
+}
+
 @media screen and (max-width: 768px) {
 	.global-header {
 		padding: 18px 5px 18px 5px;
@@ -60,7 +73,18 @@
 		top: 0px;
 		background: transparent url('https://d1a3f4spazzrp4.cloudfront.net/web-fresh/global/logo-mobile-light@1x.png') no-repeat left top;
 		background-size: 90px 13px;
-	  }
+	}
+
+	.carousel-indicators li {
+		width: 4px;
+		height: 4px;
+	}
+
+	.carousel-indicators li.active {
+		width: 6px;
+		height: 6px;
+	}
+
 }
 
 .gallery-container {
