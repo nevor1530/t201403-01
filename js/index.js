@@ -103,5 +103,11 @@ $(function(){
 		}
 	);
 	
+	$("#gallery_close").on(
+		"click", function() {
+			$('#gallery-container').hide();
+			$('#gallery-thumbnail-container').show();
+		}
+	);
 		
 });
