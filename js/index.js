@@ -52,6 +52,37 @@ $(function(){
 			lastTop = curTop;
 		}, 0);
 	});
+
+	// 导航逻辑
+	$("#id-menu").click(function(){
+		shownav();
+	});
+	$(".nav-close").click(function(){
+		hidenav();
+	});
+	$(".main-overlay").click(function(){
+		hidenav();
+	});
+
+	$(".nav  a").click(function(){
+		hidenav();
+	});
+
+	function shownav(){
+		$(".global-nav").show();
+		$(".main-wrapper").animate({right: "-200px"}, 100);
+		$(".global-header").animate({right: "-200px"}, 100);
+		$(".main-overlay").show();
+		$("body").css("overflow", "hidden");
+	}
+
+	function hidenav(){
+		$(".main-overlay").hide();
+		$("body").css("overflow", "auto");
+		$(".main-wrapper").animate({right: "0"}, 100);
+		$(".global-header").animate({right: "0"}, 100);
+		$(".global-nav").hide();
+	}	
 	
 	$(".image-container").on(
 		"mouseenter", function() {
