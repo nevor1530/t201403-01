@@ -83,6 +83,14 @@ $(function(){
 		$(".global-header").animate({right: "0"}, 100);
 		$(".global-nav").hide();
 	}	
+
+	// slide左右滑动切换
+	$("#carousel-generic").on("swipeleft", function(e){
+		$("#carousel-generic").carousel("next");
+	});
+	$("#carousel-generic").on("swiperight", function(e){
+		$("#carousel-generic").carousel("prev");
+	});
 	
 	$(".image-container").on(
 		"mouseenter", function() {
