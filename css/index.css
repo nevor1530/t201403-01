@@ -14,8 +14,10 @@ a:hover {
 }
 
 .nav-close {
-	margin: 30px 0px 30px 20px;
+	margin: 20px 0px 20px 10px;
+	padding: 10px 30px 10px 10px;
 	color: #1ebad6;
+	font-size: 16px;
 }
 .global-nav ul li {
 	border-top: 1px solid #636366;
@@ -67,7 +69,7 @@ a:hover {
   padding: 30px 20px 20px 20px;
   position: fixed;
   top: 0px;
-  z-index: 5;
+  z-index: 100;
   line-height: 10px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2);
@@ -490,9 +492,4 @@ a:hover {
 .modal-gallery .modal-container .modal-slide .copy {
     position: relative;
     text-align: left;
-}
-
-/* 引入jquery mobile后，会在body尾部加入loading的节点，加个样式隐掉 */
-.ui-loader {
-	display: none;
 }
