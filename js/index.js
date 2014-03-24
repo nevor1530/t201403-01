@@ -111,6 +111,14 @@ $(function(){
 		}
 	);
 	
+	$(".image-container").on(
+		"click", function() {
+      		$('#gallery-container').show();
+			$('#gallery-thumbnail-container').hide();
+		}
+	);
+
+	
 	$("#gallery_close").on(
 		"click", function() {
 			$('#gallery-container').hide();

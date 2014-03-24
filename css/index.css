@@ -267,14 +267,17 @@ a:hover {
 }
 
 .modal-gallery .close-btn {
-	padding-top:20px;
-	font-size:20px;
-	padding-right:10px;
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	font-size: 20px;
+	padding-right: 10px;
 }
 
 @media (max-width: 768px) {
 	.modal-gallery .close-btn {
-		padding-top:60px;
+		top: 60px;
+		z-index: 99;
 	}
 }
 
@@ -291,6 +294,13 @@ a:hover {
     height: 600px;
     margin-top: 50px;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+	.modal-gallery .modal-container {
+		height: 480px;
+		padding-top: 55px;
+	}
 }
 
 .modal-gallery .modal-container .btn {
@@ -330,6 +340,7 @@ a:hover {
     padding-right: 0;
     padding-top: 215px;
     text-align: left;
+    z-index:10;
 }
 
 @media (max-width: 768px) {
@@ -367,6 +378,15 @@ a:hover {
     list-style-image: none;
     list-style-position: outside;
     list-style-type: none;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+	.modal-gallery .modal-container ul {
+	    border-top-color: #666666;
+	    border-top-style: solid;
+	    border-top-width: 1px;
+	}
 }
 
 .modal-gallery .modal-container .modal-slide {
@@ -375,6 +395,16 @@ a:hover {
     padding-right: 75px;
     padding-top: 75px;
     position: relative;
+}
+
+@media (max-width: 768px) {
+	.modal-gallery .modal-container .modal-slide {
+	    padding-bottom: 0;
+	    padding-left: 0;
+	    padding-right: 0;
+	    padding-top: 30px;
+	    position: relative;
+	}
 }
 
 .modal-gallery .modal-container .modal-slide .feature-image {
@@ -390,11 +420,25 @@ a:hover {
     z-index: 2;
 }
 
-.modal-gallery .modal-container .modal-slide.tap-to-ride .feature-image {
+.modal-gallery .modal-container .modal-slide .feature-image {
     height: 660px;
     left: 85px;
     top: -32px;
     width: 270px;
+}
+
+@media (max-width: 768px) {
+	.modal-gallery .modal-container .modal-slide .feature-image {
+		background-image: url("../images/home-features-phones-mobile@1x.jpg");
+		height: 164px;
+	    left: 50%;
+	    top: 0;
+	    margin-bottom: 20px;
+	    margin-left: -135px;
+	    margin-right: 0;
+	    margin-top: 0;
+	    position: relative;
+	}
 }
 
 .modal-gallery .modal-container .modal-slide .stick {
@@ -412,17 +456,33 @@ a:hover {
     z-index: 1;
 }
 
-.modal-gallery .modal-container .modal-slide.tap-to-ride .stick {
+.modal-gallery .modal-container .modal-slide .stick {
     left: 128px;
     top: 220px;
     transform: rotate(-45deg);
+    display: block;
 }
 
-.modal-gallery .modal-container .modal-slide.tap-to-ride .copy {
+@media (max-width: 768px) {
+	.modal-gallery .modal-container .modal-slide .stick {
+		display: none;
+	}
+}
+
+.modal-gallery .modal-container .modal-slide .copy {
     padding-bottom: 0;
     padding-left: 340px;
     padding-right: 0;
     padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+	.modal-gallery .modal-container .modal-slide .copy {
+	    padding-bottom: 15px;
+	    padding-left: 18px;
+	    padding-right: 18px;
+	    padding-top: 5px;
+	}
 }
 
 .modal-gallery .modal-container .modal-slide .copy {
