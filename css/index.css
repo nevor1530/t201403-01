@@ -43,7 +43,7 @@ a:hover {
 	min-height: 100%;
 	position: relative;
 	right: 0;
-	box-shadow: 0 10px 25px #000000;
+	box-shadow: 0 -20px 25px #000000;
 }
 
 .header-fade {
@@ -488,4 +488,9 @@ a:hover {
 .modal-gallery .modal-container .modal-slide .copy {
     position: relative;
     text-align: left;
+}
+
+/* 引入jquery mobile后，会在body尾部加入loading的节点，加个样式隐掉 */
+.ui-loader {
+	display: none;
 }
