@@ -491,8 +491,3 @@ a:hover {
     position: relative;
     text-align: left;
 }
-
-/* 引入jquery mobile后，会在body尾部加入loading的节点，加个样式隐掉 */
-.ui-loader {
-	display: none;
-}
