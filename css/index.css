@@ -6,6 +6,16 @@ a:hover {
 	text-decoration: none;
 }
 
+.preloader {
+    background-color: #070716;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 .global-nav {
 	min-height: 100%;
 	position: fixed;

@@ -4,7 +4,17 @@ $(function(){
 
 	// 常用DOM对象
 	var $window = $(window);
-	
+
+	// 预加载overlay
+
+	var preloaderImg = document.getElementById("id-preloader-img");
+	if(preloaderImg.complete) { // 如果图片已经存在于浏览器缓存，直接调用回调函数
+		$(".js-preloader").fadeOut(1800);
+   	}
+   	preloaderImg.onload = function () { //图片下载完毕时异步调用callback函数。
+		$(".js-preloader").fadeOut(1800);
+   	};
+
 	// 限制幻灯片的高度
 	var imgw = 1440, imgh = 900;
 	var $js_slides = $(".js-slide");
@@ -97,7 +107,7 @@ $(function(){
 		    $('.image-container').css('cursor','pointer');
       		$('.image-title-box', this).hide();
 			$('.image-overlay', this).animate({
-	      		height: "toggle", 
+	      		height: "toggle"
       		}, 200);
 		}
 	);
@@ -106,7 +116,7 @@ $(function(){
 		"mouseleave", function() {
       		$('.image-title-box', this).show();
 			$('.image-overlay', this).animate({
-	      		height: "toggle", 
+	      		height: "toggle"
       		}, 200);
 		}
 	);

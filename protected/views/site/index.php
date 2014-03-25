@@ -1,5 +1,9 @@
 <?php include '_head.php'; ?>
 	<body data-spy="scroll" data-target=".global-nav">
+		<div class="preloader js-preloader">
+			<img id="id-preloader-img" src="<?php echo Yii::app()->request->baseUrl; ?>/images/home-hero-1-1440-900.jpg" width="0" height="0"/>
+		</div>
+		
 		<div class="global-container">
 			<nav class="global-nav" style="display: none;">
 				<a class="glyphicon glyphicon-remove hidden-xs nav-close"></a>
