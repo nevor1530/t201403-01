@@ -226,7 +226,9 @@ a:hover {
 .headline {
     color: #FFFFFF;
     top:30%;
-    position: relative;
+    text-align:center;
+    width:100%;
+    position: absolute;
 }
 
 .image-overlay {
