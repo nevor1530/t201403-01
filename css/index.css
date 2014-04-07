@@ -76,18 +76,18 @@ a:hover {
 
 .global-header {
   width: 100%;
-  padding: 30px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   position: fixed;
   top: 0px;
   z-index: 100;
   line-height: 10px;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.42);
   border-bottom: 1px solid #adadad;
 }
 
 .global-header:hover {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .global-header a {
@@ -104,19 +104,47 @@ a:hover {
 }
 
 .logo {
-	background: url("https://d1a3f4spazzrp4.cloudfront.net/web-fresh/global/logo-web-light@1x.png") no-repeat scroll left top / 167px 23px rgba(0, 0, 0, 0);
+	background: url("../images/logo.png") no-repeat scroll left top / 27px 32px rgba(0, 0, 0, 0);
 	border: 0 none;
     color: rgba(0, 0, 0, 0);
     display: inline-block;
     font: 0px/0 a;
-    height: 23px;
+    height: 32px;
     overflow: hidden;
     text-shadow: none;
-	width: 167px;
+	width: 27px;
+}
+
+.download-iphone-app {
+	background: url("../images/download_iphone_app.png") no-repeat scroll left top / 17px 32px rgba(0, 0, 0, 0);
+	border: 0 none;
+    color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    font: 0px/0 a;
+    height: 32px;
+    overflow: hidden;
+    text-shadow: none;
+	width: 17px;
+}
+
+.download-ipad-app {
+	background: url("../images/download_ipad_app.png") no-repeat scroll left top / 27px 36px rgba(0, 0, 0, 0);
+	border: 0 none;
+    color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    font: 0px/0 a;
+    height: 36px;
+    overflow: hidden;
+    text-shadow: none;
+	width: 27px;
+	margin-left: 30px;
+	margin-right: 10px;
 }
 
 .my-hidden-xs {
 	display: inline-block;
+	margin-left: 4px;
+	font-size: 14px;
 }
 
 .my-slide {
@@ -132,6 +160,26 @@ a:hover {
 	height: auto;
 	max-width: none !important;
 	position: absolute;
+}
+
+.carousel-caption {
+	bottom: 140px;
+}
+
+.carousel-caption .title {
+	font-size: 50px;
+	font-weight: 900;
+}
+
+.carousel-caption .content {
+	font-size: 15px;
+	font-weight: 700;
+	background-color: rgba(0, 0, 0, 0.42);
+	width: 360px;
+	margin:0 auto;
+	padding-top: 5px;
+	padding-bottom: 5px; 
+	margin-top: 20px;
 }
 
 .carousel-indicators li {
@@ -184,6 +232,10 @@ a:hover {
 		border: 2px solid #cccccc;
 	}
 
+}
+
+.gallery-section {
+	background-color: #FFFFFF;
 }
 
 .gallery-container {
@@ -504,4 +556,130 @@ a:hover {
 .modal-gallery .modal-container .modal-slide .copy {
     position: relative;
     text-align: left;
+}
+
+.partner-section {
+	background-image: url("../images/partner_section_bg.jpg");
+	background-repeat: no-repeat;
+    background-size: auto auto;
+    height: 899px;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.partner-form {
+	background-color: rgba(0, 0, 0, 0.31);
+	padding: 10px 20px 20px 20px;
+}
+
+.partner-form .title {
+	margin-bottom: 10px;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.partner-form .lead {
+	margin-bottom: 5px;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.partner-form .input-group {
+	margin-bottom: 10px;
+	float: left;
+}
+
+.partner-form .confirm-btn {
+	background-color: rgba(0, 0, 0, 0.31);
+	padding: 5px 30px 5px 30px;
+	margin-top: 20px;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 14px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px rgba(0,0,0, .29);
+}
+
+.subscription-section {
+	background-image: url("../images/subscription_section_bg.jpg");
+	background-repeat: no-repeat;
+    background-size: auto auto;
+    height: 899px;
+    width: 100%;
+    padding-top: 250px;
+}
+
+.subscription-section .section-title {
+	margin-bottom: 40px;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 34px;
+}
+
+.subscription-section .lead {
+	margin-bottom: 20px;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.ipad-download-section {
+	background-color: rgba(0, 0, 0, 0.42);
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.ipad-download-section .title {
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+
+.ipad-download-section .lead {
+	color: #FFFFFF;
+	padding-bottom: 40px;
+	font-weight: 700;
+	font-size: 22px;
+}
+
+.ipad-download-section p {
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 15px;
+	margin-bottom: 3px;
+}
+
+.ipad-download-section 。divider {
+	width: 2px;
+	height: 199px;
+}
+
+.ipad-download-section .ipad-logo {
+	width: 100%;
+	height: 100%;
+	margin-top: 30px;
+}
+
+.ipad-download-section .QR-code {
+	width: 100%;
+	height: 100%;
+	margin-top: 50px;
+}
+
+.ipad-download-section .QR-text {
+	margin-top: 80px;
+}
+
+.ipad-download-section .ipad_download_placeholder {
+	width: 100%;
+	height: 100%;
+}
+
+.map-section .map {
+	width: 100%;
+	height: 100%;
 }

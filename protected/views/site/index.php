@@ -23,10 +23,10 @@
 				<?php include '_header.php'; ?>
 				<?php include '_carousel_section.php'; ?>
 				<?php include '_gallery_section.php'; ?>
-				<section id="id-customer-section"></section>
-				<section id="id-brand-section"></section>
-				<section id="id-download-section"></section>
-				<section id="id-about-section"></section>
+				<?php include '_partner_section.php'; ?>
+				<?php include '_subscription_section.php'; ?>
+				<?php include '_ipad_download_section.php'; ?>
+				<?php include '_map_section.php'; ?>
 			</div>
 		</div>
 

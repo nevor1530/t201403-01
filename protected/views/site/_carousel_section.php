@@ -9,24 +9,24 @@
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner">
 		<div class="item active js-slide">
-			<img class="slide-img js-slide-img" src="<?php echo Yii::app()->request->baseUrl; ?>/images/home-hero-1-1440-900.jpg" alt="...">
+			<img class="slide-img js-slide-img" src="<?php echo Yii::app()->request->baseUrl; ?>/images/section-1-1440-900.jpg" alt="...">
 			<div class="carousel-caption">
-				<h1>Moving people</h1>
-				<p>The Uber app connects you with a driver at the tap of a button</p>
+				<div class="title">整体搭配 省时无忧</div>
+				<div class="content">在商城中选择类目查询，以获得完美的整体搭配</div>
 			</div>
 		</div>
 		<div class="item js-slide">
-			<img class="slide-img js-slide-img" src="<?php echo Yii::app()->request->baseUrl; ?>/images/home-hero-2-1440-900.jpg" alt="...">
+			<img class="slide-img js-slide-img" src="<?php echo Yii::app()->request->baseUrl; ?>/images/section-1-1440-900.jpg" alt="...">
 			<div class="carousel-caption">
-				<h1>Moving people</h1>
-				<p>The Uber app connects you with a driver at the tap of a button</p>
+				<div class="title">整体搭配 省时无忧</div>
+				<div class="content">在商城中选择类目查询，以获得完美的整体搭配</div>
 			</div>
 		</div>
 		<div class="item js-slide">
-			<img class="slide-img js-slide-img" src="<?php echo Yii::app()->request->baseUrl; ?>/images/home-hero-3-1440-900.jpg" alt="...">
+			<img class="slide-img js-slide-img" src="<?php echo Yii::app()->request->baseUrl; ?>/images/section-1-1440-900.jpg" alt="...">
 			<div class="carousel-caption">
-				<h1>Moving people</h1>
-				<p>The Uber app connects you with a driver at the tap of a button</p>
+				<div class="title">整体搭配 省时无忧</div>
+				<div class="content">在商城中选择类目查询，以获得完美的整体搭配</div>
 			</div>
 		</div>
 	</div>
