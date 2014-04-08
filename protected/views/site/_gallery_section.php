@@ -65,24 +65,23 @@
 	
 	<div id="gallery-container" class="container modal-gallery" style="display: none;">
 		<a id="gallery_close" class="close-btn">
-			<span class="glyphicon glyphicon-remove"/>
+			<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/cross.png"/>
 		</a>
 		<div class="modal-container">
 			<a class="btn last">
-				<span class="glyphicon glyphicon-chevron-left"></span>
+				<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/left-arrow.png"/>
 			</a>
 			<ul>
 				<li class="modal-slide active">
 					<p class="feature-image"></p>
-					<p class="stick"></p>
 					<div class="copy">
-						<h2> 轻触即可搭乘</h2>
-						<p>Uber使用您手机内的定位系统找到您的位置，只需轻触屏幕，系统将自动通知离您最近的车辆。即使您不知上车地点的详细地址，也可在任何地方上车。</p>
+						<h2>点图购买，直观简便</h2>
+						<p>在《拾裳》杂志里，所有出现在杂志里的商品，您都可以轻触，直接下单购买。</p>
 					</div>
 				</li>
 			</ul>
 			<a class="next btn">
-				<span class="glyphicon glyphicon-chevron-right"/>
+				<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/right-arrow.png"/>
 			</a>
 		</div>
 	</div>

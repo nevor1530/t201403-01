@@ -372,7 +372,7 @@ a:hover {
 
 @media (max-width: 768px) {
 	.modal-gallery .close-btn {
-		top: 60px;
+		top: 30px;
 		z-index: 99;
 	}
 }
@@ -380,8 +380,6 @@ a:hover {
 .modal-gallery .modal-container {
 	background-attachment: scroll;
     background-clip: border-box;
-    background-color: #202024;
-    background-image: url("../images/pattern-grid-dark@1x.gif");
     background-origin: padding-box;
     background-position: left top;
     background-repeat: repeat;
@@ -394,8 +392,9 @@ a:hover {
 
 @media (max-width: 768px) {
 	.modal-gallery .modal-container {
-		height: 480px;
+		height: 240px;
 		padding-top: 55px;
+		margin-top: 20px;
 	}
 }
 
@@ -444,7 +443,7 @@ a:hover {
 	 	padding-bottom: 22px;
 	    padding-left: 20px;
 	    padding-right: 20px;
-	    padding-top: 60px;
+	    padding-top: 35px;
 	}
 }
 
@@ -464,7 +463,7 @@ a:hover {
 		padding-bottom: 22px;
 	    padding-left: 22px;
 	    padding-right: 22px;
-	    padding-top: 60px;
+	    padding-top: 35px;
 		left: 50px;
 		right: auto;
 	}
@@ -507,7 +506,7 @@ a:hover {
     background-attachment: scroll;
     background-clip: border-box;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("../images/features-phones-web-sprite@1x-8.png");
+    background-image: url("../images/gallery_iphone_1.png");
     background-origin: padding-box;
     background-position: left top;
     background-repeat: no-repeat;
@@ -517,67 +516,48 @@ a:hover {
 }
 
 .modal-gallery .modal-container .modal-slide .feature-image {
-    height: 660px;
+    height: 663px;
     left: 85px;
     top: -32px;
-    width: 270px;
+    width: 488px;
 }
 
 @media (max-width: 768px) {
 	.modal-gallery .modal-container .modal-slide .feature-image {
-		background-image: url("../images/home-features-phones-mobile@1x.jpg");
-		height: 164px;
-	    left: 50%;
-	    top: 0;
-	    margin-bottom: 20px;
-	    margin-left: -135px;
-	    margin-right: 0;
-	    margin-top: 0;
-	    position: relative;
-	}
-}
-
-.modal-gallery .modal-container .modal-slide .stick {
-    background-attachment: scroll;
-    background-clip: border-box;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: url("../images/sprite@1x-8.png");
-    background-origin: padding-box;
-    background-position: -145px top;
-    background-repeat: no-repeat;
-    background-size: auto auto;
-    height: 32px;
-    position: relative;
-    width: 225px;
-    z-index: 1;
-}
-
-.modal-gallery .modal-container .modal-slide .stick {
-    left: 128px;
-    top: 220px;
-    transform: rotate(-45deg);
-    display: block;
-}
-
-@media (max-width: 768px) {
-	.modal-gallery .modal-container .modal-slide .stick {
-		display: none;
+		height: 200px;
+		width: 150px;
+		left: -10px;
+    	top: 10px;
+	    background-size: cover;
 	}
 }
 
 .modal-gallery .modal-container .modal-slide .copy {
-    padding-bottom: 0;
-    padding-left: 340px;
-    padding-right: 0;
-    padding-top: 80px;
+    margin-bottom: 0;
+    margin-left: 520px;
+    margin-right: 0;
+    margin-top: 80px;
+    width: 350px;
+    color: #000000;
+}
+
+.modal-gallery .modal-container .modal-slide .copy h2 {
+	font-weight: 900;
+	font-size: 34px;
 }
 
 @media (max-width: 768px) {
 	.modal-gallery .modal-container .modal-slide .copy {
-	    padding-bottom: 15px;
-	    padding-left: 18px;
-	    padding-right: 18px;
-	    padding-top: 5px;
+	    margin-bottom: 13px;
+	    margin-left: 145px;
+	    margin-right: 10px;
+	    margin-top: 30px;
+	    width: 150px;
+	}
+	
+	.modal-gallery .modal-container .modal-slide .copy h2 {
+		font-weight: 900;
+		font-size: 15px;
 	}
 }
 
