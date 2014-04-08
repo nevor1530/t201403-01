@@ -231,15 +231,33 @@ a:hover {
 	.carousel-indicators li.active {
 		border: 2px solid #cccccc;
 	}
-
 }
 
 .gallery-section {
 	background-color: #FFFFFF;
+	padding-top: 30px;
+}
+
+.gallery-section .label {
+	padding: 3px 10px 3px 10px;
+	background-color: rgba(3, 2, 2, 0.9);
+	font-size: 16px;
+}
+
+.gallery-section .title {
+	margin-top: 25px;
+	margin-bottom: 0;
+	font-size: 28px;
+	font-weight: 900;
+}
+
+.gallery-section .description {
+	font-size: 13px;
 }
 
 .gallery-container {
 	max-width:680px;
+	margin-top: 30px;
 }
 
 .my-column {

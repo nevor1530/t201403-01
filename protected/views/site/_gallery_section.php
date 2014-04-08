@@ -1,8 +1,9 @@
 <!-- Start Gallery Block
 ================================================== -->
 <section id="gallery" class="section text-center gallery-section">
-	<h1>The Uber App</h1>
-	<h1><small>Request, ride, and pay via your mobile phone</small></h1>
+	<p class="label">功能</p>
+	<p class="title">拾裳风应用程序</p>
+	<p class="description">随时随地可购物的时尚杂志</p>
 	<div id="gallery-thumbnail-container" class="container text-center gallery-container" style="display: block;">
 		<div class="row">
 			<div class="col-md-6 col-sm-6 my-column">
@@ -11,9 +12,6 @@
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline text-center">轻触即可搭乘 </h3>
-						<span class="plus icon-thin_plus">
-							<span class="glyphicon glyphicon-plus"></span>
-						</span>
 					</div>
 				</div>
 			</div>
@@ -23,9 +21,6 @@
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline">安全可靠接载 </h3>
-						<span class="plus icon-thin_plus">
-							<span class="glyphicon glyphicon-plus"></span>
-						</span>
 					</div>
 				</div>
 			</div>
@@ -37,9 +32,6 @@
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline">价格清晰 </h3>
-						<span class="plus icon-thin_plus">
-							<span class="glyphicon glyphicon-plus"></span>
-						</span>
 					</div>
 				</div>
 			</div>
@@ -49,9 +41,6 @@
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline">无需现金支付 </h3>
-						<span class="plus icon-thin_plus">
-							<span class="glyphicon glyphicon-plus"></span>
-						</span>
 					</div>
 				</div>
 			</div>
