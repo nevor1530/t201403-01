@@ -104,7 +104,7 @@ a:hover {
 }
 
 .logo {
-	background: url("../images/logo.png") no-repeat scroll left top / 42px 50px rgba(0, 0, 0, 0);
+	background: url("../images/logo.png") no-repeat scroll left top / 35px 42px rgba(0, 0, 0, 0);
 	border: 0 none;
     color: rgba(0, 0, 0, 0);
     display: inline-block;
@@ -112,7 +112,7 @@ a:hover {
     height: 42px;
     overflow: hidden;
     text-shadow: none;
-	width: 50px;
+	width: 35px;
 }
 
 .download-iphone-app {
