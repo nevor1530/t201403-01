@@ -4,7 +4,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 				<div class="overview animate" data-animate="fadeInDown">
 					<h3 class="section-title"><strong>对我们感兴趣？</strong></h3>
-					<p class="lead">留下您的联系方式，我们尽快联系您!</p>
+					<p class="lead">留下您的联系方式，我们将尽快联系您!</p>
 				</div>
 				<form role="form" class="partner-form col-xs-12 col-sm-10 col-md-10 col-lg-10">
 					<p class="title text-center">公司/设计师信息</p>

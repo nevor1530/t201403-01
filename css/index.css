@@ -576,6 +576,14 @@ a:hover {
     padding-bottom: 150px;
 }
 
+@media (max-width: 768px) {
+	.partner-section {
+    	padding-top: 0;
+    	height: 579px;
+    	padding-bottom: 0px;
+	}
+}
+
 .partner-form {
 	background-color: rgba(0, 0, 0, 0.31);
 	padding: 10px 20px 20px 20px;
