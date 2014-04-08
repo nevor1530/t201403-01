@@ -171,6 +171,12 @@ a:hover {
 	font-weight: 900;
 }
 
+@media screen and (max-width: 768px) {
+	.carousel-caption .title {
+		font-size: 27px;
+	}
+}
+
 .carousel-caption .content {
 	font-size: 15px;
 	font-weight: 700;
@@ -180,6 +186,13 @@ a:hover {
 	padding-top: 5px;
 	padding-bottom: 5px; 
 	margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	.carousel-caption .content {
+		font-size: 10px;
+		width: 220px;
+	}
 }
 
 .carousel-indicators li {
@@ -628,6 +641,14 @@ a:hover {
     padding-top: 250px;
 }
 
+@media (max-width: 768px) {
+	.subscription-section {
+    	height: 550px;
+    	width: 100%;
+    	padding-top: 150px;
+	}
+}
+
 .subscription-section .section-title {
 	margin-bottom: 40px;
 	color: #FFFFFF;
@@ -635,11 +656,23 @@ a:hover {
 	font-size: 34px;
 }
 
+@media (max-width: 768px) {
+	.subscription-section .section-title {
+		font-size: 24px;
+	}
+}
+
 .subscription-section .lead {
 	margin-bottom: 20px;
 	color: #FFFFFF;
 	font-weight: 700;
 	font-size: 20px;
+}
+
+@media (max-width: 768px) {
+	.subscription-section .lead {
+		font-size: 18px;
+	}
 }
 
 .ipad-download-section {
