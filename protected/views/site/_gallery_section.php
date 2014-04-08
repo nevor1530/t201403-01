@@ -6,7 +6,7 @@
 	<p class="description">随时随地可购物的时尚杂志</p>
 	<div id="gallery-thumbnail-container" class="container text-center gallery-container" style="display: block;">
 		<div class="row">
-			<div class="col-md-6 col-sm-6 my-column">
+			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="image-container">
 					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/01.png" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
@@ -15,7 +15,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6 col-sm-6 my-column">
+			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="image-container">
 					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/02.png" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
@@ -24,9 +24,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row my-row">
-			<div class="col-md-6 col-sm-6 my-column">
+			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="image-container">
 					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/03.png" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
@@ -35,7 +33,25 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6 col-sm-6 my-column">
+			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
+				<div class="image-container">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/04.png" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<div class="image-overlay"></div>
+					<div class="image-title-box text-center">
+						<h3 class="headline">无需现金支付 </h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
+				<div class="image-container">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/04.png" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<div class="image-overlay"></div>
+					<div class="image-title-box text-center">
+						<h3 class="headline">无需现金支付 </h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="image-container">
 					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/04.png" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
