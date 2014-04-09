@@ -20,7 +20,7 @@
 						<p class="lead">省份：</p>
 		            	<input type="text" class="form-control input-sm">
 		          	</div>
-		          	<div class="col-xs-offset-2 col-xs-5 col-sm-offset-2 col-sm-5 col-md-offset-2 col-md-5 col-lg-offset-2 col-lg-5 input-group">
+		          	<div class="col-xs-offset-2 col-xs-5 col-sm-offset-2 col-sm-5 col-md-offset-2 col-md-5 col-lg-offset-2 col-lg-5 input-group city-container">
 						<p class="lead">城市：</p>
 		            	<input type="text" class="form-control input-sm">
 		          	</div>
@@ -28,7 +28,7 @@
 						<p class="lead">联系人：</p>
 		            	<input type="text" class="form-control input-sm">
 		          	</div>
-		          	<div class="col-xs-offset-2 col-xs-5 col-sm-offset-2 col-sm-5 col-md-offset-2 col-md-5 col-lg-offset-2 col-lg-5 input-group">
+		          	<div class="col-xs-offset-2 col-xs-5 col-sm-offset-2 col-sm-5 col-md-offset-2 col-md-5 col-lg-offset-2 col-lg-5 input-group phone-container">
 						<p class="lead">联系电话：</p>
 		            	<input type="text" class="form-control input-sm">
 		          	</div>

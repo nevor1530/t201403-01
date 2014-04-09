@@ -110,7 +110,7 @@ a:hover {
 	background: url("../images/menu.png") no-repeat;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
 	.menu-btn {
 		width: 29px;
 	}
@@ -167,7 +167,7 @@ a:hover {
 	margin-right: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
 	.download-ipad-app {
 		margin-left: 10px;
 	}
@@ -207,7 +207,7 @@ a:hover {
 	font-weight: 900;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
 	.carousel-caption .title {
 		font-size: 27px;
 	}
@@ -224,7 +224,7 @@ a:hover {
 	margin-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
 	.carousel-caption .content {
 		font-size: 10px;
 		width: 220px;
@@ -253,7 +253,7 @@ a:hover {
 	margin-left: 0px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
 	.global-header {
 		padding: 18px 10px 18px 10px;
 	}
@@ -318,7 +318,7 @@ a:hover {
 	margin-bottom:20px;
 }
 	
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.my-column {
 		margin-bottom:8px;
 	}
@@ -367,7 +367,7 @@ a:hover {
     font-weight: 700;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.headline {
 		font-size: 16px;
 		font-weight: 500;
@@ -423,7 +423,7 @@ a:hover {
 	padding-right: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.modal-gallery .close-btn {
 		top: 30px;
 		z-index: 99;
@@ -443,7 +443,7 @@ a:hover {
     width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.modal-gallery .modal-container {
 		height: 240px;
 		padding-top: 55px;
@@ -466,7 +466,7 @@ a:hover {
     padding-top: 215px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.modal-gallery .modal-container .btn {
 		background-color: rgba(0, 0, 0, 0);
 		color: #1EBAD6;
@@ -491,7 +491,7 @@ a:hover {
     z-index:10;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.modal-gallery .modal-container .btn.last {
 	 	padding-bottom: 22px;
 	    padding-left: 20px;
@@ -510,7 +510,7 @@ a:hover {
     right: 0;
 }
 	
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.modal-gallery .modal-container .btn.next {
 		margin: 0;
 		padding-bottom: 22px;
@@ -529,7 +529,7 @@ a:hover {
     padding: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.modal-gallery .modal-container ul {
 	    border-top-color: #666666;
 	    border-top-style: solid;
@@ -545,7 +545,7 @@ a:hover {
     position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.modal-gallery .modal-container .modal-slide {
 	    padding-bottom: 0;
 	    padding-left: 0;
@@ -575,7 +575,7 @@ a:hover {
     width: 488px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.modal-gallery .modal-container .modal-slide .feature-image {
 		height: 200px;
 		width: 150px;
@@ -599,7 +599,7 @@ a:hover {
 	font-size: 34px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.modal-gallery .modal-container .modal-slide .copy {
 	    margin-bottom: 13px;
 	    margin-left: 145px;
@@ -629,7 +629,7 @@ a:hover {
     padding-bottom: 150px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.partner-section {
     	padding-top: 0;
     	height: 579px;
@@ -681,7 +681,7 @@ a:hover {
     padding-top: 250px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.subscription-section {
     	height: 550px;
     	width: 100%;
@@ -696,7 +696,7 @@ a:hover {
 	font-size: 34px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.subscription-section .section-title {
 		font-size: 24px;
 	}
@@ -709,7 +709,7 @@ a:hover {
 	font-size: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.subscription-section .lead {
 		font-size: 18px;
 	}
@@ -721,7 +721,7 @@ a:hover {
 	padding-bottom: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.ipad-download-section {
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -735,7 +735,7 @@ a:hover {
 	margin-bottom: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.ipad-download-section .title {
 		font-size: 20px;
 	}
@@ -748,7 +748,7 @@ a:hover {
 	font-size: 22px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.ipad-download-section .content {
 		padding-left: 5px;
 		padding-right: 5px;
@@ -768,7 +768,7 @@ a:hover {
 	margin-bottom: 3px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.ipad-download-section p {
 		font-size: 11px;
 	}
@@ -791,7 +791,7 @@ a:hover {
 	margin-top: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.ipad-download-section .logo-container {
 		width: 20%;
 		padding-left: 8px;
@@ -821,7 +821,7 @@ a:hover {
 	margin-top: 80px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 	.ipad-download-section .QR-1 {
 		display: none;
 	}
@@ -841,9 +841,54 @@ a:hover {
 	height: 100%;
 }
 
-.map-section .map {
+.map-section #map {
+	position: relative;
+	width: auto;
+}
+
+.map-section .container {
 	width: 100%;
-	height: 100%;
+	background-color;
+	background-image: url("../images/about_us_bg.png");
+	background-repeat: repeat;
+    background-size: auto auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.map-section .company {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.map-section .email {
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 500;
+	padding-top: 5px;
+}
+
+.map-section .telephone {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.map-section .attention {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.map-section .specifier {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.map-section .sns img {
+	margin: 5px;
 }
 
 .noverflow {
