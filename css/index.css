@@ -103,6 +103,32 @@ a:hover {
 	border-radius: 2px;
 }
 
+.menu-btn {
+	height: 16px;
+	width: 58px;
+	display: inline-block;
+	background: url("../images/menu.png") no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+	.menu-btn {
+		width: 29px;
+	}
+}
+
+.header-pull-left {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+}
+
+.header-pull-right {
+	position: absolute;
+	top: 50%;
+	margin-top: -18px;
+	right: 0;
+}
+
 .logo {
 	background: url("../images/logo.png") no-repeat scroll left top / 35px 42px rgba(0, 0, 0, 0);
 	border: 0 none;
@@ -139,6 +165,12 @@ a:hover {
 	width: 27px;
 	margin-left: 30px;
 	margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.download-ipad-app {
+		margin-left: 10px;
+	}
 }
 
 .inline-hidden-xs {

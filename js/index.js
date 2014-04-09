@@ -84,7 +84,7 @@ $(function(){
 		$(".global-header").animate({right: "-200px"}, 100);
 		$(".main-overlay").show();
 		$("body").addClass("noverflow");
-		$(".main-wrapper").height("100%");
+		$(".main-wrapper").height($window.height());
 		// 停止轮播
 		$(".carousel").carousel("pause");
 	}
