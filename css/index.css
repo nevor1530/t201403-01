@@ -141,6 +141,10 @@ a:hover {
 	margin-right: 10px;
 }
 
+.inline-hidden-xs {
+	display: inline-block;
+}
+
 .my-hidden-xs {
 	display: inline-block;
 	margin-left: 4px;
@@ -223,6 +227,10 @@ a:hover {
 	}
 	
 	.my-hidden-xs {
+		display: none !important;
+	}
+
+	.inline-hidden-xs {
 		display: none !important;
 	}
 	
@@ -804,4 +812,9 @@ a:hover {
 .map-section .map {
 	width: 100%;
 	height: 100%;
+}
+
+.noverflow {
+	overflow: hidden;
+	overflow-y: hidden;
 }

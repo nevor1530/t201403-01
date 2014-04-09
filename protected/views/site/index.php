@@ -4,7 +4,7 @@
 			<img id="id-preloader-img" src="<?php echo Yii::app()->request->baseUrl; ?>/images/section-1-1440-900.jpg" width="0" height="0"/>
 		</div>
 		
-		<div class="global-container">
+		<div class="global-container noverflow">
 			<nav class="global-nav" style="display: none;">
 				<a class="glyphicon glyphicon-remove hidden-xs nav-close"></a>
 				<ul class="nav">

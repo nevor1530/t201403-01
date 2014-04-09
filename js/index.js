@@ -83,15 +83,21 @@ $(function(){
 		$(".main-wrapper").animate({right: "-200px"}, 100);
 		$(".global-header").animate({right: "-200px"}, 100);
 		$(".main-overlay").show();
-		$("body").css("overflow", "hidden");
+		$("body").addClass("noverflow");
+		$(".main-wrapper").height("100%");
+		// 停止轮播
+		$(".carousel").carousel("pause");
 	}
 
 	function hidenav(){
 		$(".main-overlay").hide();
-		$("body").css("overflow", "auto");
+		$("body").removeClass("noverflow");
+		$(".main-wrapper").height("auto");
 		$(".main-wrapper").animate({right: "0"}, 100);
 		$(".global-header").animate({right: "0"}, 100);
 		$(".global-nav").hide();
+		// 启动轮播
+		$(".carousel").carousel("cycle");
 	}	
 
 	// slide左右滑动切换
