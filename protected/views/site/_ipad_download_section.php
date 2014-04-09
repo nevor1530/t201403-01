@@ -14,21 +14,28 @@
 							<p>阅读、互动、购物一体的拾裳带给你无穷乐趣</p>
 						</div>
 					</div>
-					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-						<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/divider.png">
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 divider-container">
+						<img class="divider" src="<?php echo Yii::app()->request->baseUrl; ?>/images/divider.png">
 					</div>
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 logo-container">
 						<img class="ipad-logo" src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad_logo.png">
 					</div>
 				</div>
-				<div class="row">
+				<div class="row QR-1">
 					<div class="col-xs-offset-2 col-xs-3 col-sm-offset-2 col-sm-3 col-md-offset-2 col-md-3 col-lg-offset-2 col-lg-3">
 						<img class="QR-code" src="<?php echo Yii::app()->request->baseUrl; ?>/images/QR_code.png">	
 					</div>
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 QR-text">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 QR-text1">
 						<p>扫二维码</p>
 						<p>直接安装</p>
 					</div>
+				</div>
+			</div>
+			<div class="col-xs-3 text-center QR-2">
+				<img class="QR-code" src="<?php echo Yii::app()->request->baseUrl; ?>/images/QR_code.png">	
+				<div class="QR-text2">
+					<p>扫二维码</p>
+					<p>直接安装</p>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
