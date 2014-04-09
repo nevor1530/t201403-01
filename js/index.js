@@ -1,6 +1,6 @@
 $(function(){
 	// 响应式尺寸参数
-	var screen_xs_max = 768;
+	var screen_xs_max = 500;
 
 	// 常用DOM对象
 	var $window = $(window);
@@ -18,7 +18,7 @@ $(function(){
 	// 限制幻灯片的高度
 	var imgw = 1440, imgh = 900;
 	var $js_slides = $(".js-slide");
-	var $slide_img = $(".slide-img");
+	var $slide_img = $(".js-slide-img");
 	$(window).resize(function(){
 		onresize();
 	});
@@ -32,7 +32,7 @@ $(function(){
 			$slide_img.css("left", 0);
 		} else {
 			$slide_img.css("width","auto");
-			$slide_img.css("height","100%");
+			$slide_img.css("height",wh+"px");
 			$slide_img.css("left", (-imgw*wh/imgh/2 + ww/2)+"px");
 		}
 	}
@@ -80,8 +80,8 @@ $(function(){
 
 	function shownav(){
 		$(".global-nav").show();
-		$(".main-wrapper").animate({right: "-200px"}, 100);
-		$(".global-header").animate({right: "-200px"}, 100);
+		$(".main-wrapper").animate({right: "-280px"}, 100);
+		$(".global-header").animate({right: "-280px"}, 100);
 		$(".main-overlay").show();
 		$("body").addClass("noverflow");
 		$(".main-wrapper").height($window.height());

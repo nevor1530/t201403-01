@@ -15,6 +15,7 @@
 					<li><a href="#id-download-section" data-ajax="false">下载页面</a></li>
 					<li><a href="#id-about-section" data-ajax="false">关于我们</a></li>
 				</ul>
+				<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipadiphone-download.png" class="ipadiphone-img"/>
 			</nav>
 			<div class="main-wrapper">
 				<!-- 蒙板 -->

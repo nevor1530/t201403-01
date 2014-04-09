@@ -8,8 +8,8 @@
 	<div class="header-pull-right">
 		<!--<a class="btn btn-download btn-sm hidden-xs" href="#">下载</a>-->
 		<!--<a class="btn btn-download btn-xs visible-xs" href="#">下载</a>-->
-		<a class="download-iphone-app" href="#"></a>
-		<a class="download-ipad-app" href="#"></a>
+		<a class="download-iphone-app"></a>
+		<a class="download-ipad-app"></a>
 	</div>
 	<!-- logo -->
 	<center>
