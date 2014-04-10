@@ -55,6 +55,10 @@ a:hover {
 	min-height: 100%;
 	position: relative;
 	right: 0;
+}
+
+.main-wrapper-content {
+	position: relative;
 	box-shadow: 0 -20px 25px #000000;
 }
 
@@ -131,26 +135,25 @@ a:hover {
 
 .logo {
 	background: url("../images/logo.png") no-repeat scroll left top / 35px 42px;
-    display: inline-block;
-    font: 0px;
-    height: 42px;
-    overflow: hidden;
+	display: inline-block;
+	font: 0px;
+	height: 42px;
 	width: 35px;
 }
 
 .download-iphone-app {
-	background: url("../images/download_iphone_app.png") no-repeat scroll left top / 17px 32px;
-    display: inline-block;
-    height: 32px;
-    overflow: hidden;
+	background: url("../images/download_iphone_app.png") no-repeat;
+	background-size: 17px 32px;
+	display: inline-block;
+	height: 32px;
 	width: 17px;
 }
 
 .download-ipad-app {
-	background: url("../images/download_ipad_app.png") no-repeat scroll left top / 27px 36px;
-    display: inline-block;
-    height: 36px;
-    overflow: hidden;
+	background: url("../images/download_ipad_app.png") no-repeat;
+	background-size: 27px 36px;
+	display: inline-block;
+	height: 36px;
 	width: 27px;
 	margin-left: 30px;
 	margin-right: 10px;

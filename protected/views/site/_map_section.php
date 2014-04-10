@@ -1,4 +1,4 @@
-<section class="section map-section">
+<section class="section map-section" id="id-map-section">
 	<img id="map" src="<?php echo Yii::app()->request->baseUrl; ?>/images/map.jpg">
 	<div class="container" >
 		<div class="row">

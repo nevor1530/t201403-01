@@ -8,26 +8,27 @@
 			<nav class="global-nav" style="display: none;">
 				<a class="glyphicon glyphicon-remove hidden-xs nav-close"></a>
 				<ul class="nav">
-					<li><a href="#carousel-generic" data-ajax="false">首页</a></li>
-					<li><a href="#gallery" data-ajax="false">功能</a></li>
-					<li><a href="#id-customer-section" data-ajax="false">顾客</a></li>
-					<li><a href="#id-brand-section" data-ajax="false">品牌及设计师</a></li>
-					<li><a href="#id-download-section" data-ajax="false">下载页面</a></li>
-					<li><a href="#id-about-section" data-ajax="false">关于我们</a></li>
+					<li><a href="#carousel-generic" data-ajax="false">主页</a></li>
+					<li><a href="#gallery" data-ajax="false">iPad应用介绍</a></li>
+					<li><a href="#gallery" data-ajax="false">iPhone应用介绍</a></li>
+					<li><a href="#id-partner-section" data-ajax="false">申请成为合作伙伴</a></li>
+					<li><a href="#id-map-section" data-ajax="false">关于我们</a></li>
 				</ul>
 				<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipadiphone-download.png" class="ipadiphone-img"/>
 			</nav>
 			<div class="main-wrapper">
-				<!-- 蒙板 -->
-				<div class="main-overlay" style="display: none; cursor:pointer;"></div>
-				<div class="header-fade"></div>
-				<?php include '_header.php'; ?>
-				<?php include '_carousel_section.php'; ?>
-				<?php include '_gallery_section.php'; ?>
-				<?php include '_partner_section.php'; ?>
-				<?php include '_subscription_section.php'; ?>
-				<?php include '_ipad_download_section.php'; ?>
-				<?php include '_map_section.php'; ?>
+				<div class="main-wrapper-content noverflow">
+					<!-- 蒙板 -->
+					<div class="main-overlay" style="display: none; cursor:pointer;"></div>
+					<div class="header-fade"></div>
+					<?php include '_header.php'; ?>
+					<?php include '_carousel_section.php'; ?>
+					<?php include '_gallery_section.php'; ?>
+					<?php include '_partner_section.php'; ?>
+					<?php include '_subscription_section.php'; ?>
+					<?php include '_ipad_download_section.php'; ?>
+					<?php include '_map_section.php'; ?>
+				</div>
 			</div>
 		</div>
 
