@@ -134,7 +134,8 @@ a:hover {
 }
 
 .logo {
-	background: url("../images/logo.png") no-repeat scroll left top / 35px 42px;
+	background: url("../images/logo.png") no-repeat;
+	background-size: 35px 42px;
 	display: inline-block;
 	font: 0px;
 	height: 42px;
