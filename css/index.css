@@ -451,6 +451,12 @@ a:hover {
 	}
 }
 
+@media (max-width: 900px) {
+	.modal-gallery .modal-container {
+		height: 480px;
+	}
+}
+
 .modal-gallery .modal-container .btn {
 	background-color: rgba(0, 0, 0, 0);
 	position: absolute;
@@ -585,6 +591,16 @@ a:hover {
 	}
 }
 
+@media (max-width: 900px) {
+	.modal-gallery .modal-container .modal-slide .feature-image {
+		height: 480px;
+		width: 360px;
+		left: 20px;
+    	top: 20px;
+	    background-size: cover;
+	}
+}
+
 .modal-gallery .modal-container .modal-slide .copy {
     margin-bottom: 0;
     margin-left: 520px;
@@ -611,6 +627,21 @@ a:hover {
 	.modal-gallery .modal-container .modal-slide .copy h2 {
 		font-weight: 900;
 		font-size: 15px;
+	}
+}
+
+@media (max-width: 900px) {
+	.modal-gallery .modal-container .modal-slide .copy {
+	    margin-bottom: 13px;
+	    margin-left: 330px;
+	    margin-right: 10px;
+	    margin-top: 100px;
+	    width: 240px;
+	}
+	
+	.modal-gallery .modal-container .modal-slide .copy h2 {
+		font-weight: 900;
+		font-size: 16px;
 	}
 }
 
@@ -689,6 +720,14 @@ a:hover {
 	}
 }
 
+@media (max-width: 900px) {
+	.subscription-section {
+    	height: 600px;
+    	width: 100%;
+    	padding-top: 180px;
+	}
+}
+
 .subscription-section .section-title {
 	margin-bottom: 40px;
 	color: #FFFFFF;
@@ -702,6 +741,12 @@ a:hover {
 	}
 }
 
+@media (max-width: 900px) {
+	.subscription-section .section-title {
+		font-size: 26px;
+	}
+}
+
 .subscription-section .lead {
 	margin-bottom: 20px;
 	color: #FFFFFF;
@@ -709,7 +754,7 @@ a:hover {
 	font-size: 20px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 	.subscription-section .lead {
 		font-size: 18px;
 	}
@@ -728,6 +773,13 @@ a:hover {
 	}
 }
 
+@media (max-width: 900px) {
+	.ipad-download-section {
+		padding-top: 90px;
+		padding-bottom: 80px;
+	}
+}
+
 .ipad-download-section .title {
 	color: #FFFFFF;
 	font-weight: 700;
@@ -741,6 +793,12 @@ a:hover {
 	}
 }
 
+@media (max-width: 900px) {
+	.ipad-download-section .title {
+		font-size: 26px;
+	}
+}
+
 .ipad-download-section .lead {
 	color: #FFFFFF;
 	padding-bottom: 40px;
@@ -751,6 +809,19 @@ a:hover {
 @media (max-width: 500px) {
 	.ipad-download-section .content {
 		padding-left: 5px;
+		padding-right: 5px;
+		width: 75%;
+	}
+	
+	.ipad-download-section .lead {
+		padding-bottom: 20px;
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 900px) {
+	.ipad-download-section .content {
+		padding-left: 0;
 		padding-right: 5px;
 		width: 75%;
 	}
@@ -784,6 +855,21 @@ a:hover {
 	}
 }
 
+@media (max-width: 900px) {
+	.ipad-download-section p {
+		font-size: 12px;
+	}
+	
+	.ipad-download-section .divider {
+		height: 150px;
+	}
+	
+	.ipad-download-section .divider-container {
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 3%;
+	}
+}
 
 .ipad-download-section .ipad-logo {
 	width: 100%;
@@ -791,7 +877,7 @@ a:hover {
 	margin-top: 30px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 	.ipad-download-section .logo-container {
 		width: 20%;
 		padding-left: 8px;
@@ -833,6 +919,17 @@ a:hover {
 	
 	.ipad-download-section .QR-text2 {
 		margin-top: 10px;
+	}
+}
+
+@media (max-width: 900px) {
+	.ipad-download-section .QR-1 {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	
+	.ipad-download-section .QR-text1 {
+		margin-top: 70px;
 	}
 }
 

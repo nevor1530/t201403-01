@@ -1,7 +1,7 @@
 <section class="section partner-section">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
 				<div class="overview animate" data-animate="fadeInDown">
 					<h3 class="section-title"><strong>对我们感兴趣？</strong></h3>
 					<p class="lead">留下您的联系方式，我们将尽快联系您!</p>
