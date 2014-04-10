@@ -20,7 +20,7 @@ a:hover {
 	min-height: 100%;
 	position: fixed;
 	width: 285px;
-	background: #121420;
+	background: #0c0e14;
 }
 
 .nav-close {
@@ -227,7 +227,7 @@ a:hover {
 	width: auto;
 	height: auto;
 	margin: 0 0 0 20px;
-	border: 5px solid #1ebad6;
+	border: 5px solid #ffffff;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -236,7 +236,7 @@ a:hover {
 	width: auto;
 	height: auto;
 	margin: 0 0 0 20px;
-	border: 5px solid #cccccc;
+	border: 5px solid #0c3b59;
 }
 .carousel-indicators li:first-child{
 	margin-left: 1px;
