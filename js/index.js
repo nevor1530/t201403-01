@@ -141,5 +141,29 @@ $(function(){
 			$('#gallery-thumbnail-container').show();
 		}
 	);
+	
+	// 地图尺寸自适应
+	var $map_img = $("#map");
+	$(window).resize(function(){
+		resize_map_image();
+	});
+	
+	function resize_map_image(){
+		var ww = $window.width();
+		
+		var mapw, maph;
+		if (ww < 500) {
+			mapw = 877;
+			maph = 300;
+		} else {
+			mapw = 1440;
+			maph = 492;
+		}
+		
+		$map_img.css("height", maph +"px");
+		$map_img.css("left", (-mapw + ww) / 2 +"px");
+		
+	}
+	resize_map_image();
 		
 });

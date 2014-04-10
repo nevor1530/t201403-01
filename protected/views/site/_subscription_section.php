@@ -6,7 +6,7 @@
 					<h3 class="section-title"><strong>iPhone版本即将推出</strong></h3>
 					<p class="lead">请留下您的邮箱地址，以便我们第一时间通知你 !</p>
 				</div>
-				<form role="form" class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6 animate" data-animate="fadeInUp">
+				<form role="form" class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6 animate" data-animate="fadeInUp">
 					<div class="input-group">
 		            	<input type="text" class="form-control input-lg" placeholder="YOUR-EMAIL">
 		            	<span class="input-group-btn">

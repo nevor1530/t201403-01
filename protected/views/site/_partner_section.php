@@ -1,7 +1,7 @@
 <section class="section partner-section">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
 				<div class="overview animate" data-animate="fadeInDown">
 					<h3 class="section-title"><strong>对我们感兴趣？</strong></h3>
 					<p class="lead">留下您的联系方式，我们将尽快联系您!</p>
@@ -20,7 +20,7 @@
 						<p class="lead">省份：</p>
 		            	<input type="text" class="form-control input-sm">
 		          	</div>
-		          	<div class="col-xs-offset-2 col-xs-5 col-sm-offset-2 col-sm-5 col-md-offset-2 col-md-5 col-lg-offset-2 col-lg-5 input-group">
+		          	<div class="col-xs-offset-2 col-xs-5 col-sm-offset-2 col-sm-5 col-md-offset-2 col-md-5 col-lg-offset-2 col-lg-5 input-group city-container">
 						<p class="lead">城市：</p>
 		            	<input type="text" class="form-control input-sm">
 		          	</div>
@@ -28,7 +28,7 @@
 						<p class="lead">联系人：</p>
 		            	<input type="text" class="form-control input-sm">
 		          	</div>
-		          	<div class="col-xs-offset-2 col-xs-5 col-sm-offset-2 col-sm-5 col-md-offset-2 col-md-5 col-lg-offset-2 col-lg-5 input-group">
+		          	<div class="col-xs-offset-2 col-xs-5 col-sm-offset-2 col-sm-5 col-md-offset-2 col-md-5 col-lg-offset-2 col-lg-5 input-group phone-container">
 						<p class="lead">联系电话：</p>
 		            	<input type="text" class="form-control input-sm">
 		          	</div>
