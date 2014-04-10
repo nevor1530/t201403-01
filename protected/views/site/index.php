@@ -14,7 +14,13 @@
 					<li><a href="#id-partner-section" data-ajax="false">申请成为合作伙伴</a></li>
 					<li><a href="#id-map-section" data-ajax="false">关于我们</a></li>
 				</ul>
-				<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipadiphone-download.png" class="ipadiphone-img"/>
+				<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipadiphone-download.png" class="ipadiphone-img" usemap="#downloadMap"/>
+				<map name="downloadMap">
+					<area shape="rect" coords="19,34,68,98" href="#iphone" />
+					<area shape="rect" coords="0,99,145,176" href="#iphone" />
+					<area shape="rect" coords="88,0,276,98" href="#ipad" />
+					<area shape="rect" coords="145,99,298,176" href="#ipad" />
+				</map>
 			</nav>
 			<div class="main-wrapper">
 				<div class="main-wrapper-content noverflow">
