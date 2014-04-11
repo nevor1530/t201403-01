@@ -1,5 +1,5 @@
 <section class="section map-section" id="id-map-section">
-	<img id="map" src="<?php echo Yii::app()->request->baseUrl; ?>/images/map.jpg">
+	<img id="map" src="<?php echo Yii::app()->request->baseUrl; ?>/images/map.png">
 	<div class="container" >
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
