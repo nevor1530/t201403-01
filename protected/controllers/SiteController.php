@@ -21,6 +21,34 @@ class SiteController extends Controller
 		);
 	}
 
+	public function actionPartner(){
+		$model=new Partner;
+		if(isset($_POST['Partner']))
+		{
+			$model->attributes=$_POST['Partner'];
+			if($model->validate() && $model->save())
+			{
+				// TODO Yii::app()->user->setFlash('partner','');
+				$this->refresh();
+			}
+		}
+		$this->render('index',array('model'=>$model));
+	}
+
+	public function actionSubscribe(){
+		$model=new Subscriber;
+		if(isset($_POST['Subscriber']))
+		{
+			$model->attributes=$_POST['Subscriber'];
+			if($model->validate() && $model->save())
+			{
+				// TODO Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+				$this->refresh();
+			}
+		}
+		$this->render('index',array('model'=>$model));
+	}
+
 	/**
 	 * This is the default 'index' action that is invoked
 	 * when an action is not explicitly requested by users.
