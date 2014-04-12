@@ -680,9 +680,8 @@ a:hover {
 	font-size: 14px;
 }
 
-.partner-form .input-group {
+.partner-form > .row {
 	margin-bottom: 10px;
-	float: left;
 }
 
 .partner-form .confirm-btn {
