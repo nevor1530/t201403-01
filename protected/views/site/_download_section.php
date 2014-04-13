@@ -1,4 +1,4 @@
-<section class="section download-section">
+<section class="section download-section" id="id-download-section">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-5 col-md-4">

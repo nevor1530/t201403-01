@@ -12,6 +12,7 @@
 					<li><a href="#gallery" data-ajax="false">iPad应用介绍</a></li>
 					<li><a href="#gallery" data-ajax="false">iPhone应用介绍</a></li>
 					<li><a href="#id-partner-section" data-ajax="false">申请成为合作伙伴</a></li>
+					<li><a href="#id-download-section" data-ajax="false">下载应用</a></li>
 					<li><a href="#id-map-section" data-ajax="false">关于我们</a></li>
 				</ul>
 				<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipadiphone-download.png" class="ipadiphone-img" usemap="#downloadMap"/>

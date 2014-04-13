@@ -80,7 +80,7 @@ a:hover {
 
 .global-header {
   width: 100%;
-  padding: 20px 20px 20px 20px;
+  padding: 15px;
   position: fixed;
   top: 0px;
   z-index: 100;
@@ -248,7 +248,7 @@ a:hover {
 
 @media screen and (max-width: 500px) {
 	.global-header {
-		padding: 18px 10px 18px 10px;
+		padding: 10px;
 	}
 	
 	.my-hidden-xs {
