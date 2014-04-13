@@ -814,6 +814,12 @@ a:hover {
 	}
 }
 
+@media (min-width: 500px) and (max-width: 900px) {
+	.download-section .content {
+		font-size: 16px;
+	}
+}
+
 .download-section .download-text-container {
 	margin-top: 90px;
 }
@@ -821,6 +827,12 @@ a:hover {
 @media (max-width: 500px) {
 	.download-section .download-text-container {
 		margin-top: 20px;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+	.download-section .download-text-container {
+		margin-top: 50px;
 	}
 }
 
@@ -847,7 +859,7 @@ a:hover {
 	max-width: 80px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 	.download-section .img-container .ipad-logo {
 		max-width: 70px;
 	}
@@ -859,7 +871,7 @@ a:hover {
 	max-width: 80px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 	.download-section .img-container .iphone-logo {
 		max-width: 70px;
 	}
@@ -871,7 +883,7 @@ a:hover {
 	max-width: 80px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 	.download-section .img-container .QR-code {
 		max-width: 70px;
 	}
@@ -890,7 +902,7 @@ a:hover {
 	max-width: 80px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 	.download-section .ipad-name {
 		max-width: 70px;
 	}
@@ -904,7 +916,7 @@ a:hover {
 	max-width: 80px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 	.download-section .iphone-name {
 		max-width: 70px;
 	}
@@ -918,14 +930,14 @@ a:hover {
 	max-width: 80px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 	.download-section .QR-code-name {
 		max-width: 70px;
 	}
 }
 
 .download-section .download-placeholder {
-	width: auto;
+	width: 100%;
 	height: 100%;
 	max-height: 500px;
 }
