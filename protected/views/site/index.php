@@ -32,7 +32,7 @@
 					<?php include '_gallery_section.php'; ?>
 					<?php include '_partner_section.php'; ?>
 					<?php include '_subscription_section.php'; ?>
-					<?php include '_ipad_download_section.php'; ?>
+					<?php include '_download_section.php'; ?>
 					<?php include '_map_section.php'; ?>
 				</div>
 			</div>
