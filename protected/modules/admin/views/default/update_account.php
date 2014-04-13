@@ -1,4 +1,3 @@
-<?php include '_head.php'; ?>
 <div class="box span12 row-fluid">
 	<div class="box-header well" data-original-title>
 		<h2><i class="icon-user"></i>账户管理</h2>
@@ -44,10 +43,6 @@
 		</form>  
 	</div>
 </div>
-</div>
-</div>
-</div>
- <jsp:include page="footer.jsp" />
 
 <script type="text/javascript">
 window.load = function(){ 
