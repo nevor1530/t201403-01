@@ -878,7 +878,8 @@ a:hover {
 }
 
 .download-section .name-container {
-	margin-left: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .download-section .ipad-name {
@@ -886,6 +887,13 @@ a:hover {
 	font-family: "Microsoft YaHei" !important;
 	font-size: 15px;
 	font-weight: 900;
+	max-width: 80px;
+}
+
+@media (max-width: 500px) {
+	.download-section .ipad-name {
+		max-width: 70px;
+	}
 }
 
 .download-section .iphone-name {
@@ -893,6 +901,13 @@ a:hover {
 	font-family: "Microsoft YaHei" !important;
 	font-size: 15px;
 	font-weight: 900;
+	max-width: 80px;
+}
+
+@media (max-width: 500px) {
+	.download-section .iphone-name {
+		max-width: 70px;
+	}
 }
 
 .download-section .QR-code-name {
@@ -900,6 +915,13 @@ a:hover {
 	font-family: "Microsoft YaHei" !important;
 	font-size: 15px;
 	font-weight: 900;
+	max-width: 80px;
+}
+
+@media (max-width: 500px) {
+	.download-section .QR-code-name {
+		max-width: 70px;
+	}
 }
 
 .download-section .download-placeholder {
