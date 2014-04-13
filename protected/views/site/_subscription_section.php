@@ -8,10 +8,10 @@
 				</div>
 				<form role="form" class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6 animate" data-animate="fadeInUp" method="POST" action="<?php echo $this->createUrl('site/subscribe');?>">
 					<div class="input-group">
-		            	<input type="email" class="wow slideInLeft animated form-control input-lg" placeholder="YOUR-EMAIL" name="Subscriber[email]" required>
-		            	<span class="input-group-btn">
-		              		<button class="btn btn-lg btn-default" type="button">确认</button>
-		            	</span>
+		            			<input type="email" class="wow slideInLeft form-control input-lg" data-wow-duration="5s" placeholder="YOUR-EMAIL" name="Subscriber[email]" required>
+		            			<span class="wow slideInRight input-group-btn">
+		            		  		<button class="btn btn-lg btn-default" type="button">确认</button>
+		            			</span>
 		          	</div>
 	          	</form>
 			</div>

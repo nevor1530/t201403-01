@@ -44,6 +44,7 @@
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.mobile.custom.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/wow.min.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/index.js"></script>
 	</body>
 </html>

@@ -165,5 +165,7 @@ $(function(){
 		
 	}
 	resize_map_image();
+
+	new WOW().init();
 		
 });

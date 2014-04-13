@@ -9,6 +9,7 @@
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/index.css">
+		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/animate.css">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
