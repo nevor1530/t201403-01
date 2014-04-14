@@ -1,3 +1,8 @@
+<?php
+$cs=Yii::app()->clientScript;
+$cs->scriptMap=array();
+$cs->registerCoreScript('jquery');
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
 <head>
@@ -66,8 +71,6 @@
 	<!-- The fav icon -->
 	<link rel="shortcut icon" href="img/favicon.ico">
 	
-	<!-- jQuery -->
-	<script src="<?php echo $this->module->assetsUrl; ?>/js/jquery-1.7.2.min.js"></script>
 	<!-- jQuery UI -->
 	<script src="<?php echo $this->module->assetsUrl; ?>/js/jquery-ui-1.8.21.custom.min.js"></script>
 	<!-- transition / effect library -->

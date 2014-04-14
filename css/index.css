@@ -646,7 +646,7 @@ a:hover {
 .partner-section {
 	background-image: url("../images/partner_section_bg.jpg");
 	background-repeat: no-repeat;
-    background-size: auto auto;
+    background-size: 100% auto;
     height: 899px;
     width: 100%;
     padding-top: 150px;
@@ -723,7 +723,7 @@ a:hover {
 .subscription-section {
 	background-image: url("../images/subscription_section_bg.jpg");
 	background-repeat: no-repeat;
-    background-size: auto auto;
+    background-size: 100% auto;
     height: 899px;
     width: 100%;
     padding-top: 250px;

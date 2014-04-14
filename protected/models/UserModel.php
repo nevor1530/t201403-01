@@ -1,21 +1,22 @@
 <?php
 
 /**
- * This is the model class for table "subscriber".
+ * This is the model class for table "user".
  *
- * The followings are the available columns in table 'subscriber':
+ * The followings are the available columns in table 'user':
  * @property integer $id
- * @property string $email
- * @property string $created_time
+ * @property string $username
+ * @property string $password
+ * @property string $create_time
  */
-class Subscriber extends CActiveRecord
+class UserModel extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'subscriber';
+		return 'user';
 	}
 
 	/**
@@ -26,12 +27,13 @@ class Subscriber extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('email', 'required'),
-			array('email', 'length', 'max'=>200),
-			array('created_time', 'safe'),
+			array('username, password', 'required'),
+			array('username', 'length', 'max'=>20),
+			array('password', 'length', 'max'=>32),
+			array('create_time', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, email, created_time', 'safe', 'on'=>'search'),
+			array('id, username, password, create_time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,8 +55,9 @@ class Subscriber extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'email' => 'Email',
-			'created_time' => 'Created Time',
+			'username' => 'Username',
+			'password' => 'Password',
+			'create_time' => 'Create Time',
 		);
 	}
 
@@ -77,8 +80,9 @@ class Subscriber extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('created_time',$this->created_time,true);
+		$criteria->compare('username',$this->username,true);
+		$criteria->compare('password',$this->password,true);
+		$criteria->compare('create_time',$this->create_time,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -89,10 +93,17 @@ class Subscriber extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Subscriber the static model class
+	 * @return UserModel the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+	
+	public function beforeSave() {
+		if ($this->getIsNewRecord ()) {
+			$this->create_time = date('Y-m-d H:i:s');
+		}
+		return parent::beforeSave ();
 	}
 }
