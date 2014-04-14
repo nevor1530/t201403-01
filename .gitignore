@@ -3,4 +3,5 @@ protected/runtime/*
 .project
 .settings
 *.swp
+*.orig
 *~
