@@ -1,4 +1,4 @@
-<section class="section subscription-section">
+<section class="section subscription-section" id="id-subscription-section">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
