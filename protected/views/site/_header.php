@@ -5,8 +5,7 @@
 	</div>
 	<!-- 右部分 -->
 	<div class="header-pull-right">
-		<a class="download-iphone-app"></a>
-		<a class="download-ipad-app"></a>
+		<a class="download-app"></a>
 	</div>
 	<!-- logo -->
 	<center>

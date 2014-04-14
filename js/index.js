@@ -155,13 +155,17 @@ $(function(){
 		if (ww < 500) {
 			mapw = 877;
 			maph = 300;
-		} else {
+			$map_img.css("height", maph +"px");
+			$map_img.css("left", (-mapw + ww) / 2 +"px");
+		} else if (ww < 1440) {
 			mapw = 1440;
 			maph = 492;
+			$map_img.css("height", maph +"px");
+			$map_img.css("left", (-mapw + ww) / 2 +"px");
+		} else {
+			$map_img.css("width", "100%");
+			$map_img.css("height", "auto");
 		}
-		
-		$map_img.css("height", maph +"px");
-		$map_img.css("left", (-mapw + ww) / 2 +"px");
 		
 	}
 	resize_map_image();

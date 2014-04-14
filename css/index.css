@@ -142,26 +142,18 @@ a:hover {
 	width: 35px;
 }
 
-.download-iphone-app {
-	background: url("../images/download_iphone_app.png") no-repeat;
-	background-size: 17px 32px;
-	display: inline-block;
-	height: 32px;
-	width: 17px;
-}
-
-.download-ipad-app {
-	background: url("../images/download_ipad_app.png") no-repeat;
+.download-app {
+	background: url("../images/download.png") no-repeat;
 	background-size: 27px 36px;
 	display: inline-block;
-	height: 36px;
-	width: 27px;
+	height: 35px;
+	width: 29px;
 	margin-left: 30px;
 	margin-right: 10px;
 }
 
 @media screen and (max-width: 500px) {
-	.download-ipad-app {
+	.download-app {
 		margin-left: 10px;
 	}
 }
@@ -646,17 +638,19 @@ a:hover {
 .partner-section {
 	background-image: url("../images/partner_section_bg.jpg");
 	background-repeat: no-repeat;
-    background-size: 100% auto;
-    height: 899px;
+    background-size: cover;
     width: 100%;
+}
+
+.partner-section-container {
     padding-top: 150px;
     padding-bottom: 150px;
 }
 
 @media (max-width: 500px) {
-	.partner-section {
-    	padding-top: 30px;
-    	height: 599px;
+	.partner-section-container {
+	    padding-top: 50px;
+	    padding-bottom: 50px;
 	}
 }
 
@@ -723,24 +717,21 @@ a:hover {
 .subscription-section {
 	background-image: url("../images/subscription_section_bg.jpg");
 	background-repeat: no-repeat;
-    background-size: 100% auto;
-    height: 899px;
+    background-size: cover;
     width: 100%;
-    padding-top: 250px;
+    padding-top: 240px;
+	padding-bottom: 220px;
 }
 
 @media (max-width: 500px) {
 	.subscription-section {
-    	height: 550px;
-    	width: 100%;
     	padding-top: 150px;
+    	padding-bottom: 150px;
 	}
 }
 
 @media (min-width: 500px) and (max-width: 900px) {
 	.subscription-section {
-    	height: 600px;
-    	width: 100%;
     	padding-top: 180px;
 	}
 }
@@ -780,6 +771,33 @@ a:hover {
 @media (min-width: 500px) and (max-width: 900px) {
 	.subscription-section .lead {
 		font-size: 18px;
+	}
+}
+
+.subscription-section .my-col {
+	padding-left: 0;
+}
+
+.subscription-section .email-input {
+	border-radius: 15px;
+	height: 40px;
+	background-color: rgba(255, 255, 255, 0.40);
+	border-width: 0;
+	color: #FFFFFF;
+}
+
+.subscription-section .confirm-btn {
+	font-weight: 700;
+	font-size: 20px;
+	border-radius: 20px;
+	height: 40px;
+	padding: 0 30px;
+}
+
+@media (max-width: 500px) {
+	.subscription-section .confirm-btn {
+		font-size: 18px;
+		padding: 0 20px;
 	}
 }
 
@@ -968,9 +986,9 @@ a:hover {
 }
 
 .download-section .download-placeholder {
+	max-width: 550px;
 	width: 100%;
-	height: 100%;
-	max-height: 500px;
+	height: auto;
 }
 
 @media (max-width: 500px) {

@@ -1,5 +1,5 @@
 <section class="section partner-section" id="id-partner-section">
-	<div class="container">
+	<div class="partner-section-container container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-8 col-md-6">
 				<div class="overview animate" data-animate="fadeInDown">
