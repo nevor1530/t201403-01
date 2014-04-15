@@ -32,9 +32,9 @@
 					<?php include '_header.php'; ?>
 					<?php include '_carousel_section.php'; ?>
 					<?php include '_gallery_section.php'; ?>
-					<?php include '_partner_section.php'; ?>
 					<?php include '_subscription_section.php'; ?>
 					<?php include '_download_section.php'; ?>
+					<?php include '_partner_section.php'; ?>
 					<?php include '_map_section.php'; ?>
 				</div>
 			</div>
