@@ -9,7 +9,7 @@
  * @property string $password
  * @property string $create_time
  */
-class UserModel extends CActiveRecord
+class UserModel extends ActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -98,12 +98,5 @@ class UserModel extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
-	}
-	
-	public function beforeSave() {
-		if ($this->getIsNewRecord ()) {
-			$this->create_time = date('Y-m-d H:i:s');
-		}
-		return parent::beforeSave ();
 	}
 }

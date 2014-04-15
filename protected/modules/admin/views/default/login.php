@@ -185,7 +185,7 @@
 								<span class="add-on">
 									<i class="icon-user"></i>
 								</span>
-								<input class="input-large" name="LoginForm[username]" id="username" type="text" value="请输入用户名" onclick="onClickUserName()" onblur="onBlurUserName()"/>
+								<input class="input-large" name="LoginForm[username]" id="username" type="text" placeholder="请输入用户名" onclick="onClickUserName()" onblur="onBlurUserName()" required/>
 								<span id="username_tips" class="help-inline" style="visibility:hidden;color:#E32C3B;">用户名不能为空</span>
 							</div>
 							<div class="clearfix"></div>
@@ -194,7 +194,7 @@
 								<span class="add-on">
 									<i class="icon-lock"></i>
 								</span>
-								<input class="input-large" name="LoginForm[password]" id="password" type="text" value="请输入密码" onfocus="onClickPassword()" onclick="onClickPassword()" onblur="onBlurPassword()"/>
+								<input class="input-large" name="LoginForm[password]" id="password" type="text" placeholder="请输入密码" onfocus="onClickPassword()" onclick="onClickPassword()" onblur="onBlurPassword()" required/>
 								<span id="password_tips" class="help-inline" style="visibility:hidden;color:#E32C3B;">密码不能为空</span>
 							</div>
 							<div class="clearfix"></div>

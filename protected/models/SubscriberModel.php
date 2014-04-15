@@ -8,7 +8,7 @@
  * @property string $email
  * @property string $created_time
  */
-class SubscriberModel extends CActiveRecord
+class SubscriberModel extends ActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -53,8 +53,8 @@ class SubscriberModel extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'email' => 'Email',
-			'created_time' => 'Created Time',
+			'email' => '电子邮箱',
+			'created_time' => '创建时间',
 		);
 	}
 
