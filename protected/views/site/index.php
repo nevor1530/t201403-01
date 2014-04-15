@@ -8,13 +8,13 @@
 			<nav class="global-nav" style="display: none;">
 				<a class="glyphicon glyphicon-remove hidden-xs nav-close"></a>
 				<ul class="nav">
-					<li><a href="#carousel-generic" data-ajax="false">主页</a></li>
-					<li><a href="#gallery" data-ajax="false">iPad应用介绍</a></li>
-					<li><a href="#gallery" data-ajax="false">iPhone应用介绍</a></li>
-					<li><a href="#id-partner-section" data-ajax="false">申请成为合作伙伴</a></li>
-					<li><a href="#id-subscription-section" data-ajax="false">订阅我们</a></li>
-					<li><a href="#id-download-section" data-ajax="false">下载应用</a></li>
-					<li><a href="#id-map-section" data-ajax="false">关于我们</a></li>
+					<li><a class="nav-border-wrapper" href="#carousel-generic" data-ajax="false">主页</a></li>
+					<li><a class="nav-border-wrapper" href="#gallery" data-ajax="false">iPad应用介绍</a></li>
+					<li><a class="nav-border-wrapper" href="#gallery" data-ajax="false">iPhone应用介绍</a></li>
+					<li><a class="nav-border-wrapper" href="#id-partner-section" data-ajax="false">申请成为合作伙伴</a></li>
+					<li><a class="nav-border-wrapper" href="#id-subscription-section" data-ajax="false">订阅我们</a></li>
+					<li><a class="nav-border-wrapper" href="#id-download-section" data-ajax="false">下载应用</a></li>
+					<li><a class="nav-border-wrapper" href="#id-map-section" data-ajax="false">关于我们</a></li>
 				</ul>
 				<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipadiphone-download.png" class="ipadiphone-img" usemap="#downloadMap"/>
 				<map name="downloadMap">

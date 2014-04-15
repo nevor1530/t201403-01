@@ -9,10 +9,10 @@ $(function(){
 
 	var preloaderImg = document.getElementById("id-preloader-img");
 	if(preloaderImg.complete) { // 如果图片已经存在于浏览器缓存，直接调用回调函数
-		$(".js-preloader").fadeOut(1800);
+		$(".js-preloader").fadeOut(1000);
    	}
    	preloaderImg.onload = function () { //图片下载完毕时异步调用callback函数。
-		$(".js-preloader").fadeOut(1800);
+		$(".js-preloader").fadeOut(1000);
    	};
 
 	// 限制幻灯片的高度

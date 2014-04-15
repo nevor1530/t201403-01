@@ -20,7 +20,7 @@ a:hover {
 	min-height: 100%;
 	position: fixed;
 	width: 285px;
-	background: #0c0e14;
+	background-color: rgba(12, 14, 20, 1);
 }
 
 .nav-close {
@@ -29,18 +29,23 @@ a:hover {
 	color: #1ebad6;
 	font-size: 16px;
 }
-.global-nav ul li {
+
+.nav li a {
 	border-top: 1px solid #636366;
-}
-
-.global-nav li a {
+	border-bottom: 1px solid #636366;
+	margin: -1px 28px -1px 20px;
 	color: #FFFFFF;
-	padding-left: 20px;
+	padding: 10px 15px;
+	display: block;
 }
 
-.nav>li>a:hover, .nav>li.active>a, .nav>li.active>a:hover, .nav>li.active>a:focus {
+.nav>li:hover, .nav>li.active {
 	background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav>li:hover>a, .nav>li.active>a {
 	color: #1ebad6;
+	background-color: rgba(255, 255, 255, 0);
 }
 
 .main-overlay {
@@ -187,31 +192,42 @@ a:hover {
 }
 
 .carousel-caption .title {
-	font-size: 50px;
-	font-weight: 900;
+	font-size: 75px;
+	line-height: 75px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+	.carousel-caption .title {
+		line-height: 60px;
+		font-size: 54px;
+	}
 }
 
 @media screen and (max-width: 500px) {
 	.carousel-caption .title {
-		font-size: 27px;
+		font-size: 29px;
+		line-height: 35px;
 	}
 }
 
 .carousel-caption .content {
 	font-size: 15px;
-	font-weight: 700;
-	background-color: rgba(0, 0, 0, 0.42);
-	width: 360px;
-	margin:0 auto;
-	padding-top: 5px;
-	padding-bottom: 5px; 
-	margin-top: 20px;
+	background-color: rgba(7, 7, 22, 0.3);
+	display: inline-block;
+	padding: 0 10px;
+}
+
+@media screen and (max-width: 1000px) {
+	.carousel-caption .content {
+		font-size: 12px;
+	}
 }
 
 @media screen and (max-width: 500px) {
 	.carousel-caption .content {
-		font-size: 10px;
-		width: 220px;
+		font-size: 11px;
+		padding: 5px 10px;
+		line-height: 16px;
 	}
 }
 
@@ -1045,6 +1061,8 @@ a:hover {
 
 .map-section .sns img {
 	margin: 5px;
+	width: 32px;
+	height: 32px;
 }
 
 .noverflow {
