@@ -14,11 +14,11 @@
 			<!-- user dropdown starts -->
 			<div class="btn-group pull-right" >
 				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-					<i class="icon-user"></i><span class="hidden-phone"> admin</span>
+					<i class="icon-user"></i><span class="hidden-phone"><?php echo Yii::app()->user->name?></span>
 					<span class="caret"></span>
 				</a>
 				<ul class="dropdown-menu">
-					<li><a href="servlet/CheckoutServlet">Logout</a></li>
+					<li><a href="<?php echo $this->createUrl('/admin/default/logout');?>">Logout</a></li>
 				</ul>
 			</div>
 			<!-- user dropdown ends -->

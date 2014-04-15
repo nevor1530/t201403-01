@@ -14,7 +14,7 @@
 		<ul class="nav nav-tabs nav-stacked main-menu">
 			<li class="nav-header hidden-tablet">管理员账户</li>
 			<li><a class="ajax-link" href="<?php echo $this->createUrl('/admin/user/admin'); ?>"><i class="icon-user"></i><span class="hidden-tablet"> 列表</span></a></li>
-			<li><a class="ajax-link" href="<?php echo $this->createUrl('/admin/user/admin'); ?>"><i class="icon-user"></i><span class="hidden-tablet"> 新建</span></a></li>
+			<li><a class="ajax-link" href="<?php echo $this->createUrl('/admin/user/create'); ?>"><i class="icon-user"></i><span class="hidden-tablet"> 新建</span></a></li>
 		</ul>
 	</div><!--/.well -->
 </div><!--/span-->

@@ -1,20 +1,6 @@
 <?php
 /* @var $this PartnerController */
 /* @var $model Partner */
-
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-	$('.search-form').toggle();
-	return false;
-});
-$('.search-form form').submit(function(){
-	$('#partner-grid').yiiGridView('update', {
-		data: $(this).serialize()
-	});
-	return false;
-});
-");
-
 ?>
 <div class="box span12 row-fluid">
 	<div class="box-header well" data-original-title>
@@ -30,7 +16,7 @@ $('.search-form form').submit(function(){
 			'company',
 			'brand',
 			'province',
-			'cite',
+			'city',
 			'contact',
 			/*
 			'phone',
@@ -40,6 +26,7 @@ $('.search-form form').submit(function(){
 			*/
 			array(
 				'class'=>'CButtonColumn',
+				'template'=>'{update} {delete}',
 			),
 		),
 	)); ?>

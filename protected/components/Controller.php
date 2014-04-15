@@ -20,4 +20,16 @@ class Controller extends CController
 	 * for more details on how to specify this property.
 	 */
 	public $breadcrumbs=array();
+	
+	public function beginControlGroup($model, $attribute){
+		echo '<div class="control-group';
+		if($model->hasErrors($attribute)){
+			echo ' error';
+		}
+		echo '">';
+	}
+	
+	public function endControlGroup(){
+		echo '</div>';
+	}
 }

@@ -8,14 +8,14 @@
  * @property string $company
  * @property string $brand
  * @property string $province
- * @property string $cite
+ * @property string $city
  * @property string $contact
  * @property string $phone
  * @property string $email
  * @property string $created_time
  * @property string $updated_time
  */
-class PartnerModel extends CActiveRecord
+class PartnerModel extends ActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -35,12 +35,12 @@ class PartnerModel extends CActiveRecord
 		return array(
 			array('company, contact, phone', 'required'),
 			array('company, brand', 'length', 'max'=>40),
-			array('province, cite, contact, phone', 'length', 'max'=>20),
+			array('province, city, contact, phone', 'length', 'max'=>20),
 			array('email', 'length', 'max'=>100),
 			array('created_time, updated_time', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, company, brand, province, cite, contact, phone, email, created_time, updated_time', 'safe', 'on'=>'search'),
+			array('id, company, brand, province, city, contact, phone, email, created_time, updated_time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,15 +62,15 @@ class PartnerModel extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'company' => 'Company',
-			'brand' => 'Brand',
-			'province' => 'Province',
-			'cite' => 'Cite',
-			'contact' => 'Contact',
-			'phone' => 'Phone',
-			'email' => 'Email',
-			'created_time' => 'Created Time',
-			'updated_time' => 'Updated Time',
+			'company' => '公司名称',
+			'brand' => '品牌',
+			'province' => '省份',
+			'city' => '城市',
+			'contact' => '联系人',
+			'phone' => '电话',
+			'email' => '电子邮件',
+			'created_time' => '创建时间',
+			'updated_time' => '更新时间',
 		);
 	}
 
@@ -96,7 +96,7 @@ class PartnerModel extends CActiveRecord
 		$criteria->compare('company',$this->company,true);
 		$criteria->compare('brand',$this->brand,true);
 		$criteria->compare('province',$this->province,true);
-		$criteria->compare('cite',$this->cite,true);
+		$criteria->compare('city',$this->city,true);
 		$criteria->compare('contact',$this->contact,true);
 		$criteria->compare('phone',$this->phone,true);
 		$criteria->compare('email',$this->email,true);

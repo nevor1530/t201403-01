@@ -22,7 +22,7 @@ class DefaultController extends Controller
 
 	public function actionIndex()
 	{
-		$this->render('index');
+		$this->redirect(array('/admin/partner/admin'));
 	}
 	
 	public function actionLogin()
@@ -35,7 +35,7 @@ class DefaultController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login()){
-				$this->redirect(Yii::app()->user->returnUrl);
+				$this->redirect(array('/admin/default/login'));
 			}
 		}
 		// display the login form

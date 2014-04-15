@@ -1,18 +1,11 @@
 <?php
 /* @var $this PartnerController */
 /* @var $model PartnerModel */
-
-$this->breadcrumbs=array(
-	'Partner Models'=>array('index'),
-	'Create',
-);
-
-$this->menu=array(
-	array('label'=>'List PartnerModel', 'url'=>array('index')),
-	array('label'=>'Manage PartnerModel', 'url'=>array('admin')),
-);
 ?>
+<div class="box span12 row-fluid">
+	<div class="box-header well" data-original-title>
+		<h2><i class="icon-user"></i>创建合作伙伴</h2>
+	</div>
 
-<h1>Create PartnerModel</h1>
-
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+	<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>
