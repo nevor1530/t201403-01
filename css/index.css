@@ -60,10 +60,6 @@ a:hover {
 	min-height: 100%;
 	position: relative;
 	right: 0;
-}
-
-.main-wrapper-content {
-	position: relative;
 	box-shadow: 0 -20px 25px #000000;
 }
 
@@ -275,14 +271,14 @@ a:hover {
 	}
 
 	.carousel-indicators li {
-		border: 2px solid #1ebad6;
+		border: 2px solid #ffffff;
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
 		border-radius: 2px;
 	}
 
 	.carousel-indicators li.active {
-		border: 2px solid #cccccc;
+		border: 2px solid #0c3b59;
 	}
 }
 

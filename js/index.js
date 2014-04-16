@@ -64,6 +64,9 @@ $(function(){
 	});
 
 	// 导航逻辑
+	var scrollTop = "0px";
+	var activeIndex = 0;
+
 	$("#id-menu").click(function(){
 		shownav();
 	});
@@ -79,26 +82,53 @@ $(function(){
 	});
 
 	function shownav(){
+		// 停止轮播
+		$(".carousel").carousel("pause");
+		// 获取当前actived的序号
+		activeIndex = getActiveIndex();
+
 		$(".global-nav").show();
 		$(".main-wrapper").animate({right: "-280px"}, 100);
 		$(".global-header").animate({right: "-280px"}, 100);
 		$(".main-overlay").show();
+
+		scrollTop = $(document).scrollTop();
+		$(".global-container").width($window.width()).height($window.height());
 		$("body").addClass("noverflow");
-		$(".main-wrapper").height($window.height());
-		// 停止轮播
-		$(".carousel").carousel("pause");
+		$(".main-wrapper").css("top", -scrollTop);
+
+		// set the actived li
+		setTimeout(function() {
+			$lis = $("ul.nav li");
+			$lis.removeClass("active");
+			$($lis[activeIndex]).addClass("active");
+		}, 100);
 	}
 
 	function hidenav(){
+		// 启动轮播
+		$(".carousel").carousel("cycle");
+
 		$(".main-overlay").hide();
 		$("body").removeClass("noverflow");
-		$(".main-wrapper").height("auto");
+		$(".global-container").width("auto").height("auto");
+		$(".main-wrapper").css("top", 0);
+		$(document).scrollTop(scrollTop);
+
 		$(".main-wrapper").animate({right: "0"}, 100);
 		$(".global-header").animate({right: "0"}, 100);
 		$(".global-nav").hide();
-		// 启动轮播
-		$(".carousel").carousel("cycle");
+
 	}	
+
+	function getActiveIndex(){
+		var $lis = $("ul.nav li");
+		for(var i=0; i<$lis.length; i++) {
+			if ($($lis[i]).hasClass("active")) {
+				return i;
+			}
+		}
+	}
 
 	// slide左右滑动切换
 	$("#carousel-generic").on("swipeleft", function(e){
