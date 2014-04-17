@@ -289,57 +289,72 @@ a:hover {
 	}
 }
 
-.gallery-section {
+.iphone-function-section {
+	border-top-style: solid;
+	border-width: 1px;
+}
+
+.function-section {
 	background-color: #FFFFFF;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
-.gallery-section .label {
-	padding: 3px 10px 3px 10px;
+.function-section .section-label {
 	background-color: rgba(3, 2, 2, 0.9);
-	font-size: 16px;
+	font-family: "Microsoft YaHei" !important;
+	width: 70px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 18px;
+	margin: auto;
+	color: #FFFFFF;
+	letter-spacing: 3px;
 }
 
-.gallery-section .title {
+.function-section .title {
 	margin-top: 25px;
 	margin-bottom: 0;
-	font-size: 28px;
-	font-weight: 900;
+	font-size: 26px;
+	font-weight: 580;
+	font-family: "Microsoft YaHei" !important;
+	letter-spacing: 2px;
 }
 
-.gallery-section .description {
-	font-size: 13px;
+.function-section .description {
+	margin-top: 5px;
+	font-size: 15px;
+	font-family: "Microsoft YaHei" !important;
 }
 
-.gallery-container {
-	max-width: 780px;
+.function-section .gallery-container {
+	max-width: 900px;
 	margin-top: 30px;
 }
 
-.my-column {
+.function-section .my-column {
 	margin-bottom:20px;
 }
 	
 @media (max-width: 500px) {
-	.my-column {
+	.function-section .my-column {
 		margin-bottom:8px;
 	}
 }
 
 @media (max-width: 992px) {
-	.my-column {
+	.function-section .my-column {
 		margin-bottom:12px;
 	}
 }
 
 @media (max-width: 1200px) {
-	.my-column {
+	.function-section .my-column {
 		margin-bottom:16px;
 	}
 }
 
-.gallery-image {
+.function-section .gallery-image {
 	width:100%;
 	height:auto;
 	padding:0px;
@@ -347,11 +362,11 @@ a:hover {
 	max-width:340px;
 } 
 
-.image-container {
+.function-section .image-container {
 	position:relative;
 }
 
-.image-title-box {
+.function-section .image-title-box {
 	position:absolute;
 	left:0;
 	top:0;
@@ -360,24 +375,24 @@ a:hover {
 	max-width:340px;
 }
 
-.headline {
+.function-section .image-container .headline {
     color: #FFFFFF;
     top:30%;
     text-align:center;
     width:100%;
     position: absolute;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 
 @media (max-width: 500px) {
-	.headline {
+	.function-section .image-container .headline {
 		font-size: 16px;
 		font-weight: 500;
 	}
 }
 
-.image-overlay {
+.function-section .image-container .image-overlay {
     position: absolute;
     background-color: rgba(7, 7, 22, 0.7);
     max-width:340px;
@@ -387,7 +402,7 @@ a:hover {
     top: 0;
 }
 
-.plus {
+.function-section .plus {
     background-color: #000000;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -407,18 +422,13 @@ a:hover {
     line-height: 1;
 }
 
-.glyphicon-plus {
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 25px;
-}
-
-.modal-gallery {
+.function-section .modal-gallery {
     display: block;
     position: relative;
     margin-bottom:50px;
 }
 
-.modal-gallery .close-btn {
+.function-section .modal-gallery .close-btn {
 	position: absolute;
 	right: 10px;
 	top: 20px;
@@ -427,13 +437,13 @@ a:hover {
 }
 
 @media (max-width: 500px) {
-	.modal-gallery .close-btn {
+	.function-section .modal-gallery .close-btn {
 		top: 30px;
 		z-index: 99;
 	}
 }
 
-.modal-gallery .modal-container {
+.function-section .modal-gallery .modal-container {
 	background-attachment: scroll;
     background-clip: border-box;
     background-origin: padding-box;
@@ -447,7 +457,7 @@ a:hover {
 }
 
 @media (max-width: 500px) {
-	.modal-gallery .modal-container {
+	.function-section .modal-gallery .modal-container {
 		height: 240px;
 		padding-top: 55px;
 		margin-top: 20px;
@@ -455,12 +465,12 @@ a:hover {
 }
 
 @media (min-width: 500px) and (max-width: 900px) {
-	.modal-gallery .modal-container {
+	.function-section .modal-gallery .modal-container {
 		height: 480px;
 	}
 }
 
-.modal-gallery .modal-container .btn {
+.function-section .modal-gallery .modal-container .btn {
 	background-color: rgba(0, 0, 0, 0);
 	position: absolute;
 	height: 452px;
@@ -476,7 +486,7 @@ a:hover {
 }
 
 @media (max-width: 500px) {
-	.modal-gallery .modal-container .btn {
+	.function-section .modal-gallery .modal-container .btn {
 		background-color: rgba(0, 0, 0, 0);
 		color: #1EBAD6;
 	    right: 0;
@@ -490,7 +500,7 @@ a:hover {
 	}
 }
 
-.modal-gallery .modal-container .btn.last {
+.function-section .modal-gallery .modal-container .btn.last {
     left: 0;
     padding-bottom: 0;
     padding-left: 20px;
@@ -501,7 +511,7 @@ a:hover {
 }
 
 @media (max-width: 500px) {
-	.modal-gallery .modal-container .btn.last {
+	.function-section .modal-gallery .modal-container .btn.last {
 	 	padding-bottom: 22px;
 	    padding-left: 20px;
 	    padding-right: 20px;
@@ -509,7 +519,7 @@ a:hover {
 	}
 }
 
-.modal-gallery .modal-container .btn.next {
+.function-section .modal-gallery .modal-container .btn.next {
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 20px;
@@ -520,7 +530,7 @@ a:hover {
 }
 	
 @media (max-width: 500px) {
-	.modal-gallery .modal-container .btn.next {
+	.function-section .modal-gallery .modal-container .btn.next {
 		margin: 0;
 		padding-bottom: 22px;
 	    padding-left: 22px;
@@ -531,7 +541,7 @@ a:hover {
 	}
 }
 
-.modal-gallery .modal-container ul {
+.function-section .modal-gallery .modal-container ul {
     list-style-image: none;
     list-style-position: outside;
     list-style-type: none;
@@ -539,14 +549,14 @@ a:hover {
 }
 
 @media (max-width: 500px) {
-	.modal-gallery .modal-container ul {
+	.function-section .modal-gallery .modal-container ul {
 	    border-top-color: #666666;
 	    border-top-style: solid;
 	    border-top-width: 1px;
 	}
 }
 
-.modal-gallery .modal-container .modal-slide {
+.function-section .modal-gallery .modal-container .modal-slide {
     padding-bottom: 75px;
     padding-left: 75px;
     padding-right: 75px;
@@ -555,7 +565,7 @@ a:hover {
 }
 
 @media (max-width: 500px) {
-	.modal-gallery .modal-container .modal-slide {
+	.function-section .modal-gallery .modal-container .modal-slide {
 	    padding-bottom: 0;
 	    padding-left: 0;
 	    padding-right: 0;
@@ -564,7 +574,7 @@ a:hover {
 	}
 }
 
-.modal-gallery .modal-container .modal-slide .feature-image {
+.function-section .modal-gallery .modal-container .modal-slide .feature-image {
     background-attachment: scroll;
     background-clip: border-box;
     background-color: rgba(0, 0, 0, 0);
@@ -577,7 +587,7 @@ a:hover {
     z-index: 2;
 }
 
-.modal-gallery .modal-container .modal-slide .feature-image {
+.function-section .modal-gallery .modal-container .modal-slide .feature-image {
     height: 663px;
     left: 85px;
     top: -32px;
@@ -585,7 +595,7 @@ a:hover {
 }
 
 @media (max-width: 500px) {
-	.modal-gallery .modal-container .modal-slide .feature-image {
+	.function-section .modal-gallery .modal-container .modal-slide .feature-image {
 		height: 200px;
 		width: 150px;
 		left: -10px;
@@ -595,7 +605,7 @@ a:hover {
 }
 
 @media (min-width: 500px) and (max-width: 900px) {
-	.modal-gallery .modal-container .modal-slide .feature-image {
+	.function-section .modal-gallery .modal-container .modal-slide .feature-image {
 		height: 480px;
 		width: 360px;
 		left: 20px;
@@ -604,7 +614,7 @@ a:hover {
 	}
 }
 
-.modal-gallery .modal-container .modal-slide .copy {
+.function-section .modal-gallery .modal-container .modal-slide .copy {
     margin-bottom: 0;
     margin-left: 520px;
     margin-right: 0;
@@ -613,13 +623,13 @@ a:hover {
     color: #000000;
 }
 
-.modal-gallery .modal-container .modal-slide .copy h2 {
+.function-section .modal-gallery .modal-container .modal-slide .copy h2 {
 	font-weight: 900;
 	font-size: 34px;
 }
 
 @media (max-width: 500px) {
-	.modal-gallery .modal-container .modal-slide .copy {
+	.function-section .modal-gallery .modal-container .modal-slide .copy {
 	    margin-bottom: 13px;
 	    margin-left: 145px;
 	    margin-right: 10px;
@@ -627,14 +637,14 @@ a:hover {
 	    width: 150px;
 	}
 	
-	.modal-gallery .modal-container .modal-slide .copy h2 {
+	.function-section .modal-gallery .modal-container .modal-slide .copy h2 {
 		font-weight: 900;
 		font-size: 15px;
 	}
 }
 
 @media (min-width: 500px) and (max-width: 900px) {
-	.modal-gallery .modal-container .modal-slide .copy {
+	.function-section .modal-gallery .modal-container .modal-slide .copy {
 	    margin-bottom: 13px;
 	    margin-left: 330px;
 	    margin-right: 10px;
@@ -642,13 +652,13 @@ a:hover {
 	    width: 240px;
 	}
 	
-	.modal-gallery .modal-container .modal-slide .copy h2 {
+	.function-section .modal-gallery .modal-container .modal-slide .copy h2 {
 		font-weight: 900;
 		font-size: 16px;
 	}
 }
 
-.modal-gallery .modal-container .modal-slide .copy {
+.function-section .modal-gallery .modal-container .modal-slide .copy {
     position: relative;
     text-align: left;
 }
