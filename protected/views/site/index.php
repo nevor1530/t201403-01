@@ -7,8 +7,8 @@
 			<a class="glyphicon glyphicon-remove hidden-xs nav-close"></a>
 			<ul class="nav">
 				<li><a class="nav-border-wrapper" href="#carousel-generic" data-ajax="false">主页</a></li>
-				<li><a class="nav-border-wrapper" href="#gallery" data-ajax="false">iPad应用介绍</a></li>
-				<li><a class="nav-border-wrapper" href="#gallery" data-ajax="false">iPhone应用介绍</a></li>
+				<li><a class="nav-border-wrapper" href="#ipad-function-section" data-ajax="false">iPad应用介绍</a></li>
+				<li><a class="nav-border-wrapper" href="#iphone-function-section" data-ajax="false">iPhone应用介绍</a></li>
 				<li><a class="nav-border-wrapper" href="#id-subscription-section" data-ajax="false">订阅我们</a></li>
 				<li><a class="nav-border-wrapper" href="#id-download-section" data-ajax="false">下载应用</a></li>
 				<li><a class="nav-border-wrapper" href="#id-partner-section" data-ajax="false">申请成为合作伙伴</a></li>
@@ -30,7 +30,8 @@
 					<div class="header-fade"></div>
 					<?php include '_header.php'; ?>
 					<?php include '_carousel_section.php'; ?>
-					<?php include '_gallery_section.php'; ?>
+					<?php include '_ipad_function_section.php'; ?>
+					<?php include '_iphone_function_section.php'; ?>
 					<?php include '_subscription_section.php'; ?>
 					<?php include '_download_section.php'; ?>
 					<?php include '_partner_section.php'; ?>

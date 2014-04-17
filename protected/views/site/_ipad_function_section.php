@@ -1,62 +1,62 @@
 <!-- Start Gallery Block
 ================================================== -->
-<section id="gallery" class="section text-center gallery-section">
-	<p class="label">功能</p>
-	<p class="title">拾裳风应用程序</p>
+<section id="ipad-function-section" class="section text-center function-section ipad-function-section">
+	<p class="section-label">功能</p>
+	<p class="title">拾裳iPad应用程序</p>
 	<p class="description">随时随地可购物的时尚杂志</p>
 	<div id="gallery-thumbnail-container" class="container text-center gallery-container" style="display: block;">
 		<div class="row">
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/01.png" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-1.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
-						<h3 class="headline text-center">轻触即可搭乘 </h3>
+						<h3 class="headline text-center">时尚杂志呈现</h3>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/02.png" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-2.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
-						<h3 class="headline">安全可靠接载 </h3>
+						<h3 class="headline">产品信息一目了然 </h3>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/03.png" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-3.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
-						<h3 class="headline">价格清晰 </h3>
+						<h3 class="headline">商城与杂志分类浏览 </h3>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/04.png" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-4.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
-						<h3 class="headline">无需现金支付 </h3>
+						<h3 class="headline">随时购物，随时分享</h3>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/04.png" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-5.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
-						<h3 class="headline">无需现金支付 </h3>
+						<h3 class="headline">多种支付，简便安全</h3>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/04.png" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-6.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
-						<h3 class="headline">无需现金支付 </h3>
+						<h3 class="headline">同时提供iPhone版本</h3>
 					</div>
 				</div>
 			</div>
