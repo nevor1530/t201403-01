@@ -184,12 +184,19 @@ a:hover {
 }
 
 .carousel-caption {
-	bottom: 140px;
+	top: 55%;
 }
 
 .carousel-caption .title {
-	font-size: 75px;
-	line-height: 75px;
+	font-size: 96px;
+	text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1000px) {
+	.carousel-caption .title {
+		font-size: 75px;
+		line-height: 75px;
+	}
 }
 
 @media screen and (min-width: 500px) and (max-width: 1000px) {
