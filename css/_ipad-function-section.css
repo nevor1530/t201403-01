@@ -125,9 +125,30 @@
     line-height: 1;
 }
 
+.ipad-function-section .small-device-last-btn {
+	display: none;
+}
+
+.ipad-function-section .small-device-next-btn {
+	display: none;
+}
+
+.ipad-function-section  .large-device-last-btn {
+	display: block;
+}
+
+.ipad-function-section  .large-device-next-btn {
+	display: block;
+}
+	
 .ipad-function-section .function-large-image-container {
 	height: 350px;
-	vertical-align: middle;
+}
+
+@media (max-width: 500px) {
+	.ipad-function-section .function-large-image-container {
+		height: auto;
+	}
 }
 
 .ipad-function-section .function-image {
@@ -135,6 +156,38 @@
 	height: 350px;
 }
 
+@media (max-width: 500px) {
+	.ipad-function-section .function-image {
+		width: 100%;
+		height: auto;
+	}
+}
+
 .ipad-function-section .function-large-image-text-container {
-	top: 100px;
+	margin-top: 100px;
+}
+
+@media (max-width: 500px) {
+	.ipad-function-section .function-large-image-text-container {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 500px) {
+	.ipad-function-section .small-device-last-btn {
+		display: block;
+	}
+	
+	.ipad-function-section .small-device-next-btn {
+		display: block;
+	}
+	
+	.ipad-function-section  .large-device-last-btn {
+		display: none;
+	}
+	
+	.ipad-function-section  .large-device-next-btn {
+		display: none;
+	}
 }
