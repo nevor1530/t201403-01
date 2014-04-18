@@ -1,6 +1,6 @@
 <!-- Start Gallery Block
 ================================================== -->
-<section id="ipad-function-section" class="full-screen-section text-center ipad-function-section" >
+<section id="ipad-function-section" class="section full-screen-section text-center ipad-function-section js-section" >
 	<p class="section-label">功能</p>
 	<p class="title">拾裳iPad应用程序</p>
 	<p class="description">随时随地可购物的时尚杂志</p>
@@ -93,4 +93,5 @@
 			</div>
 		</div>
 	</div>
+	<a href="#" class="next-section js-next-section"></a>
 </section>

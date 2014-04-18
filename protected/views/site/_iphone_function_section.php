@@ -1,6 +1,6 @@
 <!-- Start Gallery Block
 ================================================== -->
-<section id="iphone-function-section" class="section text-center iphone-function-section">
+<section id="iphone-function-section" class="section text-center iphone-function-section js-section">
 	<p class="section-label">功能</p>
 	<p class="title">拾裳风iPhone应用程序</p>
 	<p class="description">随时随地可购物的时尚杂志</p>
@@ -85,4 +85,5 @@
 			</a>
 		</div>
 	</div>
+	<a href="#" class="next-section js-next-section"></a>
 </section>

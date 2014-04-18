@@ -1,4 +1,4 @@
-<section class="section map-section" id="id-map-section">
+<section class="section map-section js-section" id="id-map-section">
 	<img id="map" src="<?php echo Yii::app()->request->baseUrl; ?>/images/map.png">
 	<div class="container" >
 		<div class="row">
@@ -20,4 +20,5 @@
 			</div>
 		</div>
 	</div>
+	<a href="#" class="next-section js-next-section"></a>
 </section>

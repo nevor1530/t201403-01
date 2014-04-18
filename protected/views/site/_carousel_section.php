@@ -1,4 +1,4 @@
-<section id="carousel-generic" class="carousel slide js-slide noverflow" data-ride="carousel" data-interval="5000">
+<section id="carousel-generic" class="section carousel slide js-slide noverflow js-section" data-ride="carousel" data-interval="5000">
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
 		<li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
@@ -37,4 +37,6 @@
 	<a class="right carousel-control" href="#carousel-generic" data-slide="next">
 		<span class="glyphicon glyphicon-chevron-right"></span>
 	</a>-->
+	
+	<a href="#" class="next-section js-next-section"></a>
 </section>

@@ -1,4 +1,4 @@
-<section class="section subscription-section" id="id-subscription-section">
+<section class="section subscription-section js-section" id="id-subscription-section">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -19,4 +19,5 @@
 			</div>
 		</div>
 	</div>
+	<a href="#" class="next-section js-next-section"></a>
 </section>

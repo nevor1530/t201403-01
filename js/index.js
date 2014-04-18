@@ -201,4 +201,16 @@ $(function(){
 		
 	}
 	resize_map_image();
+	
+	/* =============================================
+	init the next section links
+	==============================================*/
+	$("a.js-next-section").each(function(){
+		var $nextSection = $(this).parent().next(".js-section");
+		if ($nextSection.length > 0) {
+			this.href = "#" + $nextSection.attr("id");		
+		} else {
+			this.style.display = "none";
+		}
+	});
 });
