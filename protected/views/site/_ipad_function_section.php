@@ -65,30 +65,30 @@
 	
 	<div id="gallery-container" class="container modal-gallery" style="display: block;">
 		<div class="row">
-			<div class="col-xs-2" style="display:none;">
+			<div class="col-xs-2 small-device-last-btn">
 				<a class="last-btn"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/left-arrow.png"/></a>
 			</div>
-			<div class="col-xs-2" style="display:none;">
+			<div class="col-xs-2 small-device-next-btn">
 				<a class="next-btn"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/right-arrow.png"/></a>
 			</div>
-			<div class="col-xs-offset-11 col-xs-1">
+			<div class="col-xs-8 col-sm-12 text-right">
 				<a id="gallery_close">
 					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/cross.png"/>
 				</a>
 			</div>
 		</div>
 		<div class="row function-large-image-container">
-			<div class="col-xs-1">
+			<div class="col-sm-1 text-left large-device-last-btn">
 				<a class="last-btn"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/left-arrow.png"/></a>
 			</div>
-			<div class="col-xs-4 function-large-image-text-container">
+			<div class="col-xs-12 col-sm-4 function-large-image-text-container">
 				<h2>点图购买，直观简便</h2>
 				<p>在《拾裳》杂志里，所有出现在杂志里的商品，您都可以轻触，直接下单购买。</p>
 			</div>
-			<div class="col-xs-6">
+			<div class="col-xs-12 col-sm-6">
 				<img class="function-image" src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-large-1.png"/>
 			</div>
-			<div class="col-xs-1">
+			<div class="col-sm-1 text-right large-device-next-btn">
 				<a class="next-btn"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/right-arrow.png"/></a>
 			</div>
 		</div>
