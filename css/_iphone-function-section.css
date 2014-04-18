@@ -1,0 +1,448 @@
+.iphone-function-section {
+	border-top-style: solid;
+	border-width: 1px;
+	background-color: #FFFFFF;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.iphone-function-section .section-label {
+	background-color: rgba(3, 2, 2, 0.9);
+	font-family: "Microsoft YaHei" !important;
+	width: 70px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 18px;
+	margin: auto;
+	color: #FFFFFF;
+	letter-spacing: 3px;
+}
+
+.iphone-function-section .title {
+	margin-top: 25px;
+	margin-bottom: 0;
+	font-size: 26px;
+	font-weight: 580;
+	font-family: "Microsoft YaHei" !important;
+	letter-spacing: 2px;
+}
+
+.iphone-function-section .description {
+	margin-top: 5px;
+	font-size: 15px;
+	font-family: "Microsoft YaHei" !important;
+}
+
+.iphone-function-section .gallery-container {
+	max-width: 900px;
+	margin-top: 30px;
+}
+
+.iphone-function-section .my-column {
+	margin-bottom:20px;
+}
+	
+@media (max-width: 500px) {
+	.iphone-function-section .my-column {
+		margin-bottom:8px;
+	}
+}
+
+@media (max-width: 992px) {
+	.iphone-function-section .my-column {
+		margin-bottom:12px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.iphone-function-section .my-column {
+		margin-bottom:16px;
+	}
+}
+
+.iphone-function-section .gallery-image {
+	width:100%;
+	height:auto;
+	padding:0px;
+	margin:0px;
+	max-width:340px;
+} 
+
+.iphone-function-section .image-container {
+	position:relative;
+}
+
+.iphone-function-section .image-title-box {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	max-width:340px;
+}
+
+.iphone-function-section .image-container .headline {
+    color: #FFFFFF;
+    top:30%;
+    text-align:center;
+    width:100%;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media (max-width: 500px) {
+	.iphone-function-section .image-container .headline {
+		font-size: 16px;
+		font-weight: 500;
+	}
+}
+
+.iphone-function-section .image-container .image-overlay {
+    position: absolute;
+    background-color: rgba(7, 7, 22, 0.7);
+    max-width:340px;
+    width:100%;
+    height:100%;
+    left: 0;
+    top: 0;
+}
+
+.iphone-function-section .plus {
+    background-color: #000000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #1EBAD6;
+    display: block;
+    left: 50%;
+    margin-left: -13px;
+    opacity: 0.8;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+    position: absolute;
+    top: 64%;
+    line-height: 1;
+}
+
+.iphone-function-section .modal-gallery {
+    display: block;
+    position: relative;
+    margin-bottom:50px;
+}
+
+.iphone-function-section .modal-gallery .close-btn {
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	font-size: 20px;
+	padding-right: 10px;
+}
+
+@media (max-width: 500px) {
+	.iphone-function-section .modal-gallery .close-btn {
+		top: 30px;
+		z-index: 99;
+	}
+}
+
+.iphone-function-section .modal-gallery .modal-container {
+	background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position: left top;
+    background-repeat: repeat;
+    background-size: 18px 18px;
+    color: #FFFFFF;
+    height: 600px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.iphone-function-section .modal-gallery .ipad-modal-container {
+	height: 420px;
+	margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+	.iphone-function-section .modal-gallery .modal-container {
+		height: 240px;
+		padding-top: 55px;
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+	.iphone-function-section .modal-gallery .modal-container {
+		height: 480px;
+	}
+}
+
+.iphone-function-section .modal-gallery .modal-container .btn {
+	background-color: rgba(0, 0, 0, 0);
+	position: absolute;
+	height: 452px;
+	top: 50%;
+    margin-top: -200px;
+	width: 40%;
+	left: no;
+	right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 20px;
+    padding-top: 215px;
+}
+
+@media (max-width: 500px) {
+	.iphone-function-section .modal-gallery .modal-container .btn {
+		background-color: rgba(0, 0, 0, 0);
+		color: #1EBAD6;
+	    right: 0;
+	    text-align: right;
+	    height: auto;
+	    margin: 0;
+	    padding: 22px;
+	    left: no;
+	    top: 0;
+	    width: 52px;
+	}
+}
+
+.iphone-function-section .modal-gallery .modal-container .btn.last {
+    left: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 0;
+    padding-top: 215px;
+    text-align: left;
+    z-index:10;
+}
+
+@media (max-width: 500px) {
+	.iphone-function-section .modal-gallery .modal-container .btn.last {
+	 	padding-bottom: 22px;
+	    padding-left: 20px;
+	    padding-right: 20px;
+	    padding-top: 35px;
+	}
+}
+
+.iphone-function-section .modal-gallery .modal-container .btn.next {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 20px;
+    padding-top: 215px;
+    text-align: right;
+    left: auto;
+    right: 0;
+}
+	
+@media (max-width: 500px) {
+	.iphone-function-section .modal-gallery .modal-container .btn.next {
+		margin: 0;
+		padding-bottom: 22px;
+	    padding-left: 22px;
+	    padding-right: 22px;
+	    padding-top: 35px;
+		left: 50px;
+		right: auto;
+	}
+}
+
+.iphone-function-section .modal-gallery .modal-container ul {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    padding: 0;
+}
+
+@media (max-width: 500px) {
+	.iphone-function-section .modal-gallery .modal-container ul {
+	    border-top-color: #666666;
+	    border-top-style: solid;
+	    border-top-width: 1px;
+	}
+}
+
+.iphone-function-section .modal-gallery .modal-container .modal-slide {
+    padding-bottom: 75px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 75px;
+    position: relative;
+}
+
+@media (max-width: 500px) {
+	.iphone-function-section .modal-gallery .modal-container .modal-slide {
+	    padding-bottom: 0;
+	    padding-left: 0;
+	    padding-right: 0;
+	    padding-top: 30px;
+	    position: relative;
+	}
+}
+
+.iphone-function-section .modal-gallery .modal-container .modal-slide .left-feature-image {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-origin: padding-box;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    position: absolute;
+    z-index: 2;
+    height: 663px;
+    left: 85px;
+    top: -32px;
+    width: 488px;
+}
+
+@media (max-width: 500px) {
+	.iphone-function-section .modal-gallery .modal-container .modal-slide .left-feature-image {
+		height: 200px;
+		width: 150px;
+		left: -10px;
+    	top: 10px;
+	    background-size: cover;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+	.iphone-function-section .modal-gallery .modal-container .modal-slide .left-feature-image {
+		height: 480px;
+		width: 360px;
+		left: 20px;
+    	top: 20px;
+	    background-size: cover;
+	}
+}
+
+.iphone-function-section .modal-gallery .modal-container .modal-slide h2 {
+	font-weight: 500;
+	font-size: 36px;
+	font-family: "Microsoft YaHei" !important;
+	letter-spacing: 4px;
+	margin-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+	.iphone-function-section .modal-gallery .modal-container .modal-slide h2 {
+		font-weight: 900;
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+	.iphone-function-section .modal-gallery .modal-container .modal-slide h2 {
+		font-weight: 900;
+		font-size: 16px;
+	}
+}
+
+.iphone-function-section .modal-gallery .modal-container .modal-slide p {
+	font-weight: 500;
+	font-size: 16px;
+	font-family: "Microsoft YaHei" !important;
+}
+
+.iphone-function-section .modal-gallery .modal-container .modal-slide .right-text {
+    margin-bottom: 0;
+    margin-left: 520px;
+    margin-right: 0;
+    margin-top: 80px;
+    width: 350px;
+    color: #000000;
+   	position: relative;
+    text-align: left;
+}
+
+@media (max-width: 500px) {
+	.iphone-function-section .modal-gallery .modal-container .modal-slide .right-text {
+	    margin-bottom: 13px;
+	    margin-left: 145px;
+	    margin-right: 10px;
+	    margin-top: 30px;
+	    width: 150px;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+	.iphone-function-section .modal-gallery .modal-container .modal-slide .right-text {
+	    margin-bottom: 13px;
+	    margin-left: 330px;
+	    margin-right: 10px;
+	    margin-top: 100px;
+	    width: 240px;
+	}
+}
+
+.iphone-function-section .modal-gallery .modal-container .modal-slide .left-text {
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 0;
+    margin-top: 110px;
+    width: 350px;
+    color: #000000;
+   	position: relative;
+    text-align: left;
+}
+
+@media (max-width: 500px) {
+	.iphone-function-section .modal-gallery .modal-container .modal-slide .left-text {
+	    margin-bottom: 13px;
+	    margin-left: 145px;
+	    margin-right: 10px;
+	    margin-top: 30px;
+	    width: 150px;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+	.iphone-function-section .modal-gallery .modal-container .modal-slide .left-text {
+	    margin-bottom: 13px;
+	    margin-left: 330px;
+	    margin-right: 10px;
+	    margin-top: 100px;
+	    width: 240px;
+	}
+}
+
+.iphone-function-section .modal-gallery .modal-container .modal-slide .right-feature-image {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-origin: padding-box;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 500px auto;
+    position: absolute;
+    z-index: 2;
+    height: 663px;
+    right: 100px;
+    top: 80px;
+    width: 500px;
+}
+
+@media (max-width: 500px) {
+	.iphone-function-section .modal-gallery .modal-container .modal-slide .right-feature-image {
+		height: 200px;
+		width: 150px;
+		left: -10px;
+    	top: 10px;
+	    background-size: cover;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+	.iphone-function-section .modal-gallery .modal-container .modal-slide .right-feature-image {
+		height: 480px;
+		width: 360px;
+		left: 20px;
+    	top: 20px;
+	    background-size: cover;
+	}
+}

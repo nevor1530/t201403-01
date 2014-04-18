@@ -1,0 +1,78 @@
+.partner-section {
+	background-image: url("../images/partner_section_bg.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.partner-section-container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+@media (max-width: 500px) {
+	.partner-section-container {
+	    padding-top: 50px;
+	    padding-bottom: 50px;
+	}
+}
+
+.partner-section .section-title {
+	font-family: "Microsoft YaHei" !important;
+	font-size: 24px;
+	font-weight: 900;
+	letter-spacing: 3px;
+}
+
+@media (max-width: 500px) {
+	.partner-section .section-title {
+		font-size: 20px;
+		letter-spacing: 1px;
+	}
+}
+
+.partner-section .lead {
+	font-family: "Microsoft YaHei" !important;
+	font-size: 20px;
+}
+
+@media (max-width: 500px) {
+	.partner-section .lead {
+		font-size: 16px;
+	}
+}
+
+.partner-form {
+	background-color: rgba(0, 0, 0, 0.31);
+	padding: 10px 20px 20px 20px;
+	border-radius: 5px;
+}
+
+.partner-form .title {
+	margin-bottom: 10px;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.partner-form .lead {
+	margin-bottom: 5px;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.partner-form > .row {
+	margin-bottom: 10px;
+}
+
+.partner-form .confirm-btn {
+	background-color: rgba(0, 0, 0, 0.31);
+	padding: 5px 30px 5px 30px;
+	margin-top: 20px;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 14px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px rgba(0,0,0, .29);
+}

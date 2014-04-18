@@ -1,0 +1,51 @@
+.map-section #map {
+	position: relative;
+	width: auto;
+}
+
+.map-section .container {
+	width: 100%;
+	background-color;
+	background-image: url("../images/about_us_bg.png");
+	background-repeat: repeat;
+    background-size: auto auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.map-section .company {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.map-section .email {
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 500;
+	padding-top: 5px;
+}
+
+.map-section .telephone {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.map-section .attention {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.map-section .specifier {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.map-section .sns img {
+	margin: 5px;
+	width: 32px;
+	height: 32px;
+}

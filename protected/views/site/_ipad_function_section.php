@@ -1,13 +1,13 @@
 <!-- Start Gallery Block
 ================================================== -->
-<section id="ipad-function-section" class="section text-center function-section ipad-function-section">
+<section id="ipad-function-section" class="full-screen-section text-center ipad-function-section" >
 	<p class="section-label">功能</p>
 	<p class="title">拾裳iPad应用程序</p>
 	<p class="description">随时随地可购物的时尚杂志</p>
-	<div id="gallery-thumbnail-container" class="container text-center gallery-container" style="display: block;">
+	<div id="gallery-thumbnail-container" class="container text-center gallery-container" style="display: none;">
 		<div class="row">
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
-				<div class="image-container">
+				<div class="function-small-image-container">
 					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-1.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
@@ -16,7 +16,7 @@
 				</div>
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
-				<div class="image-container">
+				<div class="function-small-image-container">
 					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-2.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
@@ -25,7 +25,7 @@
 				</div>
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
-				<div class="image-container">
+				<div class="function-small-image-container">
 					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-3.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
@@ -34,7 +34,7 @@
 				</div>
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
-				<div class="image-container">
+				<div class="function-small-image-container">
 					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-4.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
-				<div class="image-container">
+				<div class="function-small-image-container">
 					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-5.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
@@ -52,7 +52,7 @@
 				</div>
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
-				<div class="image-container">
+				<div class="function-small-image-container">
 					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-6.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
@@ -63,26 +63,34 @@
 		</div>
 	</div>
 	
-	<div id="gallery-container" class="container modal-gallery" style="display: none;">
-		<a id="gallery_close" class="close-btn">
-			<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/cross.png"/>
-		</a>
-		<div class="modal-container">
-			<a class="btn last">
-				<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/left-arrow.png"/>
-			</a>
-			<ul>
-				<li class="modal-slide active">
-					<p class="feature-image"></p>
-					<div class="copy">
-						<h2>点图购买，直观简便</h2>
-						<p>在《拾裳》杂志里，所有出现在杂志里的商品，您都可以轻触，直接下单购买。</p>
-					</div>
-				</li>
-			</ul>
-			<a class="next btn">
-				<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/right-arrow.png"/>
-			</a>
+	<div id="gallery-container" class="container modal-gallery" style="display: block;">
+		<div class="row">
+			<div class="col-xs-2" style="display:none;">
+				<a class="last-btn"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/left-arrow.png"/></a>
+			</div>
+			<div class="col-xs-2" style="display:none;">
+				<a class="next-btn"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/right-arrow.png"/></a>
+			</div>
+			<div class="col-xs-offset-11 col-xs-1">
+				<a id="gallery_close">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/cross.png"/>
+				</a>
+			</div>
+		</div>
+		<div class="row function-large-image-container">
+			<div class="col-xs-1">
+				<a class="last-btn"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/left-arrow.png"/></a>
+			</div>
+			<div class="col-xs-4 function-large-image-text-container">
+				<h2>点图购买，直观简便</h2>
+				<p>在《拾裳》杂志里，所有出现在杂志里的商品，您都可以轻触，直接下单购买。</p>
+			</div>
+			<div class="col-xs-6">
+				<img class="function-image" src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-large-1.png"/>
+			</div>
+			<div class="col-xs-1">
+				<a class="next-btn"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/right-arrow.png"/></a>
+			</div>
 		</div>
 	</div>
 </section>

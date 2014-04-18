@@ -35,6 +35,8 @@ $(function(){
 			$slide_img.css("height",wh+"px");
 			$slide_img.css("left", (-imgw*wh/imgh/2 + ww/2)+"px");
 		}
+		
+		$(".full-screen-section").height($window.height());
 	}
 	onresize();
 	
