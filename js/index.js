@@ -23,7 +23,7 @@ $(function(){
 		onresize();
 	});
 	function onresize(){
-		var wh = $window.height()-10;
+		var wh = $window.height();
 		var ww = $window.width();
 		$js_slides.height(wh);
 		if (ww/wh >= imgw/imgh){
@@ -36,9 +36,8 @@ $(function(){
 			$slide_img.css("left", (-imgw*wh/imgh/2 + ww/2)+"px");
 		}
 		
-		$(".full-screen-section").height($window.height());
+		resize_ipad_function_section();
 	}
-	onresize();
 	
 	// 根据滚动方向，隐藏和显示header
 	var $header = $("#id-header");
@@ -140,7 +139,8 @@ $(function(){
 		$("#carousel-generic").carousel("prev");
 	});
 	
-	$(".image-container").on(
+	var isIpadFunctionInGalleryMode = false;
+	$(".ipad-function-small-image-container").on(
 		"mouseenter", function() {
 		    $('.image-container').css('cursor','pointer');
       		$('.image-title-box', this).hide();
@@ -150,7 +150,7 @@ $(function(){
 		}
 	);
 	
-	$(".image-container").on(
+	$(".ipad-function-small-image-container").on(
 		"mouseleave", function() {
       		$('.image-title-box', this).show();
 			$('.image-overlay', this).animate({
@@ -159,20 +159,96 @@ $(function(){
 		}
 	);
 	
-	$(".image-container").on(
+	$(".ipad-function-small-image-container").on(
 		"click", function() {
-      		$('#gallery-container').show();
-			$('#gallery-thumbnail-container').hide();
+      		$('#ipad-gallery-container').show();
+			$('#ipad-gallery-thumbnail-container').hide();
+			
+			var index = getIpadFunctionClickIndex(this);
+			showFunctionContainerAtIndex(index);
+			
+			isIpadFunctionInGalleryMode = true;
+			resize_ipad_function_section();
 		}
 	);
-
 	
-	$("#gallery_close").on(
+	function getIpadFunctionClickIndex(obj){
+		var $containers = $(".ipad-function-small-image-container");
+		for(var i=0; i<$containers.length; i++){
+			if ($containers[i] === obj){
+				return i;
+			}
+		}
+	}
+	
+	function showFunctionContainerAtIndex(index){
+		var $containers = $(".function-container");
+		for(var i=0; i<$containers.length; i++){
+			if (i == index){
+				$containers[index].show();	
+			} else {
+				$containers[index].hide();	
+			}
+		}
+	}
+	
+	$("#ipad-gallery-close").on(
 		"click", function() {
-			$('#gallery-container').hide();
-			$('#gallery-thumbnail-container').show();
+			$('#ipad-gallery-container').hide();
+			$('#ipad-gallery-thumbnail-container').show();
+			isIpadFunctionInGalleryMode = false;
+			resize_ipad_function_section();
 		}
 	);
+	
+	/* resize ipad_function_section */
+	function resize_ipad_function_section() {
+		//alert(ww); //iphone:320 ; ipad: 768, 1024;
+		//alert(wh); //iphone:460 ; ipad: 916, 660; 
+		var wh = $window.height();
+		var ww = $window.width();
+		
+		var $ipad_function_section = $(".ipad-function-section");
+		var ipad_function_section_min_height;
+		var padding;
+		
+		if (isIpadFunctionInGalleryMode == true) {
+			if (ww > 1200) {
+				ipad_function_section_min_height = 580;
+				padding = 20;
+			} else if (ww > 950 && ww <= 1200) {
+				ipad_function_section_min_height = 480;
+				padding = 40;
+			} else if (ww > 750 && ww <= 950) {
+				ipad_function_section_min_height = 450;
+				padding = 20;
+			} else if (ww > 340 && ww <= 750) {
+				ipad_function_section_min_height = 550;
+				padding = 20;
+			} else {
+				ipad_function_section_min_height = 550;
+				padding = 20;
+			}
+		} else {
+			if (ww > 750) {
+				ipad_function_section_min_height = 580;
+				padding = 20;
+			} else {
+				ipad_function_section_min_height = 500;
+				padding = 30;
+			}
+		}
+		
+		if (wh > ipad_function_section_min_height) {
+			$ipad_function_section.css("height", wh + "px");
+			$ipad_function_section.css("padding-top", ((wh - ipad_function_section_min_height + 2 * padding) * 0.5) + "px");
+			$ipad_function_section.css("padding-bottom", ((wh - ipad_function_section_min_height + 2 * padding) * 0.5) + "px");
+		} else {
+			$ipad_function_section.css("height", ipad_function_section_min_height + "px");
+			$ipad_function_section.css("padding-top", padding + "px");
+			$ipad_function_section.css("padding-bottom", padding + "px");
+		}
+	}
 	
 	// 地图尺寸自适应
 	var $map_img = $("#map");
@@ -213,4 +289,6 @@ $(function(){
 			this.style.display = "none";
 		}
 	});
+	
+	onresize();
 });

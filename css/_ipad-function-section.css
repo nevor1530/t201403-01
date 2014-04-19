@@ -16,9 +16,9 @@
 }
 
 .ipad-function-section .title {
-	margin-top: 25px;
+	margin-top: 15px;
 	margin-bottom: 0;
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 580;
 	font-family: "Microsoft YaHei" !important;
 	letter-spacing: 2px;
@@ -30,7 +30,7 @@
 	font-family: "Microsoft YaHei" !important;
 }
 
-.ipad-function-section .gallery-container {
+.ipad-function-section .gallery-thumbnail-container {
 	max-width: 900px;
 	margin-top: 30px;
 }
@@ -65,7 +65,7 @@
 	max-width:340px;
 } 
 
-.ipad-function-section .function-small-image-container {
+.ipad-function-section .ipad-function-small-image-container {
 	position:relative;
 }
 
@@ -78,7 +78,7 @@
 	max-width:340px;
 }
 
-.ipad-function-section .function-small-image-container .headline {
+.ipad-function-section .ipad-function-small-image-container .headline {
     color: #FFFFFF;
     top:30%;
     text-align:center;
@@ -89,13 +89,13 @@
 }
 
 @media (max-width: 500px) {
-	.ipad-function-section .function-small-image-container .headline {
-		font-size: 16px;
+	.ipad-function-section .ipad-function-small-image-container .headline {
+		font-size: 13px;
 		font-weight: 500;
 	}
 }
 
-.ipad-function-section .function-small-image-container .image-overlay {
+.ipad-function-section .ipad-function-small-image-container .image-overlay {
     position: absolute;
     background-color: rgba(7, 7, 22, 0.7);
     max-width:340px;
@@ -125,6 +125,13 @@
     line-height: 1;
 }
 
+/*************************************
+ **** screen (width > 1200) ****
+ *************************************/
+.ipad-function-section .btn-container {
+	width: auto;
+}
+
 .ipad-function-section .small-device-last-btn {
 	display: none;
 }
@@ -133,22 +140,34 @@
 	display: none;
 }
 
-.ipad-function-section  .large-device-last-btn {
+.ipad-function-section .large-device-last-btn {
+	margin-top: 150px;
 	display: block;
 }
 
-.ipad-function-section  .large-device-next-btn {
-	display: block;
+.ipad-function-section .function-large-image-text-container {
+	margin-top: 80px;
 }
-	
+
+.ipad-function-section .function-container h2 {
+	font-size: 32px;
+	font-weight: 600;
+	font-family: "Microsoft YaHei" !important;
+	letter-spacing: 3px;
+	text-align: left;
+}
+
+.ipad-function-section .function-container p {
+	font-size: 16px;
+	font-weight: 500;
+	font-family: "Microsoft YaHei" !important;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
 .ipad-function-section .function-large-image-container {
+	width: auto;
 	height: 350px;
-}
-
-@media (max-width: 500px) {
-	.ipad-function-section .function-large-image-container {
-		height: auto;
-	}
 }
 
 .ipad-function-section .function-image {
@@ -156,38 +175,222 @@
 	height: 350px;
 }
 
-@media (max-width: 500px) {
-	.ipad-function-section .function-image {
-		width: 100%;
-		height: auto;
+.ipad-function-section .large-device-next-btn {
+	margin-top: 150px;
+	display: block;
+	float: right;
+}
+
+/*****************************************************
+ **** screen (width > 950 && width <= 1200) **********
+ *****************************************************/
+@media (min-width: 950px) and (max-width: 1200px) {
+	.container {
+		min-width: 900px;
 	}
-}
-
-.ipad-function-section .function-large-image-text-container {
-	margin-top: 100px;
-}
-
-@media (max-width: 500px) {
+	
+	.ipad-function-section .btn-container {
+		width: auto;
+	}
+	
+	.ipad-function-section .small-device-last-btn {
+		display: none;
+	}
+	
+	.ipad-function-section .small-device-next-btn {
+		display: none;
+	}
+	
+	.ipad-function-section .large-device-last-btn {
+		margin-top: 120px;
+		display: block;
+	}
+	
 	.ipad-function-section .function-large-image-text-container {
-		margin-top: 10px;
-		margin-bottom: 10px;
+		width: 300px;
+		margin-top: 60px;
+	}
+	
+	.ipad-function-section .function-container h2 {
+		font-size: 30px;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+	
+	.ipad-function-section .function-large-image-container {
+		width: 390px;
+		height: 260px;
+	}
+	
+	.ipad-function-section .function-image {
+		width: 390px;
+		height: 260px;
+	}
+	
+	.ipad-function-section .large-device-next-btn {
+		margin-top: 120px;
+		display: block;
+		float: right;
 	}
 }
 
-@media (max-width: 500px) {
+/*****************************************************
+ **** screen (width > 750 && width <= 950) ***********
+ *****************************************************/
+@media (min-width: 750px) and (max-width: 950px) {
+	.container {
+		min-width: 680px;
+	}
+	
+	.ipad-function-section .btn-container {
+		width: auto;
+	}
+	
+	.ipad-function-section .small-device-last-btn {
+		display: none;
+	}
+	
+	.ipad-function-section .small-device-next-btn {
+		display: none;
+	}
+	
+	.ipad-function-section .large-device-last-btn {
+		margin-top: 100px;
+		display: block;
+	}
+	
+	.ipad-function-section .function-large-image-text-container {
+		width: 240px;
+		margin-top: 50px;
+	}
+	
+	.ipad-function-section .function-container h2 {
+		font-size: 28px;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+	
+	.ipad-function-section .function-large-image-container {
+		width: 330px;
+		height: 220px;
+	}
+	
+	.ipad-function-section .function-image {
+		width: 330px;
+		height: 220px;
+	}
+	
+	.ipad-function-section .large-device-next-btn {
+		margin-top: 100px;
+		display: block;
+		float: right;
+	}
+}
+
+/*****************************************************
+ **** screen (width > 340 && width <= 750) ***********
+ *****************************************************/
+ @media (min-width: 340px) and (max-width: 750px) {
+ 	.ipad-function-section .btn-container {
+		width: 330px;
+		margin: auto;
+	}
+	
 	.ipad-function-section .small-device-last-btn {
 		display: block;
+		max-height: 30px;
 	}
 	
 	.ipad-function-section .small-device-next-btn {
 		display: block;
+		max-height: 30px;
 	}
 	
-	.ipad-function-section  .large-device-last-btn {
+	.ipad-function-section .function-container {
+		width: 330px;
+		height: auto;
+		margin: auto;
+	}
+	
+	.ipad-function-section .large-device-last-btn {
 		display: none;
 	}
 	
-	.ipad-function-section  .large-device-next-btn {
+	.ipad-function-section .function-large-image-text-container {
+		width: 330px;
+		margin-bottom: 10px;
+		margin-top: 0px;
+		padding: 0px;
+	}
+	
+	.ipad-function-section .function-container h2 {
+		font-size: 28px;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+	
+ 	.ipad-function-section .function-large-image-container {
+		width: 330px;
+		height: 220px;
+		padding: 0;
+	}
+	
+	.ipad-function-section .function-image {
+		width: 330px;
+		height: 220px;
+		margin: auto;
+	}
+	
+	.ipad-function-section .large-device-next-btn {
 		display: none;
 	}
 }
+
+/*****************************************************
+ ************* screen (width < 340) ******************
+ *****************************************************/
+@media (max-width: 340px) {
+	.ipad-function-section .small-device-last-btn {
+		display: block;
+		max-height: 30px;
+	}
+	
+	.ipad-function-section .small-device-next-btn {
+		display: block;
+		max-height: 30px;
+	}
+	
+	.ipad-function-section .function-container {
+		width: auto;
+		height: auto;
+	}
+	
+	.ipad-function-section .large-device-last-btn {
+		display: none;
+	}
+	
+	.ipad-function-section .function-large-image-text-container {
+		margin-top: 0px;
+	}
+	
+	.ipad-function-section .function-container h2 {
+		font-size: 24px;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+	
+	.ipad-function-section .function-container p {
+		font-size: 14px;
+		letter-spacing: 0px;
+	}
+
+	.ipad-function-section .function-image {
+		width: 100%;
+		height: auto;
+	}
+	
+	.ipad-function-section .large-device-next-btn {
+		display: none;
+	}
+}
+
