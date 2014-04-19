@@ -172,6 +172,39 @@ $(function(){
 		}
 	);
 	
+	$("#ipad-gallery-close").on(
+		"click", function() {
+			$('#ipad-gallery-container').hide();
+			$('#ipad-gallery-thumbnail-container').show();
+			isIpadFunctionInGalleryMode = false;
+			resize_ipad_function_section();
+		}
+	);
+	
+	$(".function-container .last-btn").on(
+		"click", function() {
+			$(this).parents(".function-container").hide();
+			var last = $(this).parents(".function-container").prev(".function-container");
+			if (last.length > 0) {
+				$(last).show();
+			} else {
+				$(".function-container").last().show();
+			}
+		}
+	);
+	
+	$(".function-container .next-btn").on(
+		"click", function() {
+			$(this).parents(".function-container").hide();
+			var next = $(this).parents(".function-container").next(".function-container");
+			if (next.length > 0) {
+				$(next).show();
+			} else {
+				$(".function-container").first().show();
+			}
+		}
+	);
+	
 	function getIpadFunctionClickIndex(obj){
 		var $containers = $(".ipad-function-small-image-container");
 		for(var i=0; i<$containers.length; i++){
@@ -184,22 +217,13 @@ $(function(){
 	function showFunctionContainerAtIndex(index){
 		var $containers = $(".function-container");
 		for(var i=0; i<$containers.length; i++){
-			if (i == index){
-				$containers[index].show();	
+			if (i === index){
+				$($containers[i]).show();	
 			} else {
-				$containers[index].hide();	
+				$($containers[i]).hide();	
 			}
 		}
 	}
-	
-	$("#ipad-gallery-close").on(
-		"click", function() {
-			$('#ipad-gallery-container').hide();
-			$('#ipad-gallery-thumbnail-container').show();
-			isIpadFunctionInGalleryMode = false;
-			resize_ipad_function_section();
-		}
-	);
 	
 	/* resize ipad_function_section */
 	function resize_ipad_function_section() {
