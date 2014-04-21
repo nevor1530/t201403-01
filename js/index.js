@@ -38,6 +38,7 @@ $(function(){
 		
 		resize_ipad_function_section();
 		resize_iphone_function_section();
+		resize_subscription_function_section();
 	}
 	
 	// 根据滚动方向，隐藏和显示header
@@ -182,7 +183,7 @@ $(function(){
 		}
 	);
 	
-	$(".ipad-function-section .function-container .last-btn").on(
+	$(".ipad-function-section .last-btn").on(
 		"click", function() {
 			$(this).parents(".ipad-function-section .function-container").hide();
 			var last = $(this).parents(".ipad-function-section .function-container").prev(".ipad-function-section .function-container");
@@ -194,7 +195,7 @@ $(function(){
 		}
 	);
 	
-	$(".function-container .next-btn").on(
+	$(".ipad-function-section .next-btn").on(
 		"click", function() {
 			$(this).parents(".ipad-function-section .function-container").hide();
 			var next = $(this).parents(".ipad-function-section .function-container").next(".ipad-function-section .function-container");
@@ -318,7 +319,7 @@ $(function(){
 		}
 	);
 	
-	$(".iphone-function-section .function-container .last-btn").on(
+	$(".iphone-function-section .last-btn").on(
 		"click", function() {
 			$(this).parents(".iphone-function-section .function-container").hide();
 			var last = $(this).parents(".iphone-function-section .function-container").prev(".iphone-function-section .function-container");
@@ -330,7 +331,7 @@ $(function(){
 		}
 	);
 	
-	$(".iphone-function-section .function-container .next-btn").on(
+	$(".iphone-function-section .next-btn").on(
 		"click", function() {
 			$(this).parents(".iphone-function-section .function-container").hide();
 			var next = $(this).parents(".iphone-function-section .function-container").next(".iphone-function-section .function-container");
@@ -364,10 +365,10 @@ $(function(){
 	
 	/* resize iphone_function_section */
 	function resize_iphone_function_section() {
-		//alert(ww); //iphone:320 ; ipad: 768, 1024;
-		//alert(wh); //iphone:460 ; ipad: 916, 660; 
 		var wh = $window.height();
 		var ww = $window.width();
+		//alert(ww); //iphone:320 ; ipad: 768, 1024;
+		//alert(wh); //iphone:460 ; ipad: 916, 660; 
 		
 		var $iphone_function_section = $(".iphone-function-section");
 		var iphone_function_section_min_height;
@@ -378,16 +379,16 @@ $(function(){
 				iphone_function_section_min_height = 580;
 				padding = 20;
 			} else if (ww > 950 && ww <= 1200) {
-				iphone_function_section_min_height = 480;
+				iphone_function_section_min_height = 540;
 				padding = 40;
 			} else if (ww > 750 && ww <= 950) {
-				iphone_function_section_min_height = 450;
+				iphone_function_section_min_height = 620;
 				padding = 20;
 			} else if (ww > 340 && ww <= 750) {
-				iphone_function_section_min_height = 550;
+				iphone_function_section_min_height = 760;
 				padding = 20;
 			} else {
-				iphone_function_section_min_height = 550;
+				iphone_function_section_min_height = 720;
 				padding = 20;
 			}
 		} else {
@@ -400,6 +401,12 @@ $(function(){
 			}
 		}
 		
+		/*
+		$iphone_function_section.css("height", iphone_function_section_min_height + "px");
+		$iphone_function_section.css("padding-top", padding + "px");
+		$iphone_function_section.css("padding-bottom", padding + "px");
+		*/
+		
 		if (wh > iphone_function_section_min_height) {
 			$iphone_function_section.css("height", wh + "px");
 			$iphone_function_section.css("padding-top", ((wh - iphone_function_section_min_height + 2 * padding) * 0.5) + "px");
@@ -408,6 +415,39 @@ $(function(){
 			$iphone_function_section.css("height", iphone_function_section_min_height + "px");
 			$iphone_function_section.css("padding-top", padding + "px");
 			$iphone_function_section.css("padding-bottom", padding + "px");
+		}
+	}
+	
+	/* resize subscription_function_section */
+	function resize_subscription_function_section() {
+		var wh = $window.height();
+		var ww = $window.width();
+		//alert(ww); //iphone:320 ; ipad: 768, 1024;
+		//alert(wh); //iphone:460 ; ipad: 916, 660; 
+		
+		var $subscription_section = $(".subscription-section");
+		var subscription_section_min_height;
+		var padding;
+		
+		if (ww > 900) {
+			subscription_section_min_height = 240;
+			padding = 20;
+		} else if (ww > 500 && ww <= 900) {
+			subscription_section_min_height = 240;
+			padding = 40;
+		} else {
+			subscription_section_min_height = 240;
+			padding = 20;
+		}
+		
+		if (wh > subscription_section_min_height) {
+			$subscription_section.css("height", wh + "px");
+			$subscription_section.css("padding-top", ((wh - subscription_section_min_height + 2 * padding) * 0.5) + "px");
+			$subscription_section.css("padding-bottom", ((wh - subscription_section_min_height + 2 * padding) * 0.5) + "px");
+		} else {
+			$subscription_section.css("height", subscription_section_min_height + "px");
+			$subscription_section.css("padding-top", padding + "px");
+			$subscription_section.css("padding-bottom", padding + "px");
 		}
 	}
 	
