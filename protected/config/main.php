@@ -9,6 +9,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'IsOften',
 	'language'=>'zh_cn',
+	'timeZone'=>'Asia/Shanghai',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
