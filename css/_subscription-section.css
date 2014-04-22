@@ -5,6 +5,12 @@
     width: 100%;
 }
 
+@media (max-width: 500px) {
+	.subscription-section {
+		background-image: url("../images/subscription_section_small_bg.jpg");
+	}
+}
+
 .subscription-section .section-title {
 	margin-bottom: 40px;
 	color: #FFFFFF;

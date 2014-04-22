@@ -316,12 +316,12 @@ a:hover {
 
 .next-section {
 	background-image: url("../images/next.png");
-	background-size: 50px 50px;
+	background-size: 42px 38px;
 	position: absolute;
-	height: 50px;
-	width: 50px;
+	width: 42px;
+	height: 38px;
 	left: 50%;
-	margin-left: -25px;
+	margin-left: -21px;
 	bottom: 5px;
 	z-index: 11;
 }

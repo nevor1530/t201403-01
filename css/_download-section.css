@@ -1,23 +1,3 @@
-
-.download-section {
-	padding-top: 100px;
-	padding-bottom: 50px;
-}
-
-@media (max-width: 500px) {
-	.download-section {
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
-}
-
-@media (min-width: 500px) and (max-width: 900px) {
-	.download-section {
-		padding-top: 90px;
-		padding-bottom: 80px;
-	}
-}
-
 .download-section .myrow {
 	margin-left: 15px;
 	margin-right: 15px;
@@ -33,31 +13,34 @@
 .download-section .title {
 	font-family: "Microsoft YaHei" !important;
 	font-weight: 900;
-	font-size: 24px;
-}
-
-@media (max-width: 500px) {
-	.download-section .title {
-		font-size: 20px;
-	}
+	font-size: 42px;
 }
 
 @media (min-width: 500px) and (max-width: 900px) {
 	.download-section .title {
-		font-size: 26px;
+		font-size: 38px;
+	}
+}
+
+@media (max-width: 500px) {
+	.download-section .title {
+		font-size: 36px;
 	}
 }
 
 .download-section .content {
 	font-family: "Microsoft YaHei" !important;
-	margin-top: 20px;
-	font-size: 18px;
+	margin-top: 5px;
+	margin-bottom: 60px;
+	font-size: 22px;
+	font-weight: 700;
 }
 
 @media (max-width: 500px) {
 	.download-section .content {
-		margin-top: 10px;
-		font-size: 15px;
+		margin-top: 0px;
+		margin-bottom: 30px;
+		font-size: 18px;
 	}
 }
 
@@ -67,131 +50,33 @@
 	}
 }
 
-.download-section .download-text-container {
-	margin-top: 90px;
-}
-
-@media (max-width: 500px) {
-	.download-section .download-text-container {
-		margin-top: 20px;
-	}
-}
-
-@media (min-width: 500px) and (max-width: 900px) {
-	.download-section .download-text-container {
-		margin-top: 50px;
-	}
-}
-
-.download-section .text {
-	padding: 0;
-	font-family: "Microsoft YaHei" !important;
-	font-size: 16px;
-	font-weight: 900;
-}
-
-.download-section .app-text {
-	padding: 0;
-	font-family: "Microsoft YaHei" !important;
-	font-size: 14px;
-}
-
 .download-section .img-container {
 	padding: 0;
 }
 
-.download-section .img-container .ipad-logo {
+.download-section .img-container .ipad-download {
 	width: 100%;
 	height: auto;
-	max-width: 80px;
 }
 
-@media (max-width: 900px) {
-	.download-section .img-container .ipad-logo {
-		max-width: 70px;
-	}
-}
-
-.download-section .img-container .iphone-logo {
+.download-section .img-container .iphone-download {
 	width: 100%;
 	height: auto;
-	max-width: 80px;
 }
 
-@media (max-width: 900px) {
-	.download-section .img-container .iphone-logo {
-		max-width: 70px;
-	}
-}
-
-.download-section .img-container .QR-code {
+.download-section .img-container .QR-download {
 	width: 100%;
 	height: auto;
-	max-width: 80px;
-}
-
-@media (max-width: 900px) {
-	.download-section .img-container .QR-code {
-		max-width: 70px;
-	}
-}
-
-.download-section .name-container {
-	margin: 0;
-	padding: 0;
-}
-
-.download-section .ipad-name {
-	padding-top: 5px;
-	font-family: "Microsoft YaHei" !important;
-	font-size: 15px;
-	font-weight: 900;
-	max-width: 80px;
-}
-
-@media (max-width: 900px) {
-	.download-section .ipad-name {
-		max-width: 70px;
-	}
-}
-
-.download-section .iphone-name {
-	padding-top: 5px;
-	font-family: "Microsoft YaHei" !important;
-	font-size: 15px;
-	font-weight: 900;
-	max-width: 80px;
-}
-
-@media (max-width: 900px) {
-	.download-section .iphone-name {
-		max-width: 70px;
-	}
-}
-
-.download-section .QR-code-name {
-	padding-top: 5px;
-	font-family: "Microsoft YaHei" !important;
-	font-size: 15px;
-	font-weight: 900;
-	max-width: 80px;
-}
-
-@media (max-width: 900px) {
-	.download-section .QR-code-name {
-		max-width: 70px;
-	}
 }
 
 .download-section .download-placeholder {
-	max-width: 550px;
+	margin-top: 0;
 	width: 100%;
 	height: auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 	.download-section .download-placeholder {
-		width: 100%;
-		height: auto;
+		margin-top: 20px;
 	}
 }

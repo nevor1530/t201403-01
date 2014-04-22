@@ -39,6 +39,7 @@ $(function(){
 		resize_ipad_function_section();
 		resize_iphone_function_section();
 		resize_subscription_function_section();
+		resize_download_section();
 	}
 	
 	// 根据滚动方向，隐藏和显示header
@@ -142,6 +143,7 @@ $(function(){
 	});
 	
 	var isIpadFunctionInGalleryMode = false;
+	var curIpadFunctionContainerIndex = -1;
 	$(".ipad-function-small-image-container").on(
 		"mouseenter", function() {
 		    $('.ipad-function-section .image-container').css('cursor','pointer');
@@ -166,8 +168,8 @@ $(function(){
       		$('#ipad-gallery-container').show();
 			$('#ipad-gallery-thumbnail-container').hide();
 			
-			var index = getIpadFunctionClickIndex(this);
-			showIpadFunctionContainerAtIndex(index);
+			curIpadFunctionContainerIndex = getIpadFunctionClickIndex(this);
+			showIpadFunctionContainerAtIndex(curIpadFunctionContainerIndex);
 			
 			isIpadFunctionInGalleryMode = true;
 			resize_ipad_function_section();
@@ -180,29 +182,36 @@ $(function(){
 			$('#ipad-gallery-thumbnail-container').show();
 			isIpadFunctionInGalleryMode = false;
 			resize_ipad_function_section();
+			curIpadFunctionContainerIndex = -1;
 		}
 	);
 	
 	$(".ipad-function-section .last-btn").on(
 		"click", function() {
-			$(this).parents(".ipad-function-section .function-container").hide();
-			var last = $(this).parents(".ipad-function-section .function-container").prev(".ipad-function-section .function-container");
-			if (last.length > 0) {
-				$(last).show();
-			} else {
-				$(".ipad-function-section .function-container").last().show();
+			var $containers = $(".ipad-function-section .function-container");
+			if (curIpadFunctionContainerIndex >= 0 && curIpadFunctionContainerIndex < $containers.length) {
+				$($containers[curIpadFunctionContainerIndex]).hide();	
+				if (curIpadFunctionContainerIndex == 0) {
+					curIpadFunctionContainerIndex = $containers.length - 1;
+				} else {
+					curIpadFunctionContainerIndex--;
+				}
+				$($containers[curIpadFunctionContainerIndex]).show();
 			}
 		}
 	);
 	
 	$(".ipad-function-section .next-btn").on(
 		"click", function() {
-			$(this).parents(".ipad-function-section .function-container").hide();
-			var next = $(this).parents(".ipad-function-section .function-container").next(".ipad-function-section .function-container");
-			if (next.length > 0) {
-				$(next).show();
-			} else {
-				$(".ipad-function-section .function-container").first().show();
+			var $containers = $(".ipad-function-section .function-container");
+			if (curIpadFunctionContainerIndex >= 0 && curIpadFunctionContainerIndex < $containers.length) {
+				$($containers[curIpadFunctionContainerIndex]).hide();	
+				if (curIpadFunctionContainerIndex == $containers.length - 1) {
+					curIpadFunctionContainerIndex = 0;
+				} else {
+					curIpadFunctionContainerIndex++;
+				}
+				$($containers[curIpadFunctionContainerIndex]).show();
 			}
 		}
 	);
@@ -229,10 +238,10 @@ $(function(){
 	
 	/* resize ipad_function_section */
 	function resize_ipad_function_section() {
-		//alert(ww); //iphone:320 ; ipad: 768, 1024;
-		//alert(wh); //iphone:460 ; ipad: 916, 660; 
 		var wh = $window.height();
 		var ww = $window.width();
+		//alert(ww); //iphone:320 ; ipad: 768, 1024;
+		//alert(wh); //iphone:460 ; ipad: 916, 660; 
 		
 		var $ipad_function_section = $(".ipad-function-section");
 		var ipad_function_section_min_height;
@@ -260,11 +269,11 @@ $(function(){
 				ipad_function_section_min_height = 580;
 				padding = 20;
 			} else {
-				ipad_function_section_min_height = 500;
-				padding = 30;
+				ipad_function_section_min_height = 220 + (ww - 60) * 411 * 3 / (619 * 2);
+				padding = 20;
 			}
 		}
-		
+			
 		if (wh > ipad_function_section_min_height) {
 			$ipad_function_section.css("height", wh + "px");
 			$ipad_function_section.css("padding-top", ((wh - ipad_function_section_min_height + 2 * padding) * 0.5) + "px");
@@ -278,6 +287,7 @@ $(function(){
 	
 	
 	var isIphoneFunctionInGalleryMode = false;
+	var curIphoneFunctionContainerIndex = -1;
 	$(".iphone-function-small-image-container").on(
 		"mouseenter", function() {
 		    $('.iphone-function-section .image-container').css('cursor','pointer');
@@ -302,8 +312,8 @@ $(function(){
       		$('#iphone-gallery-container').show();
 			$('#iphone-gallery-thumbnail-container').hide();
 			
-			var index = getIphoneFunctionClickIndex(this);
-			showIphoneFunctionContainerAtIndex(index);
+			curIphoneFunctionContainerIndex = getIphoneFunctionClickIndex(this);
+			showIphoneFunctionContainerAtIndex(curIphoneFunctionContainerIndex);
 			
 			isIphoneFunctionInGalleryMode = true;
 			resize_iphone_function_section();
@@ -316,29 +326,36 @@ $(function(){
 			$('#iphone-gallery-thumbnail-container').show();
 			isIphoneFunctionInGalleryMode = false;
 			resize_iphone_function_section();
+			curIphoneFunctionContainerIndex = -1;
 		}
 	);
 	
 	$(".iphone-function-section .last-btn").on(
 		"click", function() {
-			$(this).parents(".iphone-function-section .function-container").hide();
-			var last = $(this).parents(".iphone-function-section .function-container").prev(".iphone-function-section .function-container");
-			if (last.length > 0) {
-				$(last).show();
-			} else {
-				$(".iphone-function-section .function-container").last().show();
+			var $containers = $(".iphone-function-section .function-container");
+			if (curIphoneFunctionContainerIndex >= 0 && curIphoneFunctionContainerIndex < $containers.length) {
+				$($containers[curIphoneFunctionContainerIndex]).hide();	
+				if (curIphoneFunctionContainerIndex == 0) {
+					curIphoneFunctionContainerIndex = $containers.length - 1;
+				} else {
+					curIphoneFunctionContainerIndex--;
+				}
+				$($containers[curIphoneFunctionContainerIndex]).show();
 			}
 		}
 	);
 	
 	$(".iphone-function-section .next-btn").on(
 		"click", function() {
-			$(this).parents(".iphone-function-section .function-container").hide();
-			var next = $(this).parents(".iphone-function-section .function-container").next(".iphone-function-section .function-container");
-			if (next.length > 0) {
-				$(next).show();
-			} else {
-				$(".iphone-function-section .function-container").first().show();
+			var $containers = $(".iphone-function-section .function-container");
+			if (curIphoneFunctionContainerIndex >= 0 && curIphoneFunctionContainerIndex < $containers.length) {
+				$($containers[curIphoneFunctionContainerIndex]).hide();	
+				if (curIphoneFunctionContainerIndex == $containers.length - 1) {
+					curIphoneFunctionContainerIndex = 0;
+				} else {
+					curIphoneFunctionContainerIndex++;
+				}
+				$($containers[curIphoneFunctionContainerIndex]).show();
 			}
 		}
 	);
@@ -396,8 +413,8 @@ $(function(){
 				iphone_function_section_min_height = 580;
 				padding = 20;
 			} else {
-				iphone_function_section_min_height = 500;
-				padding = 30;
+				iphone_function_section_min_height = 220 + (ww - 60) * 411 * 3 / (619 * 2);
+				padding = 20;
 			}
 		}
 		
@@ -450,6 +467,42 @@ $(function(){
 			$subscription_section.css("padding-bottom", padding + "px");
 		}
 	}
+	
+	function resize_download_section() {
+		var wh = $window.height();
+		var ww = $window.width();
+		//alert(ww); //iphone:320 ; ipad: 768, 1024;
+		//alert(wh); //iphone:460 ; ipad: 916, 660; 
+		
+		var $download_section = $(".download-section");
+		var download_section_min_height;
+		var padding;
+		
+		if (ww >= 1200) {
+			download_section_min_height = (1170 - 60) * 899 / (2 * 993) + 40;
+			padding = 20;
+		} else if (ww >= 992 && ww < 1200) {
+			download_section_min_height = (970 - 60) * 899 / (2 * 993) + 40;
+			padding = 20;
+		} else if (ww >= 768 && ww < 992) {
+			download_section_min_height = (750 - 60) * 899 / (2 * 993) + 40;
+			padding = 20;
+		} else {
+			download_section_min_height = (ww - 60) * 899 * 2 / 993 + 40;
+			padding = 20;
+		}
+		
+		if (wh > download_section_min_height) {
+			$download_section.css("height", wh + "px");
+			$download_section.css("padding-top", ((wh - download_section_min_height + 2 * padding) * 0.5) + "px");
+			$download_section.css("padding-bottom", ((wh - download_section_min_height + 2 * padding) * 0.5) + "px");
+		} else {
+			$download_section.css("height", download_section_min_height + "px");
+			$download_section.css("padding-top", padding + "px");
+			$download_section.css("padding-bottom", padding + "px");
+		}
+	}
+	
 	
 	// 地图尺寸自适应
 	var $map_img = $("#map");

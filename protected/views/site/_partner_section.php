@@ -3,8 +3,9 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-8 col-md-6">
 				<div class="overview animate" data-animate="fadeInDown">
-					<p class="section-title">对我们感兴趣？</p>
-					<p class="lead">留下您的联系方式，我们将尽快联系您!</p>
+					<p class="section-title">你的品牌独一无二</p>
+					<p class="section-title">你的设计特立独行</p>
+					<p class="section-sub-title">留下您的联系方式，我们将尽快联系您!</p>
 				</div>
 				<form role="form" class="partner-form" style="width:100%" method="POST" action="<?php echo $this->createUrl('site/partner');?>">
 					<div class="row"><p class="title text-center col-xs-12">公司/设计师信息</p></div>
