@@ -96,10 +96,10 @@ $(function(){
 		$(".global-header").animate({right: "-280px"}, 100);
 		$(".main-overlay").show();
 
-		scrollTop = $(document).scrollTop();
+//		scrollTop = $(document).scrollTop();
 //		$(".global-container").width($window.width()).height($window.height());
 		$("body").addClass("noverflow");
-		$(".main-wrapper").css("top", -scrollTop);
+//		$(".main-wrapper").css("top", -scrollTop);
 
 		// set the actived li
 //		setTimeout(function() {
@@ -115,9 +115,9 @@ $(function(){
 
 		$(".main-overlay").hide();
 		$("body").removeClass("noverflow");
-		$(".global-container").width("auto").height("auto");
-		$(".main-wrapper").css("top", 0);
-		$(document).scrollTop(scrollTop);
+//		$(".global-container").width("auto").height("auto");
+//		$(".main-wrapper").css("top", 0);
+//		$(document).scrollTop(scrollTop);
 
 		$(".main-wrapper").animate({right: "0"}, 100);
 		$(".global-header").animate({right: "0"}, 100);
