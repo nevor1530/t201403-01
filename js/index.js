@@ -89,7 +89,7 @@ $(function(){
 		// 停止轮播
 		$(".carousel").carousel("pause");
 		// 获取当前actived的序号
-		activeIndex = getActiveIndex();
+//		activeIndex = getActiveIndex();
 
 		$(".global-nav").show();
 		$(".main-wrapper").animate({right: "-280px"}, 100);
@@ -97,16 +97,16 @@ $(function(){
 		$(".main-overlay").show();
 
 		scrollTop = $(document).scrollTop();
-		$(".global-container").width($window.width()).height($window.height());
+//		$(".global-container").width($window.width()).height($window.height());
 		$("body").addClass("noverflow");
 		$(".main-wrapper").css("top", -scrollTop);
 
 		// set the actived li
-		setTimeout(function() {
-			$lis = $("ul.nav li");
-			$lis.removeClass("active");
-			$($lis[activeIndex]).addClass("active");
-		}, 100);
+//		setTimeout(function() {
+//			$lis = $("ul.nav li");
+//			$lis.removeClass("active");
+//			$($lis[activeIndex]).addClass("active");
+//		}, 100);
 	}
 
 	function hidenav(){
