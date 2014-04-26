@@ -137,24 +137,27 @@ a:hover {
 
 .logo {
 	background: url("../images/logo.png") no-repeat;
-	background-size: 42px 42px;
+	background-size: 44px 44px;
 	display: inline-block;
 	font: 0px;
-	height: 42px;
-	width: 42px;
+	height: 44px;
+	width: 44px;
 }
 
 .download-app {
 	background: url("../images/download.png") no-repeat;
-	background-size: 27px 36px;
+	background-size: 33px 44px;
 	display: inline-block;
-	height: 35px;
-	width: 29px;
+	height: 44px;
+	width: 33px;
 }
 
 @media screen and (max-width: 500px) {
 	.download-app {
 		margin-left: 10px;
+		width: 27px;
+		height: 36px;
+		background-size: 27px 36px;
 	}
 }
 
@@ -281,11 +284,11 @@ a:hover {
 	}
 	
 	.logo {
-		width: 25px;
-		height: 25px;
+		width: 32px;
+		height: 32px;
 		top: 0px;
 		background: transparent url("../images/logo.png") no-repeat left top;
-		background-size: 25px 25px;
+		background-size: 32px 32px;
 	}
 
 	.carousel-indicators li {
