@@ -240,15 +240,18 @@ $(function(){
 	function resize_ipad_function_section() {
 		var wh = $window.height();
 		var ww = $window.width();
-		//alert(ww); //iphone:320 ; ipad: 768, 1024;
-		//alert(wh); //iphone:460 ; ipad: 916, 660; 
+		// alert(ww); //iphone:320 ; ipad: 768, 1024;
+		// alert(wh); //iphone:460 ; ipad: 916, 660; 
 		
 		var $ipad_function_section = $(".ipad-function-section");
 		var ipad_function_section_min_height;
 		var padding;
 		
 		if (isIpadFunctionInGalleryMode == true) {
-			if (ww > 1200) {
+			if (ww > 1800) {
+				ipad_function_section_min_height = 900;
+				padding = 30;
+			} else if (ww > 1200 && ww <= 1800) {
 				ipad_function_section_min_height = 580;
 				padding = 20;
 			} else if (ww > 950 && ww <= 1200) {
@@ -265,7 +268,10 @@ $(function(){
 				padding = 20;
 			}
 		} else {
-			if (ww > 750) {
+			if (ww > 1800) {
+				ipad_function_section_min_height = 990;
+				padding = 30;
+			} else if (ww > 750 && ww <= 1800) {
 				ipad_function_section_min_height = 580;
 				padding = 20;
 			} else {
@@ -273,7 +279,7 @@ $(function(){
 				padding = 20;
 			}
 		}
-			
+		
 		if (wh > ipad_function_section_min_height) {
 			$ipad_function_section.css("height", wh + "px");
 			$ipad_function_section.css("padding-top", ((wh - ipad_function_section_min_height + 2 * padding) * 0.5) + "px");
@@ -392,7 +398,10 @@ $(function(){
 		var padding;
 		
 		if (isIphoneFunctionInGalleryMode == true) {
-			if (ww > 1200) {
+			if (ww > 1800) {
+				iphone_function_section_min_height = 875;
+				padding = 30;
+			} else if (ww > 1200 && ww <= 1800) {
 				iphone_function_section_min_height = 580;
 				padding = 20;
 			} else if (ww > 950 && ww <= 1200) {
@@ -409,7 +418,10 @@ $(function(){
 				padding = 20;
 			}
 		} else {
-			if (ww > 750) {
+			if (ww > 1800) {
+				iphone_function_section_min_height = 990;
+				padding = 30;
+			} else if (ww > 750 && ww <= 1800) {
 				iphone_function_section_min_height = 580;
 				padding = 20;
 			} else {
@@ -417,12 +429,6 @@ $(function(){
 				padding = 20;
 			}
 		}
-		
-		/*
-		$iphone_function_section.css("height", iphone_function_section_min_height + "px");
-		$iphone_function_section.css("padding-top", padding + "px");
-		$iphone_function_section.css("padding-bottom", padding + "px");
-		*/
 		
 		if (wh > iphone_function_section_min_height) {
 			$iphone_function_section.css("height", wh + "px");

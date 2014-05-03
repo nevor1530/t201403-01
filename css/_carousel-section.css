@@ -171,10 +171,6 @@ a:hover {
 	font-size: 14px;
 }
 
-.btn-response {
-	
-}
-
 .js-slide {
 	max-width: 100%;
 }
@@ -188,6 +184,30 @@ a:hover {
 
 .carousel-caption {
 	top: 45%;
+	right: 15%;
+	left: 15%;
+}
+
+.carousel-caption .title {
+	font-family: "Microsoft YaHei" !important;
+	font-size: 90px;
+	line-height: 130px;
+	letter-spacing: 8px;
+	text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1000px) {
+	.carousel-caption .title {
+		font-size: 60px;
+		line-height: 100px;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+	.carousel-caption .title {
+		font-size: 54px;
+		line-height: 60px;
+	}
 }
 
 @media screen and (max-width: 500px) {
@@ -195,42 +215,29 @@ a:hover {
 		right: 9%;
 		left: 9%;
 	}
-}
-
-.carousel-caption .title {
-	font-size: 96px;
-	text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-}
-
-@media screen and (max-width: 1440px) and (min-width: 1000px) {
-	.carousel-caption .title {
-		font-size: 75px;
-		line-height: 75px;
-	}
-}
-
-@media screen and (min-width: 500px) and (max-width: 1000px) {
-	.carousel-caption .title {
-		line-height: 60px;
-		font-size: 54px;
-	}
-}
-
-@media screen and (max-width: 500px) {
+	
 	.carousel-caption .title {
 		font-size: 29px;
-		line-height: 35px;
+		line-height: 45px;
+		letter-spacing: 2px;
 	}
 }
 
 .carousel-caption .content {
-	font-size: 15px;
+	font-family: "Microsoft YaHei" !important;
+	font-size: 23px;
 	background-color: rgba(7, 7, 22, 0.3);
 	display: inline-block;
 	padding: 0 10px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 1000px) and (max-width: 1440px) {
+	.carousel-caption .content {
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
 	.carousel-caption .content {
 		font-size: 12px;
 	}
@@ -292,14 +299,38 @@ a:hover {
 	}
 
 	.carousel-indicators li {
-		border: 2px solid #ffffff;
-		-webkit-border-radius: 2px;
-		-moz-border-radius: 2px;
-		border-radius: 2px;
+		border: 4px solid #ffffff;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
 	}
 
 	.carousel-indicators li.active {
-		border: 2px solid #0c3b59;
+		border: 4px solid #0c3b59;
+	}
+}
+
+@media (min-width: 1800px) {
+	.menu-btn {
+	    width: 91px;
+		height: 25px;
+		background-size: contain;
+	}
+	
+	.logo {
+		width: 70px;
+		height: 70px;
+		background-size: 70px 70px;
+	}
+	
+	.header-pull-right {
+		margin-top: -30px;
+	}
+	
+	.download-app {
+		width: 55px;
+		height: 66px;
+		background-size: 55px 66px;
 	}
 }
 

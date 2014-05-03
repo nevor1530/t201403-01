@@ -8,7 +8,7 @@
 		<div class="row iphone-function-small-images">
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="iphone-function-small-image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone-function-small-1.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone-function-small-1.jpg" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline text-center">掌握动态</h3>
@@ -17,7 +17,7 @@
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="iphone-function-small-image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone-function-small-2.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone-function-small-2.jpg" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline">打开应用，发现惊喜</h3>
@@ -26,7 +26,7 @@
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="iphone-function-small-image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone-function-small-3.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone-function-small-3.jpg" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline">商品清晰分类，一目了然</h3>
@@ -35,7 +35,7 @@
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="iphone-function-small-image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone-function-small-4.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone-function-small-4.jpg" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline">轻松分享</h3>
@@ -44,7 +44,7 @@
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="iphone-function-small-image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone-function-small-5.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone-function-small-5.jpg" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline">多种支付，简便安全</h3>
@@ -53,7 +53,7 @@
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="iphone-function-small-image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone-function-small-6.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone-function-small-6.jpg" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline">同时提供iPad版本</h3>
@@ -82,11 +82,11 @@
 				<div class="col-sm-1 text-left large-device-last-btn">
 					<a class="last-btn"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/left-arrow.png"/></a>
 				</div>
-				<div class="col-xs-12 col-sm-7 col-sm-push-3 function-large-image-text-container">
+				<div class="col-xs-12 col-sm-6 col-sm-push-4 function-large-image-text-container">
 					<h2>掌握动态</h2>
 					<p>通过拾裳风的动态，可以随时获取杂志资讯，了解品牌活动以及最新产品信息。 </p>
 				</div>
-				<div class="col-xs-12 col-sm-3 col-sm-pull-7 text-right function-large-image-container">
+				<div class="col-xs-12 col-sm-4 col-sm-pull-6 text-right function-large-image-container">
 					<img class="function-image" src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone-function-large-1.png"/>
 				</div>
 				<div class="col-sm-1 text-right large-device-next-btn">
@@ -97,11 +97,11 @@
 				<div class="col-sm-1 text-left large-device-last-btn">
 					<a class="last-btn"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/left-arrow.png"/></a>
 				</div>
-				<div class="col-xs-12 col-sm-7 function-large-image-text-container">
+				<div class="col-xs-12 col-sm-6 function-large-image-text-container">
 					<h2>打开应用，发现惊喜</h2>
 					<p>打开拾裳风的摄像头，发现身边的惊喜，随时互动，立即可以获得心爱之物。</p>
 				</div>
-				<div class="col-xs-12 col-sm-3 text-right function-large-image-container">
+				<div class="col-xs-12 col-sm-4 text-right function-large-image-container">
 					<img class="function-image" src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone-function-large-2.png"/>
 				</div>
 				<div class="col-sm-1 text-right large-device-next-btn">

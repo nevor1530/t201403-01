@@ -8,7 +8,7 @@
 		<div class="row ipad-function-small-images">
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="ipad-function-small-image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-1.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-1.jpg" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline text-center">时尚杂志呈现</h3>
@@ -17,7 +17,7 @@
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="ipad-function-small-image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-2.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-2.jpg" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline">产品信息一目了然 </h3>
@@ -26,7 +26,7 @@
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="ipad-function-small-image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-3.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-3.jpg" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline">商城与杂志分类浏览 </h3>
@@ -35,7 +35,7 @@
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="ipad-function-small-image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-4.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-4.jpg" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline">随时购物，随时分享</h3>
@@ -44,7 +44,7 @@
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="ipad-function-small-image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-5.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-5.jpg" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline">多种支付，简便安全</h3>
@@ -53,7 +53,7 @@
 			</div>
 			<div class="col-xs-6 col-lg-4 col-md-4 col-sm-4 my-column">
 				<div class="ipad-function-small-image-container">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-6.jpg" alt="Turtle" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad-function-small-6.jpg" class="thumbnail img-rounded image-responsive animate gallery-image" data-animate="fadeIn">
 					<div class="image-overlay"></div>
 					<div class="image-title-box text-center">
 						<h3 class="headline">同时提供iPhone版本</h3>
