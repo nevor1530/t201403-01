@@ -146,9 +146,9 @@ $(function(){
 	var curIpadFunctionContainerIndex = -1;
 	$(".ipad-function-small-image-container").on(
 		"mouseenter", function() {
-		    $('.ipad-function-section .image-container').css('cursor','pointer');
-      		$('.ipad-function-section .image-title-box', this).hide();
-			$('.ipad-function-section .image-overlay', this).animate({
+		    $('.ipad-function-section .ipad-function-small-image-container').css('cursor','pointer');
+      		$('.image-title-box', this).hide();
+			$('.image-overlay', this).animate({
 	      		height: "toggle"
       		}, 200);
 		}
@@ -156,8 +156,8 @@ $(function(){
 	
 	$(".ipad-function-small-image-container").on(
 		"mouseleave", function() {
-      		$('.ipad-function-section .image-title-box', this).show();
-			$('.ipad-function-section .image-overlay', this).animate({
+      		$('.image-title-box', this).show();
+			$('.image-overlay', this).animate({
 	      		height: "toggle"
       		}, 200);
 		}
@@ -294,11 +294,12 @@ $(function(){
 	
 	var isIphoneFunctionInGalleryMode = false;
 	var curIphoneFunctionContainerIndex = -1;
+	
 	$(".iphone-function-small-image-container").on(
 		"mouseenter", function() {
-		    $('.iphone-function-section .image-container').css('cursor','pointer');
-      		$('.iphone-function-section .image-title-box', this).hide();
-			$('.iphone-function-section .image-overlay', this).animate({
+			$('.iphone-function-section .iphone-function-small-image-container').css('cursor','pointer');
+      		$('.image-title-box', this).hide();
+			$('.image-overlay', this).animate({
 	      		height: "toggle"
       		}, 200);
 		}
@@ -306,8 +307,8 @@ $(function(){
 	
 	$(".iphone-function-small-image-container").on(
 		"mouseleave", function() {
-      		$('.iphone-function-section .image-title-box', this).show();
-			$('.iphone-function-section .image-overlay', this).animate({
+      		$('.image-title-box', this).show();
+			$('.image-overlay', this).animate({
 	      		height: "toggle"
       		}, 200);
 		}
