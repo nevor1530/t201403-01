@@ -66,14 +66,14 @@
 	<div id="ipad-gallery-container" class="container modal-gallery" style="display:none;">
 		<div class="row btn-container">
 			<div class="col-xs-2 small-device-last-btn">
-				<a class="last-btn"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/left-arrow.png"/></a>
+				<a class="last-btn"><img class="small-device-last-btn-img" src="<?php echo Yii::app()->request->baseUrl; ?>/images/left-arrow.png"/></a>
 			</div>
 			<div class="col-xs-2 small-device-next-btn">
-				<a class="next-btn"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/right-arrow.png"/></a>
+				<a class="next-btn"><img class="small-device-next-btn-img" src="<?php echo Yii::app()->request->baseUrl; ?>/images/right-arrow.png"/></a>
 			</div>
 			<div class="col-xs-8 col-sm-12 text-right close-btn">
 				<a id="ipad-gallery-close">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/cross.png"/>
+					<img class="close-btn-img" src="<?php echo Yii::app()->request->baseUrl; ?>/images/cross.png"/>
 				</a>
 			</div>
 		</div>

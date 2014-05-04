@@ -1,3 +1,19 @@
+.download-section .container {
+	width: 1500px;
+}
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+	.download-section .container {
+		width: 1170px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.download-section .container {
+		width: 100%;
+	}
+}
+
 .download-section .myrow {
 	margin-left: 15px;
 	margin-right: 15px;

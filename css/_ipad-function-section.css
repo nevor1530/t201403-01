@@ -104,7 +104,7 @@
 	margin-bottom: 30px;
 }
 
-.container {
+.ipad-function-section .container {
     width: 1500px;
 }
 
@@ -204,7 +204,7 @@
 		margin-bottom: 30px;
 	}
 	
-	.container {
+	.ipad-function-section .container {
 	    width: 1170px;
 	}
 
@@ -242,6 +242,7 @@
 		font-size: 32px;
 		font-weight: 600;
 		letter-spacing: 3px;
+		text-align: left;
 	}
 	
 	.ipad-function-section .function-container p {
@@ -296,8 +297,8 @@
 		margin-top: 20px;
 	}
 	
-	.container {
-		min-width: 900px;
+	.ipad-function-section .container {
+		width: 900px;
 	}
 	
 	.ipad-function-section .modal-gallery {
@@ -327,9 +328,10 @@
 	}
 	
 	.ipad-function-section .function-container h2 {
-		font-size: 30px;
-		letter-spacing: 3px;
-		text-align: center;
+		font-size: 24px;
+		letter-spacing: 2px;
+		text-align: left;
+		font-weight: 700;
 	}
 	
 	.ipad-function-section .function-container p {
@@ -342,7 +344,7 @@
 	}
 	
 	.ipad-function-section .function-image {
-		width: 390px;
+		width: auto;
 		height: 260px;
 	}
 	
@@ -389,6 +391,7 @@
 	}
 	
 	.ipad-function-section .ipad-function-small-image-container .headline {
+		top: 30%;
 		font-size: 18px;
 	}
 	
@@ -396,8 +399,8 @@
 		margin-bottom:12px;
 	}
 	
-	.container {
-		min-width: 680px;
+	.ipad-function-section .container {
+		width: 720px;
 	}
 	
 	.ipad-function-section .modal-gallery {
@@ -427,9 +430,10 @@
 	}
 	
 	.ipad-function-section .function-container h2 {
-		font-size: 28px;
-		letter-spacing: 3px;
-		text-align: center;
+		font-size: 19px;
+		letter-spacing: 1px;
+		text-align: left;
+		font-weight: 700;
 	}
 	
 	.ipad-function-section .function-container p {
@@ -437,13 +441,13 @@
 	}
 	
 	.ipad-function-section .function-large-image-container {
-		width: 330px;
-		height: 220px;
+		width: 320px;
+		height: 210px;
 	}
 	
 	.ipad-function-section .function-image {
-		width: 330px;
-		height: 220px;
+		width: auto;
+		height: 210px;
 	}
 	
 	.ipad-function-section .large-device-next-btn {
@@ -489,13 +493,18 @@
 	}
 	
 	.ipad-function-section .ipad-function-small-image-container .headline {
-		font-size: 13px;
+		top: 25%;
+		font-size: 16px;
 		font-weight: 500;
 		letter-spacing: 1px;
 	}
 	
 	.ipad-function-section .my-column {
 		margin-bottom:12px;
+	}
+	
+	.ipad-function-section .container {
+		width: 100%;
 	}
 	
 	.ipad-function-section .modal-gallery {
@@ -505,6 +514,12 @@
  	.ipad-function-section .btn-container {
 		width: 330px;
 		margin: auto;
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+		margin-left: 2px;
+	    margin-right: 2px;
+	    padding-bottom: 5px;
+	    padding-top: 5px;
 	}
 	
 	.ipad-function-section .small-device-last-btn {
@@ -535,8 +550,8 @@
 	}
 	
 	.ipad-function-section .function-container h2 {
-		font-size: 28px;
-		letter-spacing: 3px;
+		font-size: 24px;
+		letter-spacing: 2px;
 		text-align: center;
 	}
 	
@@ -545,20 +560,21 @@
 	}
 	
  	.ipad-function-section .function-large-image-container {
-		width: 330px;
-		height: 220px;
+		width: 310px;
+		height: 200px;
 		padding: 0;
 	}
 	
 	.ipad-function-section .function-image {
-		width: 330px;
-		height: 220px;
+		width: 310px;
+		height: 200px;
 		margin: auto;
 	}
 	
 	.ipad-function-section .large-device-next-btn {
 		display: none;
 	}
+	
 }
 
 /*****************************************************
@@ -597,6 +613,7 @@
 	}
 	
 	.ipad-function-section .ipad-function-small-image-container .headline {
+		top: 20%;
 		font-size: 13px;
 		font-weight: 500;
 		letter-spacing: 1px;
@@ -606,8 +623,21 @@
 		margin-bottom:8px;
 	}
 	
+	.ipad-function-section .container {
+		width: 100%;
+	}
+	
 	.ipad-function-section .modal-gallery {
 		margin-top: 10px;
+	}
+	
+	.ipad-function-section .btn-container {
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+		margin-left: 2px;
+	    margin-right: 2px;
+	    padding-bottom: 5px;
+	    padding-top: 5px;
 	}
 	
 	.ipad-function-section .small-device-last-btn {
@@ -651,6 +681,18 @@
 	
 	.ipad-function-section .large-device-next-btn {
 		display: none;
+	}
+	
+	.ipad-function-section .small-device-last-btn-img {
+		width: 12px;
+	}
+	
+	.ipad-function-section .small-device-next-btn-img {
+		width: 12px;
+	}
+	
+	.ipad-function-section .close-btn-img {
+		width: 20px;
 	}
 }
 
