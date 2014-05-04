@@ -12,39 +12,39 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<p class="lead">公司全称：</p>
-			  	          		<input name="Partner[company]" type="text" class="form-control input-sm" maxLength="40" required>
+			  	          		<input name="PartnerModel[company]" type="text" class="form-control input-sm" maxLength="40" required>
 			  	        	</div>
 					</div>
 					<div class="row">
 			  	        	<div class="col-xs-12">
 			  	      			<p class="lead">品牌：</p>
-			  	          		<input name="Partner[brand]" type="text" class="form-control input-sm" maxLength="40" required>
+			  	          		<input name="PartnerModel[brand]" type="text" class="form-control input-sm" maxLength="40" required>
 			  	        	</div>
 					</div>
 					<div class="row">
 			  	        	<div class="col-xs-6">
 			  	      			<p class="lead">省份：</p>
-			  	          		<input name="Partner[province]" type="text" class="form-control input-sm" maxLength="20" required>
+			  	          		<input name="PartnerModel[province]" type="text" class="form-control input-sm" maxLength="20" required>
 			  	        	</div>
 		  	        		<div class="col-xs-6 city-container">
 		  	      				<p class="lead">城市：</p>
-		  	        	  		<input name="Partner[city]" type="text" class="form-control input-sm" required maxLength="20">
+		  	        	  		<input name="PartnerModel[city]" type="text" class="form-control input-sm" required maxLength="20">
 		  	        		</div>
 					</div>
 					<div class="row">
 			  	        	<div class="col-xs-6">
 			  	      			<p class="lead">联系人：</p>
-			  	          		<input name="Partner[contact]" type="text" class="form-control input-sm" required maxLength="20">
+			  	          		<input name="PartnerModel[contact]" type="text" class="form-control input-sm" required maxLength="20">
 			  	        	</div>
 			  	        	<div class="col-xs-6 phone-container">
 			  	      			<p class="lead">联系电话：</p>
-			  	          		<input name="Partner[phone]" type="number" class="form-control input-sm" required maxLength="20">
+			  	          		<input name="PartnerModel[phone]" type="number" class="form-control input-sm" required maxLength="20">
 			  	        	</div>
 					</div>
 					<div class="row">
 			  	        	<div class="col-xs-12">
 			  	      			<p class="lead">电子邮箱：</p>
-			  	          		<input name="Partner[email]" type="email" class="form-control input-sm" required maxLength="100">
+			  	          		<input name="PartnerModel[email]" type="email" class="form-control input-sm" required maxLength="100">
 			  	        	</div>
 					</div>
 					<div class="row">

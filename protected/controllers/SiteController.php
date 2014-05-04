@@ -22,10 +22,10 @@ class SiteController extends Controller
 	}
 
 	public function actionPartner(){
-		$model=new Partner;
-		if(isset($_POST['Partner']))
+		$model=new PartnerModel;
+		if(isset($_POST['PartnerModel']))
 		{
-			$model->attributes=$_POST['Partner'];
+			$model->attributes=$_POST['PartnerModel'];
 			if($model->validate() && $model->save())
 			{
 				// TODO Yii::app()->user->setFlash('partner','');
@@ -36,10 +36,10 @@ class SiteController extends Controller
 	}
 
 	public function actionSubscribe(){
-		$model=new Subscriber;
-		if(isset($_POST['Subscriber']))
+		$model=new SubscriberModel;
+		if(isset($_POST['SubscriberModel']))
 		{
-			$model->attributes=$_POST['Subscriber'];
+			$model->attributes=$_POST['SubscriberModel'];
 			if($model->validate() && $model->save())
 			{
 				// TODO Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
