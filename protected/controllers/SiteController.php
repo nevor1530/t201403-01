@@ -29,7 +29,12 @@ class SiteController extends Controller
 			if($model->validate() && $model->save()) {
 				echo '提交成功，我们将尽快联系你！';  
 			} else {
-				echo '提交失败';  
+				if (!empty($model->errors)){
+					$errors = array_values($model->errors);
+					echo $errors[0][0];
+				} else {
+					echo '提交失败';  
+				}
 			}
 			exit();
 		}
@@ -44,7 +49,11 @@ class SiteController extends Controller
 			if($model->validate() && $model->save()) {
 				echo '订阅已成功！';  
 			} else {
-				echo '订阅失败！';  
+				if (SubscriberModel::model()->exists('email=:email', array(':email'=>$model->email))){
+					echo '订阅已成功！';
+				} else {
+					echo '订阅失败！';  
+				}
 			}
 			exit();
 		}
@@ -122,8 +131,10 @@ class SiteController extends Controller
 		{
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
-			if($model->validate() && $model->login())
-				$this->redirect(Yii::app()->user->returnUrl);
+			if($model->validate() && $model->login()){
+				$this->redirect(array('/admin' ));
+				Yii::app()->end();				
+			}
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));

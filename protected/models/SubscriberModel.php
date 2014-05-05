@@ -28,6 +28,7 @@ class SubscriberModel extends ActiveRecord
 		return array(
 			array('email', 'required'),
 			array('email', 'length', 'max'=>200),
+			array('email', 'unique'),
 			array('created_time', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -94,5 +95,12 @@ class SubscriberModel extends ActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+	
+	public function beforeSave() {
+		if ($this->getIsNewRecord ()) {
+			$this->created_time = date('Y-m-d H:i:s');
+		}
+		return parent::beforeSave ();
 	}
 }

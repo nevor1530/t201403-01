@@ -33,7 +33,7 @@ class PartnerModel extends ActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('company, contact, phone', 'required'),
+			array('company, contact, phone, province, email', 'required'),
 			array('company, brand', 'length', 'max'=>40),
 			array('province, city, contact, phone', 'length', 'max'=>20),
 			array('email', 'length', 'max'=>100),
@@ -68,7 +68,7 @@ class PartnerModel extends ActiveRecord
 			'city' => '城市',
 			'contact' => '联系人',
 			'phone' => '电话',
-			'email' => '电子邮件',
+			'email' => '电子邮箱',
 			'created_time' => '创建时间',
 			'updated_time' => '更新时间',
 		);
