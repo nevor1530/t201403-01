@@ -26,15 +26,20 @@ a:hover {
 .nav-close {
 	margin: 20px 0px 20px 10px;
 	padding: 10px 30px 10px 10px;
-	color: #1ebad6;
+	color: #555555; /*#1ebad6;*/
 	font-size: 16px;
 }
+
+.nav-close:hover, .nav-close:active {
+	color: #FFFFFF; 
+}
+
 
 .nav li a {
 	border-top: 1px solid #636366;
 	border-bottom: 1px solid #636366;
 	margin: -1px 28px -1px 20px;
-	color: #FFFFFF;
+	color: #777777; /*#FFFFFF;*/
 	padding: 10px 15px;
 	display: block;
 }
@@ -44,7 +49,7 @@ a:hover {
 }
 
 .nav>li:hover>a, .nav>li.active>a {
-	color: #1ebad6;
+	color: #FFFFFF;/*#1ebad6*/
 	background-color: rgba(255, 255, 255, 0);
 }
 
