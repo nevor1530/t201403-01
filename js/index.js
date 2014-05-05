@@ -40,6 +40,7 @@ $(function(){
 		resize_iphone_function_section();
 		resize_subscription_function_section();
 		resize_download_section();
+		resize_partner_section();
 	}
 	
 	// 根据滚动方向，隐藏和显示header
@@ -510,6 +511,37 @@ $(function(){
 		}
 	}
 	
+	function resize_partner_section() {
+		var wh = $window.height();
+		var ww = $window.width();
+		//alert(ww); //iphone:320 ; ipad: 768, 1024;
+		//alert(wh); //iphone:460 ; ipad: 916, 660; 
+		
+		var $partner_section = $(".partner-section");
+		var partner_section_min_height;
+		var padding;
+		
+		if (ww > 1800) {
+			partner_section_min_height = 780;
+			padding = 50;
+		} else if (ww > 1200 && ww <= 1800) {
+			partner_section_min_height = 750;
+			padding = 50;
+		} else {
+			partner_section_min_height = 720;
+			padding = 50;
+		}
+		
+		if (wh > partner_section_min_height) {
+			$partner_section.css("height", wh + "px");
+			$partner_section.css("padding-top", ((wh - partner_section_min_height + 2 * padding) * 0.5) + "px");
+			$partner_section.css("padding-bottom", ((wh - partner_section_min_height + 2 * padding) * 0.5) + "px");
+		} else {
+			$partner_section.css("height", partner_section_min_height + "px");
+			$partner_section.css("padding-top", padding + "px");
+			$partner_section.css("padding-bottom", padding + "px");
+		}
+	}
 	
 	// 地图尺寸自适应
 	var $map_img = $("#map");

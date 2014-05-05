@@ -12,7 +12,7 @@
             				<input type="email" class="form-control email-input" placeholder="你的邮箱" name="SubscriberModel[email]" required>
 		          		</div>
 		          		<div class="wow slideInRight col-xs-3 my-col">
-        		  			<input class="btn btn-lg btn-default confirm-btn" type="submit">通知</input>
+        		  			<input class="btn btn-lg btn-default confirm-btn" type="submit" value="通知"></input>
             			</div>
             		</div>
 	          	</form>
