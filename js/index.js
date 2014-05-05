@@ -273,7 +273,7 @@ $(function(){
 				ipad_function_section_min_height = 990;
 				padding = 30;
 			} else if (ww > 750 && ww <= 1800) {
-				ipad_function_section_min_height = 580;
+				ipad_function_section_min_height = 680;
 				padding = 20;
 			} else {
 				ipad_function_section_min_height = 220 + (ww - 60) * 411 * 3 / (619 * 2);
@@ -424,7 +424,7 @@ $(function(){
 				iphone_function_section_min_height = 990;
 				padding = 30;
 			} else if (ww > 750 && ww <= 1800) {
-				iphone_function_section_min_height = 580;
+				iphone_function_section_min_height = 680;
 				padding = 20;
 			} else {
 				iphone_function_section_min_height = 220 + (ww - 60) * 411 * 3 / (619 * 2);
@@ -528,8 +528,8 @@ $(function(){
 			partner_section_min_height = 750;
 			padding = 50;
 		} else {
-			partner_section_min_height = 720;
-			padding = 50;
+			partner_section_min_height = 700;
+			padding = 40;
 		}
 		
 		if (wh > partner_section_min_height) {
