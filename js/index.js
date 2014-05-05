@@ -622,4 +622,11 @@ $(function(){
 		$("#myModal").modal('hide'); 
 	});
 
+	$("input").on("focus", function(){
+		$header.fadeOut();
+	});
+	
+	$("input").on("blur", function(){
+		$header.fadeIn();
+	});
 });
