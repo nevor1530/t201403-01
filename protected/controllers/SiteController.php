@@ -26,11 +26,12 @@ class SiteController extends Controller
 		if(isset($_POST['PartnerModel']))
 		{
 			$model->attributes=$_POST['PartnerModel'];
-			if($model->validate() && $model->save())
-			{
-				// TODO Yii::app()->user->setFlash('partner','');
-				$this->refresh();
+			if($model->validate() && $model->save()) {
+				echo '提交成功，我们将尽快联系你！';  
+			} else {
+				echo '提交失败';  
 			}
+			exit();
 		}
 		$this->render('index',array('model'=>$model));
 	}
@@ -40,11 +41,12 @@ class SiteController extends Controller
 		if(isset($_POST['SubscriberModel']))
 		{
 			$model->attributes=$_POST['SubscriberModel'];
-			if($model->validate() && $model->save())
-			{
-				// TODO Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
-				$this->refresh();
+			if($model->validate() && $model->save()) {
+				echo '订阅已成功！';  
+			} else {
+				echo '订阅失败！';  
 			}
+			exit();
 		}
 		$this->render('index',array('model'=>$model));
 	}

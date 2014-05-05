@@ -39,6 +39,23 @@
 			</div>
 		</div>
 
+		<div id="myModal" class="modal fade alertModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- dialog body -->
+					<div class="modal-body text-center">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<span id='alert-msg'></span>
+					</div>
+					
+					<!-- dialog buttons -->
+					<div class="modal-footer text-center">
+						<button type="button" class="btn btn-primary">确定</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.mobile.custom.min.js"></script>

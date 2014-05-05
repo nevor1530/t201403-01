@@ -7,7 +7,7 @@
 					<p class="section-title">你的设计特立独行</p>
 					<p class="section-sub-title">留下您的联系方式，我们将尽快联系您!</p>
 				</div>
-				<form role="form" class="partner-form" style="width:100%" method="POST" action="<?php echo $this->createUrl('site/partner');?>">
+				<form id="PartnerForm" role="form" class="partner-form" style="width:100%" method="POST" action="<?php echo $this->createUrl('site/partner');?>">
 					<div class="row"><p class="title text-center col-xs-12">公司/设计师信息</p></div>
 					<div class="row">
 						<div class="col-xs-12">
@@ -49,7 +49,7 @@
 					</div>
 					<div class="row">
 		          			<center class="col-xs-12">
-		          	    			<button class="confirm-btn" type="submit">确定</button>
+		          	    			<input class="confirm-btn" type="submit" value="通知"></input>
 		          			</center>
 					</div>
 		          	</form>

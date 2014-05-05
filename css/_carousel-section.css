@@ -359,3 +359,34 @@ a:hover {
 	bottom: 5px;
 	z-index: 11;
 }
+
+.alertModal .modal-dialog {
+	margin-top: 120px;
+    width: 300px;
+}
+
+.alertModal .modal-body {
+	font-family: "Microsoft YaHei" !important;
+	font-size: 16px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.alertModal .modal-footer {
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.alertModal .modal-footer button {
+	float: left;
+	margin-left: 100px;
+	padding: 8px 20px;
+	background-color: rgba(0, 0, 0, 0.81);
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 14px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px rgba(0,0,0, .29);
+	border-style: none;
+}

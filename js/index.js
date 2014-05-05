@@ -584,4 +584,42 @@ $(function(){
 	});
 	
 	onresize();
+	
+	/* subscription form submit */
+	$(document).ready(function() {
+		$('#SubForm').submit(function() {
+			var options = { 
+				url: $(this).attr("action"),
+				type: 'post',
+				dataType: 'text',
+				data: $('#SubForm').serialize(),
+				success: function(msg) {
+					$("#myModal #alert-msg").html(msg);
+					$('#myModal').modal();
+				}
+			};
+			$.ajax(options); 
+			return false;
+		});
+		
+		$('#PartnerForm').submit(function() {
+			var options = { 
+				url: $(this).attr("action"),
+				type: 'post',
+				dataType: 'text',
+				data: $('#PartnerForm').serialize(),
+				success: function(msg) {
+					$("#myModal #alert-msg").html(msg);
+					$('#myModal').modal();
+				}
+			};
+			$.ajax(options); 
+			return false;
+		});
+	}); 
+	
+	$("#myModal button").on("click", function(e) {
+		$("#myModal").modal('hide'); 
+	});
+
 });
