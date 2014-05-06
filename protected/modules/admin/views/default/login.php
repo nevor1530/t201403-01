@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>IsOften Advertisement Manage System</title>
+	<title>IsOften Manage System</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
 	<meta name="author" content="Muhammad Usman">
@@ -194,7 +194,7 @@
 								<span class="add-on">
 									<i class="icon-lock"></i>
 								</span>
-								<input class="input-large" name="LoginForm[password]" id="password" type="text" placeholder="请输入密码" onfocus="onClickPassword()" onclick="onClickPassword()" onblur="onBlurPassword()" required/>
+								<input class="input-large" name="LoginForm[password]" id="password" type="password" placeholder="请输入密码" onfocus="onClickPassword()" onclick="onClickPassword()" onblur="onBlurPassword()" required/>
 								<span id="password_tips" class="help-inline" style="visibility:hidden;color:#E32C3B;">密码不能为空</span>
 							</div>
 							<div class="clearfix"></div>

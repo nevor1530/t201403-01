@@ -623,10 +623,10 @@ $(function(){
 	});
 
 	$("input").on("focus", function(){
-		$header.fadeOut();
+		//$header.fadeOut();
 	});
 	
 	$("input").on("blur", function(){
-		$header.fadeIn();
+		//$header.fadeIn();
 	});
 });
