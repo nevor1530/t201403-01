@@ -622,11 +622,20 @@ $(function(){
 		$("#myModal").modal('hide'); 
 	});
 
+	var headerTimeoutId;
 	$("input").on("focus", function(){
-		$header.fadeOut();
+		if (headerTimeoutId){
+			clearTimeout(headerTimeoutId);
+			headerTimeoutId = undefined;
+		} else {
+			$header.fadeOut();
+		}
 	});
 	
 	$("input").on("blur", function(){
-		$header.fadeIn();
+		headerTimeoutId = setTimeout(function(){ 
+										$header.fadeIn();
+										headerTimeoutId = undefined;
+									}, 500);
 	});
 });
