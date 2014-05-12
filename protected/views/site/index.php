@@ -14,13 +14,9 @@
 				<li><a class="nav-border-wrapper" href="#id-partner-section" data-ajax="false">申请成为合作伙伴</a></li>
 				<li><a class="nav-border-wrapper" href="#id-map-section" data-ajax="false">关于我们</a></li>
 			</ul>
-			<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipadiphone-download.png" class="ipadiphone-img" usemap="#downloadMap"/>
-			<map name="downloadMap">
-				<area shape="rect" coords="19,34,68,98" href="#iphone" />
-				<area shape="rect" coords="0,99,145,176" href="#iphone" />
-				<area shape="rect" coords="88,0,276,98" href="#ipad" />
-				<area shape="rect" coords="145,99,298,176" href="#ipad" />
-			</map>
+			<a href="http://www.sizzee.com/download" target="_blank">
+				<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipadiphone-download.png" class="ipadiphone-img" usemap="#downloadMap"/>
+			</a>
 		</nav>
 		
 		<div class="global-container noverflow">
@@ -57,10 +53,10 @@
 		</div>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.min.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.mobile.custom.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/wow.min.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.smooth-scroll.min.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/index.js"></script>

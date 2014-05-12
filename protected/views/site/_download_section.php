@@ -7,10 +7,14 @@
 				<div class="row myrow">
 					<div class="col-xs-6">
 						<div class="row img-container">
-							<img class="ipad-download" src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad_download.png">
+							<a href="https://itunes.apple.com/app/id778561250" target="_blank">
+								<img class="ipad-download" src="<?php echo Yii::app()->request->baseUrl; ?>/images/ipad_download.png">
+							</a>
 						</div>
 						<div class="row img-container">
-							<img class="iphone-download" src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone_download.png">
+							<a href="https://itunes.apple.com/app/id849670828" target="_blank">
+								<img class="iphone-download" src="<?php echo Yii::app()->request->baseUrl; ?>/images/iphone_download.png">
+							</a>
 						</div>
 					</div>
 					<div class="col-xs-offset-1 col-xs-4 img-container">

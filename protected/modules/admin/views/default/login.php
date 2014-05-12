@@ -110,7 +110,7 @@
 		<div class="row-fluid">
 			<div class="row-fluid">
 				<div class="span12 center login-header">
-					<h2>Welcome to Advertise Manage System</h2>
+					<h2>Welcome to IsOften Manage System</h2>
 				</div><!--/span-->
 			</div><!--/row-->
 		

@@ -8,7 +8,7 @@
 				<span class="icon-bar"></span>
 			</a>
 			<a class="brand">
-				<img alt="Charisma Logo" src="img/logo20.png" /> <span>IsOften</span>
+				<span>IsOften</span>
 			</a>
 			
 			<!-- user dropdown starts -->

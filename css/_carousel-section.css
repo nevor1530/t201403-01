@@ -114,15 +114,16 @@ a:hover {
 }
 
 .menu-btn {
-	height: 16px;
-	width: 58px;
+	height: 17px;
+	width: 70px;
 	display: inline-block;
 	background: url("../images/menu.png") no-repeat;
+	background-size: 70px 17px;
 }
 
 @media screen and (max-width: 500px) {
 	.menu-btn {
-		width: 29px;
+		width: 35px;
 	}
 }
 
@@ -318,8 +319,8 @@ a:hover {
 @media (min-width: 1800px) {
 	.menu-btn {
 	    width: 91px;
-		height: 25px;
-		background-size: contain;
+		height: 22px;
+		background-size: 91px 22px;
 	}
 	
 	.logo {

@@ -516,8 +516,8 @@
 		margin: auto;
 		border-top: 1px solid;
 		border-bottom: 1px solid;
-		margin-left: 2px;
-	    margin-right: 2px;
+		margin-left: auto;
+		margin-right: auto;
 	    padding-bottom: 5px;
 	    padding-top: 5px;
 	}
@@ -567,7 +567,7 @@
 	
 	.ipad-function-section .function-image {
 		width: 310px;
-		height: 200px;
+		height: auto;
 		margin: auto;
 	}
 	
@@ -634,8 +634,8 @@
 	.ipad-function-section .btn-container {
 		border-top: 1px solid;
 		border-bottom: 1px solid;
-		margin-left: 2px;
-	    margin-right: 2px;
+		margin-left: auto;
+		margin-right: auto;
 	    padding-bottom: 5px;
 	    padding-top: 5px;
 	}

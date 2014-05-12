@@ -5,7 +5,7 @@
 	</div>
 	<!-- 右部分 -->
 	<div class="header-pull-right">
-		<a class="download-app"></a>
+		<a class="download-app" href="http://www.sizzee.com/download" target="_blank"></a>
 	</div>
 	<!-- logo -->
 	<center>
